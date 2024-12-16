@@ -2,7 +2,7 @@ import { useState } from "react";
 import SearchButton from "./SearchButton";
 import styles from "./SearchBar.module.css";
 import normalizeText from "../assets/NormalizeText.ts";
-import arrayProducts from "../assets/ProductsOptions.js";
+import { arrayProducts } from "../assets/ProductsOptions.ts";
 import Swal from "sweetalert2";
 
 const SearchBar = () => {

@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import "../index.css";
 import styles from "./Card.module.css";
+import { Products } from "../assets/ProductsOptions";
 
-function CreateCard({ option }) {
+interface TemplateProps {
+  array: Products[];
+}
+
+function CreateCard({ option }: { option: Products }) {
   return (
     <div className={styles["card"]}>
       <Link to={`/details?id=${option.id}`} className={styles["product-card"]}>
@@ -16,9 +21,7 @@ function CreateCard({ option }) {
           <p className={styles["product-title"]}>{option.nombre}</p>
           <div className={styles["product-price-block"]}>
             <p className={styles["current-price"]}>S/.{option.precioMenor}</p>
-            {option.oldPrice && (
-              <del className={styles["old-price"]}>S/.{option.oldPrice}</del>
-            )}
+
             <div className={styles["icon"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +52,10 @@ function CreateCard({ option }) {
   );
 }
 
-function Template({ array }) {
+function Template({ array }: TemplateProps) {
   return array.map((option) => <CreateCard key={option.id} option={option} />);
 }
-function Cards({ array }) {
+function Cards({ array }: TemplateProps) {
   return <div className={styles["products"]}>{Template({ array })}</div>;
 }
 

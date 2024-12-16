@@ -1,32 +1,22 @@
 import { useState } from "react";
-import arrayProducts from "../assets/ProductsOptions.ts";
+import { arrayProducts, Products } from "../assets/ProductsOptions.ts";
 import styles from "./SectionCards.module.css";
 import { Template } from "./Card.tsx";
 import normalizeText from "../assets/NormalizeText.ts";
 import arraySeparators from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
 import arrayBannerSections from "../assets/BannerSectionOption.ts";
-import arrayNavOptions from "../assets/NavOptions.ts"; // Asegúrate de importar este array
 
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
   section: string; // section debería ser un string
 }
 
-interface Product {
-  id: string;
-  text: string;
-  section: string;
-  imagen: string;
-  nombre: string;
-  precioMenor: number;
-}
-
 const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const [startIndexes, setStartIndexes] = useState<Record<string, number>>({});
 
   // Función para filtrar los productos por sección
-  const sectionProducts = (array: Product[], section: string): Product[] => {
+  const sectionProducts = (array: Products[], section: string): Products[] => {
     // Si la sección es "Ofertas", no se deben mostrar los productos
     if (normalizeText(section) === "ofertas") {
       console.log("Sección 'Ofertas' detectada, no se muestran productos.");
@@ -74,11 +64,6 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   // Verifica la URL actual para determinar el estado de la navegación
   const location = useLocation();
   const verify = location.pathname.replace(/^\/|\/$/g, "");
-
-  // Verifica si la sección en la barra de navegación es "Ofertas"
-  const navOption = arrayNavOptions.find(
-    (nav) => normalizeText(nav.text) === "ofertas"
-  );
 
   // Si la sección es "Ofertas", no se debe mostrar el banner ni los productos
   if (normalizeText(section) === "ofertas") {

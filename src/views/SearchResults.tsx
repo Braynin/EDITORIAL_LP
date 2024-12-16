@@ -1,7 +1,7 @@
 // SearchResults.jsx o SearchResults.tsx
 import { useLocation } from "react-router-dom";
-import arrayProducts from "../assets/ProductsOptions.js";
-import normalizeText from "../assets/NormalizeText.js";
+import { arrayProducts } from "../assets/ProductsOptions.js";
+import normalizeText from "../assets/NormalizeText.ts";
 import Layout from "../components/Layout.js";
 import { Cards } from "../components/Card.tsx";
 import styles from "./SearchResults.module.css";
@@ -22,11 +22,11 @@ const SearchResults = () => {
           Resultados de la búsqueda: "{query}"
         </h1>
         <div className={styles["container-result"]}>
-        {filteredProducts.length > 0 ? (
-          <Cards array={filteredProducts} />
-        ) : (
-          <p>No se encontraron productos con ese nombre.</p>
-        )}
+          {filteredProducts.length > 0 ? (
+            <Cards array={filteredProducts} />
+          ) : (
+            <p>No se encontraron productos con ese nombre.</p>
+          )}
         </div>
       </Layout>
     </>
