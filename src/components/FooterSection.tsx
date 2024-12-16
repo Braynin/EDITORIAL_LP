@@ -32,8 +32,6 @@ const createFooterSection = (option: any) => (
         </Link>
       </li>
     </ul>
-   
-    
   </div>
 );
 

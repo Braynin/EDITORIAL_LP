@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchButton from "./SearchButton";
 import styles from "./SearchBar.module.css";
-import normalizeText from "../assets/NormalizeText.js";
+import normalizeText from "../assets/NormalizeText.ts";
 import arrayProducts from "../assets/ProductsOptions.js";
 import Swal from "sweetalert2";
 
@@ -37,7 +37,6 @@ const SearchBar = () => {
 
   return (
     <div className={styles["search-form"]}>
-      
       <input
         className={styles["search-input"]}
         type="text"
@@ -45,7 +44,6 @@ const SearchBar = () => {
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
         onKeyDown={handleKeyDown}
-        
       />
       <SearchButton onClick={() => handleSearch(searchText)} />
     </div>

@@ -1,5 +1,5 @@
 import styles from "./ButtonNavBar.module.css";
-import arrayNavOptions from "../assets/NavOptions";
+import arrayNavOptions from "../assets/NavOptions.ts";
 import React from "react";
 
 export default function ButtonNavBar() {
