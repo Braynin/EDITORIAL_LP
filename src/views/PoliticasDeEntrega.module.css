@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.politicasDeEntrega-container {
+  width: 100%;
+  max-width: 960px; /* Controla el ancho máximo */
+  margin: 0 auto;
+  padding: 20px; /* Espaciado para que no se toque con los bordes */
+  box-sizing: border-box; /* Asegura que el padding no se desborde */
+  text-align: justify; /* Centra el texto dentro del contenedor */
+}
+
+/* Contenedor para el título */
+.title-containerEntrega {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Título principal - h1 */
+.title-entrega {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor de los textos */
+.text-containerEntrega {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* Texto general de las políticas de entrega */
+.text-entrega {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Títulos de segundo nivel (h3) */
+.tit-txt-entrega {
+  font-size: 1.75rem; /* Tamaño para h3 */
+  font-weight: bold;
+  color: #222;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Títulos de tercer nivel (h4) */
+.tit-txt-entrega-h4 {
+  font-size: 1.25rem; /* Tamaño para h4 */
+  font-weight: bold;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Listas */
+.list-entrega {
+  list-style-type: none; /* Eliminar los puntos */
+  padding-left: 0; /* Eliminar el padding */
+  margin-top: 1rem; /* Espaciado entre listas */
+}
+
+/* Elementos de la lista */
+.li-entrega {
+  display: list-item;
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  white-space: wrap;
+}
+
+/* Estilo de negrita */
+.bold {
+  font-weight: bold;
+}

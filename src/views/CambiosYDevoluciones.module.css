@@ -1,0 +1,31 @@
+/* Contenedor principal dentro de <main> */
+.cambiosYDevoluciones-main {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+
+  flex-wrap: wrap; /* Permite que los divs se acomoden en nuevas filas si no hay suficiente espacio */
+  gap: 20px; /* Espacio entre los divs */
+  padding: 20px; /* Espacio alrededor */
+}
+.cambiosYDevoluciones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center; /* Centra el texto dentro de los divs */
+  padding-bottom: 30px;
+}
+/* Estilo para los divs con la clase imagen-footer */
+.imagen-footer {
+  width: 900px; /* Establece el ancho del div */
+  height: 500px; /* Establece la altura del div */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #ccc; /* Color por defecto en caso de que no haya color aleatorio */
+  display: inline-block; /* Asegura que los divs se comporten como bloques en línea */
+}
+
+/* Título dentro del <main> */
+.cambiosYDevoluciones-main h1 {
+  width: 100%; /* Toma el ancho completo */
+  margin-bottom: 20px; /* Espacio entre el título y los divs */
+}

@@ -1,0 +1,12 @@
+.products-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.content-subtitle {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: 800;
+}

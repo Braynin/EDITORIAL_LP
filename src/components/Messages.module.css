@@ -1,0 +1,27 @@
+/**Header-messages**/
+.messages-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #cf2e2e;
+  height: 1rem;
+  overflow: hidden;
+  border: 1px solid black;
+  
+ 
+}
+.messages {
+  display: flex;
+  max-width: 100%;
+  animation: scrollMessages 15s linear infinite;
+}
+
+@keyframes scrollMessages {
+  0% {
+    transform: translateX(200%); /* Comienza fuera a la derecha */
+  }
+  100% {
+    transform: translateX(-200%); /* Termina fuera a la izquierda */
+  }
+}

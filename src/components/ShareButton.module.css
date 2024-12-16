@@ -1,0 +1,119 @@
+/* ShareButton.module.css */
+.share-container {
+  list-style: none;
+ 
+    display: flex;
+    align-items: center; 
+    
+}
+
+.share-button-wrapper {
+
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin: 5px 0px 0px -8px;
+  
+}
+
+.policy-icon {
+  display: block;
+  padding: 8px;
+  color: black;
+}
+
+.policy-desc {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.share-menu {
+  border: 0.5px solid #c2bbbb;
+  position: absolute;
+  left: 100%; /* Coloca el menú a la derecha del texto */
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+  align-content: center;
+  gap: 1px;
+  padding: 5px;
+  margin-left:2px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border-radius: 5px; /* Bordes redondeados */
+}
+/* Colores y tamaños específicos para los iconos */
+.whatsappIcon {
+  color: white; /* Color verde característico de WhatsApp */
+  background-color: #25d366;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 2px;
+}
+
+.whatsappIcon:hover {
+  color: white;
+  background-color: #1e9e58; /* Color más oscuro */
+  transform: scale(0.95); /* Efecto de presionar */
+  border-radius: 2px;
+}
+
+.facebookIcon {
+  color: white; /* Color azul más oscuro de Facebook al pasar el mouse */
+  background-color: #145dbf;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 2px;
+}
+
+.facebookIcon:hover {
+  color: white;
+  background-color: #0d4a87; /* Color más oscuro */
+  transform: scale(0.95); /* Efecto de presionar */
+  border-radius: 2px;
+}
+
+.twitterIcon {
+  color: white; /* Color azul característico de Twitter */
+  background-color: #1da1f2;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 2px;
+}
+
+.twitterIcon:hover {
+  color: white;
+  background-color: #1a91c2; /* Color más oscuro */
+  transform: scale(0.95); /* Efecto de presionar */
+  border-radius: 2px;
+}
+.linkedinIcon {
+  color: white; /* Color azul característico de LinkedIn */
+  background-color: #0077b5;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 2px;
+}
+
+.linkedinIcon:hover { 
+  color: white;
+  background-color: #006699; /* Color más oscuro */
+  transform: scale(0.95); /* Efecto de presionar */
+  border-radius: 2px;
+}   
+.instagramIcon {
+  color: white; /* Color rosa característico de Instagram */
+  background-color: #c13584;
+  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 2px;
+} 
+
+.instagramIcon:hover {  
+  color: white; 
+  background-color: #c13584; /* Color más oscuro */ 
+  transform: scale(0.95); /* Efecto de presionar */ 
+  border-radius: 2px;
+}
+
+
+/* Estilo del icono en los enlaces */
+.share-menu a svg {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color al pasar el mouse */
+}

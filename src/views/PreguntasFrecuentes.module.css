@@ -1,0 +1,58 @@
+/* Contenedor principal */
+.preguntasFrecuentes-container {
+  width: 80%; /* Ancho limitado al 80% de la pantalla */
+  max-width: 800px; /* Limitar el tamaño máximo del contenedor */
+  margin: 0 auto; /* Centramos el contenedor horizontalmente */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Título principal */
+.title-faq {
+  font-size: 1.8rem; /* Reducido */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Reducido */
+  color: #333;
+}
+
+/* Lista de preguntas */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; /* Reducido el espacio entre preguntas */
+}
+
+/* Elemento de la pregunta */
+.faq-item {
+  background-color: #fff;
+  padding: 12px; /* Reducido */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra sutil */
+  margin: 0 auto; /* Asegura que cada pregunta esté centrada */
+  width: 90%; /* Ajustar al 90% del contenedor */
+}
+
+/* Agregar solo borde inferior rojo a las preguntas */
+.faq-question {
+  
+  font-size: 1.1rem; /* Reducido */
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px; /* Reducido */
+  padding-bottom: 4px; /* Reducido */
+  border-bottom: 2px solid rgb(240, 139, 139); /* Solo borde inferior */
+}
+
+/* Mostrar la respuesta cuando se hace clic */
+.faq-answer {
+  margin-top: 8px; /* Reducido */
+  font-size: 0.95rem; /* Reducido */
+  color: #666;
+  background-color: #f9f9f9;
+  padding: 8px; /* Reducido */
+  border-radius: 5px;
+}

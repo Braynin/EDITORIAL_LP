@@ -1,0 +1,114 @@
+/* Eliminar el estilo inline y hacer que el contenedor ocupe todo el espacio horizontal disponible */
+
+/* Las imágenes dentro del contenedor */
+.container-images ul {
+  display: flex; /* Colocamos las imágenes en fila */
+  transition: transform 0.5s ease; /* Suavizamos la transición de deslizamiento */
+}
+
+.container-images ul li {
+  flex: 0 0 100%; /* Cada imagen ocupará el 100% del contenedor */
+  transition: transform 0.5s ease; /* Aseguramos que cada imagen tenga una transición suave */
+}
+
+/* Imagen con ajuste completo al contenedor */
+.container-images ul li img {
+  margin-top: -16px;
+  width: 100%; /* Aseguramos que las imágenes ocupen todo el ancho del li */
+  object-fit: cover; /* La imagen se recorta para llenar el contenedor sin perder la relación de aspecto */
+}
+
+/* Contenedor principal que ocupa todo el ancho de la pantalla */
+.hero-container {
+  width: 100%; /* Hacer que el contenedor ocupe todo el ancho de la pantalla */
+  height: 550px; /* Aumentamos la altura para que la imagen se vea completa */
+  margin: 0 auto;
+  overflow: hidden; /* Ocultamos cualquier contenido fuera del contenedor */
+  position: relative; /* Necesario para posicionar las flechas y puntos */
+}
+
+/* Contenedor del slider, que se adapta a la altura del hero-container */
+.slider-container {
+  position: relative;
+  height: 100%; /* Aseguramos que el contenedor ocupe el 100% de la altura del hero-container */
+}
+
+/* Contenedor de las imágenes, ajustamos la visualización de las imágenes */
+.container-images {
+  width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho */
+  height: 100%; /* Aseguramos que el contenedor ocupe todo el alto */
+  overflow: hidden;
+  display: flex; /* Aseguramos que las imágenes estén en fila horizontal */
+  transition: transform 0.5s ease; /* Suavizamos la transición de deslizamiento */
+}
+
+/* Dots del carrusel, ahora los ponemos fuera de la imagen pero visibles */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: absolute; /* Lo posicionamos absolutamente respecto al contenedor */
+  bottom: 20px; /* Lo posicionamos 20px desde la parte inferior */
+  width: 100%; /* Aseguramos que ocupe todo el ancho */
+  z-index: 2; /* Los puntos estarán por encima de las flechas */
+}
+
+/* Estilo para los puntos */
+.dot-container-item {
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  position: relative;
+  display: inline-block; /* Asegura que el contenedor se ajuste al contenido */
+}
+
+.dot-container-item::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra la sombra en el punto */
+  width: 15px; /* Debe coincidir con el tamaño del punto */
+  height: 15px; /* Debe coincidir con el tamaño del punto */
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4); /* El color de la sombra */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Puedes agregar un pequeño difuminado */
+  opacity: 0; /* La sombra comienza invisible */
+  transition: opacity 0.3s ease; /* Suaviza el cambio de visibilidad */
+}
+
+/* Estilo para los puntos activos */
+.dot-container-item.active::after {
+  opacity: 1; /* Muestra la sombra solo cuando el punto está activo */
+}
+
+/* Efecto hover */
+.dot-container-item:hover::after {
+  opacity: 0.6; /* Sombra más visible al hacer hover */
+}
+/* Flechas de navegación */
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); /* Centra las flechas verticalmente */
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 3; /* Las flechas están por encima de los puntos */
+  cursor: pointer;
+  opacity: 0.2; /* La transparencia inicial */
+  user-select: none; /* Evita que se seleccione el texto */
+}
+.leftArrow:hover,
+.rightArrow:hover {
+  opacity: 1;
+}
+.leftArrow {
+  left: 32px; /* Ubica la flecha a la izquierda */
+}
+
+.rightArrow {
+  right: 32px; /* Ubica la flecha a la derecha */
+}

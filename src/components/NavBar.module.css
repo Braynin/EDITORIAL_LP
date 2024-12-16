@@ -1,0 +1,18 @@
+/* Contenedor general de la barra de navegación */
+.nav-container {
+  display: flex;
+  justify-content: center; /* Centra la barra de navegación */
+  padding: 10px 0;
+  background-color: white;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Contenedor del nav */
+.nav {
+  padding: 10px;
+  max-width: 1200px; /* Limita el tamaño máximo del nav */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  /* gap: 20px; */
+  display: flex;
+  justify-content: center; /* Centra los elementos dentro del nav */
+}

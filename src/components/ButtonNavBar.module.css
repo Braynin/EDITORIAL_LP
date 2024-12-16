@@ -1,0 +1,32 @@
+/* Estilo para las opciones de la barra de navegación (listas) */
+.nav-options {
+  display: flex; /* Aplica flexbox para alinear los elementos horizontalmente */
+  justify-content: flex-start; /* Alinea las opciones hacia el inicio */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Estilo para cada opción de navegación */
+.nav-option {
+  display: flex; /* Flex para mantener el texto alineado */
+  align-items: center; /* Alinea el contenido del botón (texto) */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-radius 0.2s ease;
+  border-radius: 10px;
+  margin-right: 10px; /* Espacio entre las opciones */
+}
+
+/* Estilo para los enlaces dentro de cada opción */
+.nav-link {
+  text-decoration: none;
+  color: black; /* Color del texto */
+  font-weight: bold;
+  padding: 10px 15px; /* Añade algo de espacio alrededor del texto */
+  transition: color 0.2s ease; /* Transición suave para el color */
+}
+
+
+.nav-option:hover .nav-link {
+  color: red; /* Letras blancas al hacer hover */
+}

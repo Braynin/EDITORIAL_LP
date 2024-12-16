@@ -1,0 +1,21 @@
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo claro */
+}
+
+.search-icon {
+  width: 1.5rem; /* Tamaño del ícono */
+  height: 1.5rem;
+  color: #333; /* Color del ícono */
+}

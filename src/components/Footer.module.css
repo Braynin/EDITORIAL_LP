@@ -1,0 +1,105 @@
+.footer-container {
+  padding: 20px 0px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.logo-footer {
+  width: 13rem; /* Tamaño fijo del logo */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Asegura que no se exceda el contenedor */
+  margin-top: 3px; /* Margen superior pequeño */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+}
+.footer-section {
+  margin: 10px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-text {
+  font-size: 14px;
+  margin-top: 15px;
+  color: white;
+}
+
+.footer-option {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.footer-address {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-option:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-ruc {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #ccc; /* Border top for footer ruc */
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.ruc {
+  font-size: 14px;
+  color: white;
+}
+
+.ruc-text {
+  font-weight: 800; /* Negrita para el texto RUC */
+}
+/* Título para "Libro de Reclamaciones" */
+.libro-reclamaciones-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Blanco para mantener la consistencia */
+}
+
+/* Enlace que lleva al libro de reclamaciones */
+.libro-reclamaciones-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Estilo de la imagen del libro de reclamaciones */
+.libro-reclamaciones-link img {
+  width: 128px; /* Tamaño de la imagen */
+  height: 80px;
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Efecto al pasar el ratón sobre la imagen */
+}
+
+/* Efecto hover sobre la imagen del libro de reclamaciones */
+.libro-reclamaciones-link img:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de la imagen ligeramente al hacer hover */
+}

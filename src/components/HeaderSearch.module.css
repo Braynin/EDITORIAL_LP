@@ -1,0 +1,90 @@
+/* Contenedor principal del encabezado */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Espacio entre logo, búsqueda y enlaces */
+  padding: 17px 300px;
+  background-color: white;
+  
+}
+
+/* Logo del encabezado */
+.header-logo {
+  width: 10rem;
+  margin-top: 3px;
+}
+
+/* Contenedor de la barra de búsqueda */
+.header-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Estilo del campo de entrada de búsqueda */
+.search-input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  padding-left: 10px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Contenedor de enlaces sociales */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 3px;
+}
+
+/* Lista de opciones de navegación */
+.nav-options {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Estilo para cada opción de navegación */
+.nav-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-radius 0.2s ease;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* Enlaces dentro de cada opción de navegación */
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+/* Hover en las opciones de navegación */
+.nav-option:hover {
+  background-color: red;
+}
+
+.nav-option:hover .nav-link {
+  color: white;
+}
+
+/* Enlaces generales dentro del contenedor del encabezado */
+.header-container ul li a {
+  text-decoration: none;
+  color: black;
+}

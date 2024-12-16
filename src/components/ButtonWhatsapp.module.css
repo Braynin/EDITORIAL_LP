@@ -1,0 +1,35 @@
+.whatsappButton {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    cursor: pointer;
+    z-index: 1000;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    background-color:  #29a61a;
+}
+   
+  
+  
+  .whatsappIcon {
+    width: 80px; 
+    height: 80px;
+    z-index: 10; 
+  }
+  
+  .st0 {
+    fill: #29a61a;
+  }
+  
+  .st1 {
+    fill: #7ac871;
+  }
+  
+  .st2 {
+    fill: #fefefe;
+  }

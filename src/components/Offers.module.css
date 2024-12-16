@@ -1,0 +1,73 @@
+.offers-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.separator {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  color: #272727;
+  border-radius: 15px;
+  max-width: 100%;
+  margin: 50px 0px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-section-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  max-width: 100%;
+  align-items: center;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); /* Centra las flechas verticalmente */
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(185, 27, 22);
+  z-index: 3; /* Las flechas están por encima de los puntos */
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: -20px; /* Ubica la flecha a la izquierda */
+}
+
+.rightArrow {
+  right: 0px; /* Ubica la flecha a la derecha */
+}

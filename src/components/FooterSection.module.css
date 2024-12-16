@@ -1,0 +1,24 @@
+.footer-section {
+  margin: 10px;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-options {
+  list-style-type: none;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer-option {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+}

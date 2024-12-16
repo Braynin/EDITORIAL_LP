@@ -1,0 +1,45 @@
+/* SearchBar.module.css */
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo de la barra */
+  border-radius: 4px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease; /* Transición suave en el foco */
+}
+
+.search-form:focus-within {
+  box-shadow:   0 6px 12px rgba(139, 0, 0, 0.5), 0 0 6px rgba(255, 0, 0, 0.3); /* Sombra cuando se enfoca algún elemento dentro */
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px 8px 20px; /* Espaciado para dejar espacio al icono */
+  font-size: 16px;
+  border: none; /* Sin borde en el input */
+  background-color: transparent; /* Fondo transparente */
+  outline: none; /* Elimina el contorno por defecto del navegador */
+}
+
+.search-input:focus {
+  outline: none; /* Elimina el contorno al hacer clic en el input */
+}
+
+.search-button {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
