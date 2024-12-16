@@ -8,7 +8,7 @@ class navOption {
   }
 }
 /*Objects*/
-const navOption1 = new navOption("Penal", "/Penal");
+const navOption1 = new navOption("Penal", "/Penal");  
 const navOption2 = new navOption("Civil", "/Civil");
 const navOption3 = new navOption("Familia", "/Familia");
 const navOption4 = new navOption("Administrativo", "/Administrativo");
