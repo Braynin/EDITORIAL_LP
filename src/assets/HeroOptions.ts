@@ -1,4 +1,10 @@
-const heroOptions = [
+interface HeroOption {
+  id: number;
+  imgUrl: string;
+  link: string;
+}
+
+const heroOptions: HeroOption[] = [
   {
     id: 1,
     imgUrl: "../public/BANNERS/BANNERS-WEB_CODIGO-CIVIL.jpg",

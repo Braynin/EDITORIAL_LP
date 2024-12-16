@@ -1,36 +1,40 @@
 class BannerSection {
-  constructor(img, section) {
+  img: string;
+  section: string;
+
+  constructor(img: string, section: string) {
     this.img = img;
     this.section = section;
   }
 }
-/*Objects*/
+
+/* Objects */
 const bannerSection1 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_ADMINISTRATIVO.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_ADMINISTRATIVO.jpg",
   "Administrativo"
 );
 const bannerSection2 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_CIVIL.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_CIVIL.jpg",
   "Civil"
 );
 const bannerSection3 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_PENAL.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_PENAL.jpg",
   "Penal"
 );
 const bannerSection4 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_FAMILIA.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_FAMILIA.jpg",
   "Familia"
 );
 const bannerSection5 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_CONSTITUCIONAL.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_CONSTITUCIONAL.jpg",
   "Constitucional"
 );
 const bannerSection6 = new BannerSection(
-  "public/BANNER DE SECCION/BANNERS-DE-SECCIÓN_OFERTAS.jpg",
+  "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_OFERTAS.jpg",
   "Ofertas"
 );
 
-const arrayBannerSections = [
+const arrayBannerSections: BannerSection[] = [
   bannerSection1,
   bannerSection2,
   bannerSection3,

@@ -2,11 +2,11 @@ import { useState } from "react";
 import arrayProducts from "../assets/ProductsOptions.js";
 import styles from "./SectionCards.module.css";
 import { Template } from "./Card.tsx";
-import normalizeText from "../assets/NormalizeText";
+import normalizeText from "../assets/NormalizeText.ts";
 import arraySeparators from "../assets/SeparatorsOptions";
 import { useLocation } from "react-router-dom";
-import arrayBannerSections from "../assets/BannerSectionOption";
-import arrayNavOptions from "../assets/NavOptions";  // Asegúrate de importar este array
+import arrayBannerSections from "../assets/BannerSectionOption.ts";
+import arrayNavOptions from "../assets/NavOptions.ts";
 
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
