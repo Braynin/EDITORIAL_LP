@@ -57,7 +57,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const startIndex = startIndexes[section] || 0;
 
   // Busca el separador asociado con la sección actual
-  const separator = arraySeparators.find(
+  const separator: Separator | undefined = arraySeparators.find(
     (separator) => normalizeText(separator.section) === normalizeText(section)
   );
 
@@ -122,7 +122,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
       );
     }
   } else {
-    const bannerSection = arrayBannerSections.find(
+    const bannerSection: BannerSection | undefined = arrayBannerSections.find(
       (banner) => normalizeText(banner.section) === normalizeText(section)
     );
 
