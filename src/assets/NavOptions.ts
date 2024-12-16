@@ -1,6 +1,8 @@
 /*Class*/
 class navOption {
-  constructor(text, linkto) {
+  text: string;
+  linkto: string;
+  constructor(text: string , linkto: string) {
     this.text = text;
     this.linkto = linkto;
   }

@@ -1,12 +1,12 @@
 import { useState } from "react";
-import arrayProducts from "../assets/ProductsOptions.js";
+import arrayProducts from "../assets/ProductsOptions.ts";
 import styles from "./SectionCards.module.css";
 import { Template } from "./Card.tsx";
-import normalizeText from "../assets/NormalizeText";
-import arraySeparators from "../assets/SeparatorsOptions";
+import normalizeText from "../assets/NormalizeText.js";
+import arraySeparators from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
 import arrayBannerSections from "../assets/BannerSectionOption";
-import arrayNavOptions from "../assets/NavOptions";  // Asegúrate de importar este array
+import arrayNavOptions from "../assets/NavOptions.ts";  // Asegúrate de importar este array
 
 // Definir los tipos de las propiedades
 interface CardsSectionProps {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import arrayOffers from "../assets/OffersOptions.js"; // Aquí está el array de tus productos (ofertas)
 import styles from "./Offers.module.css"; // Estilos del componente
 import { TemplateOffer } from "./OffersCard.tsx"; // Plantilla de producto (oferta)
-import arraySeparators from "../assets/SeparatorsOptions";
+import arraySeparators from "../assets/SeparatorsOptions.ts";
 
 export default function Offers() {
   // Estado para mantener el índice de inicio de los productos

@@ -1,5 +1,7 @@
 class Separator {
-  constructor(img, section) {
+  img: string;
+  section: string;
+  constructor(img:string, section:string) {
     this.img = img;
     this.section = section;
   }
