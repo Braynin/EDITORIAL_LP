@@ -22,6 +22,18 @@ interface Product {
   precioMenor: number;
 }
 
+// Asegurarse de que el tipo de `separator` y `bannerSection` sea correcto
+interface Separator {
+  img: string;
+  section: string;
+}
+
+interface BannerSection {
+  img: string;
+  section: string;
+}
+
+
 const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const [startIndexes, setStartIndexes] = useState<Record<string, number>>({});
 
@@ -67,7 +79,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const startIndex = startIndexes[section] || 0;
 
   // Busca el separador asociado con la sección actual
-  const separator = arraySeparators.find(
+  const separator: Separator | undefined = arraySeparators.find(
     (separator) => normalizeText(separator.section) === normalizeText(section)
   );
 
@@ -75,10 +87,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const location = useLocation();
   const verify = location.pathname.replace(/^\/|\/$/g, "");
 
-  // Verifica si la sección en la barra de navegación es "Ofertas"
-  const navOption = arrayNavOptions.find(
-    (nav) => normalizeText(nav.text) === "ofertas"
-  );
+ 
 
   // Si la sección es "Ofertas", no se debe mostrar el banner ni los productos
   if (normalizeText(section) === "ofertas") {
@@ -137,7 +146,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
       );
     }
   } else {
-    const bannerSection = arrayBannerSections.find(
+    const bannerSection: BannerSection | undefined = arrayBannerSections.find(
       (banner) => normalizeText(banner.section) === normalizeText(section)
     );
 
