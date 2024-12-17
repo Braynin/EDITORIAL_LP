@@ -48,19 +48,17 @@
   text-decoration: none;
   color: black;
 }
+.hamburger-btn {
+  display: none; /* Oculta el botón en pantallas grandes */
+}
 
 /* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
   /* Mostrar el botón hamburguesa solo en dispositivos móviles */
   .hamburger-btn {
     display: flex; /* El botón se muestra en móviles */
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     background: none;
     border: none;
-    width: 30px;
-    height: 25px;
     cursor: pointer;
     z-index: 10; /* Asegura que el botón esté encima del menú */
   }
@@ -93,10 +91,12 @@
     top: 0;
     left: 0;
     background-color: white;
-    margin-top :150px; ;
+    margin-top: 150px;
     width: 250px; /* Ancho de la columna del menú */
-    height:60%;  /* Asegura que ocupe toda la altura */
-    transform: translateX(-100%); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
+    height: 60%; /* Asegura que ocupe toda la altura */
+    transform: translateX(
+      -100%
+    ); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
     z-index: 9; /* Asegura que el menú esté debajo del botón */
     transition: transform 0.3s ease-in-out; /* Añadido para animación suave */
   }

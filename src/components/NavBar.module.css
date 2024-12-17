@@ -10,7 +10,7 @@
 /* Contenedor del nav */
 .nav {
   padding: 10px;
-  max-width: 1200px; /* Limita el tamaño máximo del nav */
+  max-width: 800px; /* Limita el tamaño máximo del nav */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
   /* gap: 20px; */
   display: flex;
