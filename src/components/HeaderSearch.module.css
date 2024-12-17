@@ -50,7 +50,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-radius 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-radius 0.2s ease;
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -82,21 +83,14 @@
 /* Media query para pantallas más pequeñas (menos de 768px) */
 @media screen and (max-width: 768px) {
   .header-container {
-    padding: 10px; /* Ajustar el padding para pantallas más pequeñas */
-    gap: 10px; /* Menor espacio entre los elementos */
-    justify-content: space-between; /* Distribuir los elementos a los extremos */
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
   }
 
-  .header-logo {
-    order: 1; /* Hacer que el logo esté al principio */
-  }
-
-  .nav-options {
-    order: 3; /* El navbar estará al final */
-    justify-content: flex-start; /* Alineación a la izquierda */
-  }
-
-  .header-search {
-    order: 2; /* Barra de búsqueda en el medio */
+  .logo-container {
+    justify-self: center;
+    order: 2;
   }
 }

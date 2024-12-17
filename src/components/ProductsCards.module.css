@@ -1,7 +1,7 @@
 .products-container {
   padding: 20px;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1445px;
 }
 
 .content-subtitle {
@@ -9,4 +9,23 @@
   padding: 30px;
   font-size: 40px;
   font-weight: 800;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 8px 0px 35px 0px;
+}
+
+.Ads-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
