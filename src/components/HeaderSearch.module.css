@@ -50,7 +50,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-radius 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-radius 0.2s ease;
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -83,22 +84,13 @@
 @media screen and (max-width: 768px) {
   .header-container {
     display: flex;
-     /* 3 columnas: navbar a la izquierda, logo centrado, barra de búsqueda a la derecha */
     gap: 10px;
     padding: 10px;
     align-items: center;
-    
   }
 
-  /* Centrar el logo */
-  .header-logo {
-   /* Centra el logo en la segunda columna */
+  .logo-container {
     justify-self: center;
     order: 2;
   }
-
- 
-  
-
-
 }

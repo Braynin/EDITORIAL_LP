@@ -7,16 +7,15 @@ function HeaderSearch() {
   return (
     <>
       <div className={styles["header-container"]}>
-        <Link to="/">
+        <Link className={styles["logo-container"]} to="/">
           <img
             className={styles["header-logo"]}
             src="/public/LOGO EDITORIAL - ROJO.png"
             alt="Logo Lp"
           />
         </Link>
-        <NavBar/>
+        <NavBar />
         <SearchBar />
-       
       </div>
     </>
   );

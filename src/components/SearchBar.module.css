@@ -12,7 +12,7 @@
 }
 
 .search-form:focus-within {
-  box-shadow:   0 6px 12px rgba(139, 0, 0, 0.5), 0 0 6px rgba(255, 0, 0, 0.3); /* Sombra cuando se enfoca algún elemento dentro */
+  box-shadow: 0 6px 12px rgba(139, 0, 0, 0.5), 0 0 6px rgba(255, 0, 0, 0.3); /* Sombra cuando se enfoca algún elemento dentro */
 }
 
 .search-input {
@@ -43,14 +43,21 @@
   color: #0056b3;
   transform: scale(1.1);
 }
-  /* Barra de búsqueda a la derecha */
-  .header-search {
-     /* La barra de búsqueda va a la tercera columna */
-    justify-self: end;
+/* Barra de búsqueda a la derecha */
+.header-search {
+  /* La barra de búsqueda va a la tercera columna */
+  justify-self: end;
+  order: 3;
+}
+
+/* Ocultar barra de búsqueda en pantallas pequeñas si no es necesario */
+.search-input {
+  width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
+}
+
+@media screen and (max-width: 768px) {
+  .search-form {
+    justify-self: center;
     order: 3;
   }
-
-  /* Ocultar barra de búsqueda en pantallas pequeñas si no es necesario */
-  .search-input {
-    width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
-  }
+}
