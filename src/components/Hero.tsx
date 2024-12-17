@@ -1,6 +1,6 @@
 import Style from "./Hero.module.css";
 import { useEffect, useState } from "react";
-import heroOptions from "../assets/HeroOptions";
+import { heroOptions } from "../assets/HeroOptions";
 import { Link } from "react-router-dom";
 
 interface Imagen {

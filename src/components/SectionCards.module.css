@@ -4,13 +4,13 @@
   color: #272727;
   border-radius: 15px;
   max-width: 100%;
-  margin: 50px 0px;
+  margin-top: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 .separator {
   border-radius: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .banner-section {
   border-radius: 15px;

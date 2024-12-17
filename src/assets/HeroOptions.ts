@@ -4,7 +4,7 @@ interface HeroOption {
   link: string;
 }
 
-const heroOptions: HeroOption[] = [
+export const heroOptions: HeroOption[] = [
   {
     id: 1,
     imgUrl: "../public/BANNERS/BANNERS-WEB_CODIGO-CIVIL.jpg",
@@ -31,5 +31,20 @@ const heroOptions: HeroOption[] = [
     link: "/details?id=8",
   },
 ];
-
-export default heroOptions;
+export const AdsOptions: HeroOption[] = [
+  {
+    id: 3,
+    imgUrl: "../public/BANNERS/BANNERS-WEB_EL-DEFENSOR-2.jpg",
+    link: "/details?id=7",
+  },
+  {
+    id: 4,
+    imgUrl: "../public/BANNERS/BANNERS-WEB_FERNANDEZ-SESSAREGO.jpg",
+    link: "#",
+  },
+  {
+    id: 5,
+    imgUrl: "../public/BANNERS/BANNERS-WEB_LITIGACION-ORAL.jpg",
+    link: "/details?id=8",
+  },
+];

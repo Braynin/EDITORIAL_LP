@@ -19,7 +19,6 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const sectionProducts = (array: Products[], section: string): Products[] => {
     // Si la sección es "Ofertas", no se deben mostrar los productos
     if (normalizeText(section) === "ofertas") {
-      console.log("Sección 'Ofertas' detectada, no se muestran productos.");
       return [];
     }
     return array.filter((product) =>
@@ -27,7 +26,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
     );
   };
 
-  const visibleProducts = 4; // Número de productos visibles a la vez
+  const visibleProducts = 5; // Número de productos visibles a la vez
   const filteredProducts = sectionProducts(arrayProducts, section);
 
   // Función para manejar el desplazamiento
