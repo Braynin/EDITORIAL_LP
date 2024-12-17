@@ -6,7 +6,6 @@
   gap: 50px; /* Espacio entre logo, búsqueda y enlaces */
   padding: 17px 300px;
   background-color: white;
-  
 }
 
 /* Logo del encabezado */
@@ -35,15 +34,6 @@
 .search-input:focus {
   outline: none;
   border-color: #000;
-}
-
-/* Contenedor de enlaces sociales */
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  gap: 3px;
 }
 
 /* Lista de opciones de navegación */
@@ -87,4 +77,28 @@
 .header-container ul li a {
   text-decoration: none;
   color: black;
+}
+
+/* Media query para pantallas más pequeñas (menos de 768px) */
+@media screen and (max-width: 768px) {
+  .header-container {
+    display: flex;
+     /* 3 columnas: navbar a la izquierda, logo centrado, barra de búsqueda a la derecha */
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    
+  }
+
+  /* Centrar el logo */
+  .header-logo {
+   /* Centra el logo en la segunda columna */
+    justify-self: center;
+    order: 2;
+  }
+
+ 
+  
+
+
 }

@@ -2,6 +2,7 @@ import styles from "./NavBar.module.css";
 import ButtonNavBar from "./ButtonNavBar";
 
 function NavBar() {
+    
   return (
     <>
       <div className={styles["nav-container"]}>
