@@ -30,39 +30,6 @@
 .nav-option:hover .nav-link {
   color: red; /* Letras blancas al hacer hover */
 }
-/* ButtonNavBar.module.css */
-.hamburger-btn {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  border: none;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.bar {
-  width: 100%;
-  height: 3px;
-  background-color: black;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Cuando el menú está abierto, las barras se transforman */
-.bar.open:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
-}
-
-.bar.open:nth-child(2) {
-  opacity: 0;
-}
-
-.bar.open:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
-}
 
 /* Menú de navegación */
 .nav-options {
@@ -82,43 +49,78 @@
   color: black;
 }
 
-.separator {
-  width: 1px;
-  background-color: #ccc;
-  height: 20px;
-  margin-left: 10px;
-}
-
-/* En pantallas móviles */
+/* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
-  /* Ocultar el menú en dispositivos móviles */
-  .nav-options {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-
-    justify-self: start;
-    order: 1;
-  }
-
-  /* Mostrar el menú cuando está abierto */
-  .nav-options.open {
-    display: flex;
-    transform: translateX(0);
-  }
-
-  /* Mostrar el botón hamburguesa */
+  /* Mostrar el botón hamburguesa solo en dispositivos móviles */
   .hamburger-btn {
-    display: flex;
+    display: flex; /* El botón se muestra en móviles */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón esté encima del menú */
+  }
+
+  /* Las barras del botón hamburguesa */
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Transformación de las barras al abrir el menú */
+  .bar.open:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0; /* Oculta la barra del medio */
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  /* Estilos para el menú de navegación en dispositivos móviles */
+  .nav-options {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    margin-top :150px; ;
+    width: 250px; /* Ancho de la columna del menú */
+    height:60%;  /* Asegura que ocupe toda la altura */
+    transform: translateX(-100%); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
+    z-index: 9; /* Asegura que el menú esté debajo del botón */
+    transition: transform 0.3s ease-in-out; /* Añadido para animación suave */
+  }
+
+  /* Mostrar las opciones cuando el menú está abierto */
+  .nav-options.open {
+    transform: translateX(0); /* Desliza el menú hacia la derecha */
+  }
+
+  /* Estilos de las opciones dentro del menú */
+  .nav-option {
+    font-size: 18px;
+  }
+
+  /* Estilo de los enlaces dentro de cada opción */
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: red;
   }
 }

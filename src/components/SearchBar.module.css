@@ -59,5 +59,8 @@
   .search-form {
     justify-self: center;
     order: 3;
+    width: 10%;
+    background-color: white;
+    box-shadow: none;
   }
 }
