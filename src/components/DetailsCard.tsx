@@ -7,18 +7,19 @@ import ShareButton from "./ShareButton.tsx";
 function DetailsCard() {
   const Query = new URLSearchParams(useLocation().search);
   const id = Query.get("id");
+  const [product, setProduct] = useState<Products | undefined>(undefined);
   const [price, setPrice] = useState<number>(0);
   const [quantity, setQuantity] = useState<number>(1);
   const [isZoomed, setIsZoomed] = useState<boolean>(false);
   const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 });
 
-  const product = arrayProducts.find((product) => product.id === id);
-
   useEffect(() => {
-    if (product) {
-      setPrice(Number(product.precioMenor));
+    const foundProduct = arrayProducts.find((product) => product.id === id);
+    if (foundProduct) {
+      setProduct(foundProduct);
+      setPrice(Number(foundProduct.precioMenor));
     }
-  }, [product]);
+  }, [id]);
 
   const changePrice = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const newQuantity = Number(event.target.value);
@@ -79,7 +80,7 @@ function DetailsCard() {
       <section className={styles["product-images-checkout-block"]}>
         <div className={styles["product-images-block"]}>
           <div className={styles["product-images"]}>
-            {renderMiniImages(product)}
+            {product && renderMiniImages(product)}
           </div>
 
           <div
@@ -93,8 +94,8 @@ function DetailsCard() {
             <img
               className={styles["big-img"]}
               id="big-img"
-              src={product.imagen[0]}
-              alt={product.nombre}
+              src={product?.imagen?.[0] || "default-image.jpg"}
+              alt={product?.nombre || "default name"}
               style={
                 isZoomed
                   ? {
@@ -110,7 +111,7 @@ function DetailsCard() {
         <div className={styles["product-checkout-block"]}>
           <div className={styles["checkout-container"]}>
             <h1 className={styles["checkout-total-label"]}> {productTitle}</h1>
-            <p className={styles["checkout-autor"]}>{product.autor}</p>
+            <p className={styles["checkout-autor"]}>{product?.autor || ""}</p>
             <h2 id="price" className={styles["checkout-total-price"]}>
               S/.{price}
             </h2>
@@ -169,7 +170,9 @@ function DetailsCard() {
       <section className={styles["container-sipnosis-information"]}>
         <div className={styles["product-sipnosis-block"]}>
           <h2 className={styles["product-title"]}>Sinopsis:</h2>
-          <span className={styles["product-sipnosis"]}>{product.sipnosis}</span>
+          <span className={styles["product-sipnosis"]}>
+            {product?.sipnosis || ""}
+          </span>
         </div>
 
         <div className={styles["product-information-block"]}>
@@ -178,31 +181,31 @@ function DetailsCard() {
           </ul>
           <ul className={styles["product-details"]}>
             <li className={styles["product-description"]}>
-              <strong>ISBN: </strong> {product.isbn}
+              <strong>ISBN: </strong> {product?.isbn || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Autor: </strong> {product.autor}
+              <strong>Autor: </strong> {product?.autor || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Editorial: </strong> {product.editorial}
+              <strong>Editorial: </strong> {product?.editorial || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Año: </strong> {product.año}
+              <strong>Año: </strong> {product?.año || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Páginas: </strong> {product.paginas}
+              <strong>Páginas: </strong> {product?.paginas || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Presentación: </strong> {product.presentacion}
+              <strong>Presentación: </strong> {product?.presentacion || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Peso: </strong> {product.peso}
+              <strong>Peso: </strong> {product?.peso || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Alto: </strong> {product.alto}
+              <strong>Alto: </strong> {product?.alto || ""}
             </li>
             <li className={styles["product-description"]}>
-              <strong>Ancho: </strong> {product.ancho}
+              <strong>Ancho: </strong> {product?.ancho || ""}
             </li>
           </ul>
         </div>
