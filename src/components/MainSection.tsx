@@ -1,7 +1,7 @@
 import ProductsCard from "./ProductsCard.tsx";
 import Offers from "./Offers.tsx";
 
-function MainSection({ section }) {
+function MainSection({ section }: { section: string }) {
   return (
     <>
       <ProductsCard section={section} />

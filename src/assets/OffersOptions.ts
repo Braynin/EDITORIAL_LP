@@ -1,4 +1,4 @@
-class Offers {
+export class Offers {
   id: string;
   nombre: string;
   precioBase: string;
@@ -162,6 +162,4 @@ const offer4 = new Offers(
 
 /* Array de ofertas */
 
-const arrayOfers: Offers[] = [offer1, offer2, offer3, offer4];
-
-export default arrayOfers;
+export const arrayOffers: Offers[] = [offer1, offer2, offer3, offer4];

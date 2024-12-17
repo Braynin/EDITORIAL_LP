@@ -6,9 +6,9 @@ import { arrayProducts } from "../assets/ProductsOptions.ts";
 import Swal from "sweetalert2";
 
 const SearchBar = () => {
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState<string>("");
 
-  const handleSearch = (searchText) => {
+  const handleSearch = (searchText: string) => {
     const filtered = arrayProducts.filter((product) =>
       normalizeText(product.nombre).includes(normalizeText(searchText))
     );
@@ -28,7 +28,7 @@ const SearchBar = () => {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
       handleSearch(searchText); // Llama a la función de búsqueda si se presiona Enter
