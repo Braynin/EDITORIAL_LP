@@ -30,9 +30,7 @@ export default function ButtonNavBar() {
                 {option.text}
               </a>
             </li>
-            {index < arrayNavOptions.length - 1 && (
-              <span className={styles["separator"]}></span>
-            )}
+            
           </React.Fragment>
         ))}
       </ul>
