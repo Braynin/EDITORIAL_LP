@@ -14,9 +14,15 @@ export default function ButtonNavBar() {
     <>
       {/* Botón de hamburguesa */}
       <button className={styles["hamburger-btn"]} onClick={toggleMenu}>
-        <span className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}></span>
-        <span className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}></span>
-        <span className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}></span>
+        <span
+          className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}
+        ></span>
+        <span
+          className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}
+        ></span>
+        <span
+          className={`${styles["bar"]} ${menuOpen ? styles["open"] : ""}`}
+        ></span>
       </button>
 
       {/* Opciones de navegación */}
@@ -30,9 +36,6 @@ export default function ButtonNavBar() {
                 {option.text}
               </a>
             </li>
-            {index < arrayNavOptions.length - 1 && (
-              <span className={styles["separator"]}></span>
-            )}
           </React.Fragment>
         ))}
       </ul>

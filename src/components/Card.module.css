@@ -24,7 +24,7 @@
 
 .product-card:hover {
   transform: translateY(-10px); /* Levanta ligeramente al pasar el mouse */
-  box-shadow: 0 10px 20px rgba(236, 124, 124, 0.3); /* Sombra más visible y elegante */
+  box-shadow: 0 10px 10px rgb(88, 88, 88); /* Sombra más visible y elegante */
 }
 
 .product-img {

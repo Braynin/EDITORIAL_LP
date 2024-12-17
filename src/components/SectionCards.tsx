@@ -6,7 +6,8 @@ import normalizeText from "../assets/NormalizeText.ts";
 import arraySeparators from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
 import arrayBannerSections from "../assets/BannerSectionOption.ts";
-
+import { Link } from "react-router-dom";
+import { IconChevronRight } from "@tabler/icons-react";
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
   section: string; // section debería ser un string
@@ -127,52 +128,63 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
 
     if (filteredProducts.length <= 4) {
       return (
-        <div className={styles["card-section"]}>
-          <img
-            className={styles["banner-section"]}
-            src={bannerSection?.img}
-            alt={bannerSection?.section}
-          />
-          <div className={styles["slider-container"]}>
-            <div className={styles["slider"]}>
-              <Template array={sectionProducts(arrayProducts, section)} />
+        <>
+          <div className={styles["breadcrumb"]}>
+            <Link to="/">Inicio</Link>
+            <IconChevronRight stroke={2} /> {section}
+          </div>
+          <div className={styles["card-section"]}>
+            <img
+              className={styles["banner-section"]}
+              src={bannerSection?.img}
+              alt={bannerSection?.section}
+            />
+            <div className={styles["slider-container"]}>
+              <div className={styles["slider"]}>
+                <Template array={sectionProducts(arrayProducts, section)} />
+              </div>
             </div>
           </div>
-        </div>
+        </>
       );
     } else {
       return (
-        <div className={styles["card-section"]}>
-          <img
-            className={styles["banner-section"]}
-            src={bannerSection?.img}
-            alt={bannerSection?.section}
-          />
-          <div className={styles["slider-container"]}>
-            <div
-              className={styles["leftArrow"]}
-              onClick={() => scrollTo("prev", section)}
-              aria-label="Anterior"
-            >
-              &#8249;
-            </div>
-            <div className={styles["slider"]}>
-              <Template
-                array={sectionProducts(arrayProducts, section).slice(
-                  startIndex,
-                  startIndex + visibleProducts
-                )}
-              />
-            </div>
-            <div
-              className={styles["rightArrow"]}
-              onClick={() => scrollTo("next", section)}
-              aria-label="Siguiente"
-            >
-              &#8250;
+        <>
+          <div className={styles["breadcrumb"]}>
+            <Link to="/">Inicio</Link> <IconChevronRight stroke={2} /> {section}
+          </div>
+          <div className={styles["card-section"]}>
+            <img
+              className={styles["banner-section"]}
+              src={bannerSection?.img}
+              alt={bannerSection?.section}
+            />
+            <div className={styles["slider-container"]}>
+              <div
+                className={styles["leftArrow"]}
+                onClick={() => scrollTo("prev", section)}
+                aria-label="Anterior"
+              >
+                &#8249;
+              </div>
+              <div className={styles["slider"]}>
+                <Template
+                  array={sectionProducts(arrayProducts, section).slice(
+                    startIndex,
+                    startIndex + visibleProducts
+                  )}
+                />
+              </div>
+              <div
+                className={styles["rightArrow"]}
+                onClick={() => scrollTo("next", section)}
+                aria-label="Siguiente"
+              >
+                &#8250;
+              </div>
             </div>
           </div>
-        </div>
+        </>
       );
     }
   }

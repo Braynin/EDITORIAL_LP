@@ -12,10 +12,20 @@
   border-radius: 25px;
   margin-bottom: 35px;
 }
+.breadcrumb {
+  margin: 0px 0px 20px 0px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.breadcrumb a {
+  color: #272727;
+  font-weight: 700;
+}
+
 .banner-section {
   border-radius: 15px;
   max-width: 100%;
-  margin: -50px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .card-section-title {
   font-size: 20px;
