@@ -48,19 +48,17 @@
   text-decoration: none;
   color: black;
 }
+.hamburger-btn {
+  display: none; /* Oculta el botón en pantallas grandes */
+}
 
 /* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
   /* Mostrar el botón hamburguesa solo en dispositivos móviles */
   .hamburger-btn {
     display: flex; /* El botón se muestra en móviles */
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     background: none;
     border: none;
-    width: 30px;
-    height: 25px;
     cursor: pointer;
     z-index: 10; /* Asegura que el botón esté encima del menú */
   }
