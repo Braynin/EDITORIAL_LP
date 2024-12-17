@@ -43,3 +43,14 @@
   color: #0056b3;
   transform: scale(1.1);
 }
+  /* Barra de búsqueda a la derecha */
+  .header-search {
+     /* La barra de búsqueda va a la tercera columna */
+    justify-self: end;
+    order: 3;
+  }
+
+  /* Ocultar barra de búsqueda en pantallas pequeñas si no es necesario */
+  .search-input {
+    width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
+  }

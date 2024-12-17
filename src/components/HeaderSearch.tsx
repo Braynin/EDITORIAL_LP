@@ -16,9 +16,7 @@ function HeaderSearch() {
         </Link>
         <NavBar/>
         <SearchBar />
-        <ul className={styles["social-links"]}>
-          {/* <SocialLink /> */}
-        </ul>
+       
       </div>
     </>
   );
