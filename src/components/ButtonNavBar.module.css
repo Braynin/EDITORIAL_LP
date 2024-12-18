@@ -69,7 +69,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-left: 15px;
+    
     background-color: white;
     margin-top: 100px;
     padding-top: 20px;
@@ -85,14 +85,16 @@
   /* Mostrar las opciones cuando el menú está abierto */
   .nav-options.open {
     transform: translateX(0); /* Desliza el menú hacia la derecha */
+    
   }
 
   /* Estilos de las opciones dentro del menú */
   .nav-option {
     font-size: 18px;
     width: 100%;
-    padding-left: 15%;
+    text-indent: 9vw; ;
     border-bottom: 1px solid black;
+    
   }
 
   /* Estilo de los enlaces dentro de cada opción */
