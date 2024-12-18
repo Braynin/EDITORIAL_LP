@@ -46,6 +46,9 @@ const SearchBar = () => {
         onKeyDown={handleKeyDown}
       />
       <SearchButton onClick={() => handleSearch(searchText)} />
+      <div>
+        <SearchButton onClick={() => handleSearch(searchText)} />
+      </div>
     </div>
   );
 };

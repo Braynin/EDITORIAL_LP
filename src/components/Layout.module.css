@@ -7,9 +7,9 @@
 .main {
   margin-top: 150px;
 }
-/* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 768px) {  
-  .main{
-    margin-top: 100px;
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-items: center;
   }
 }
