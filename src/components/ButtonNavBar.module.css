@@ -34,7 +34,7 @@
 /* Menú de navegación */
 .nav-options {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -61,6 +61,7 @@
     border: none;
     cursor: pointer;
     z-index: 10; /* Asegura que el botón esté encima del menú */
+    
   }
 
   /* Las barras del botón hamburguesa */
@@ -90,11 +91,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-left: 25px;
+    padding-left: 15px;
     background-color: white;
     margin-top :100px; ;
     width: 250px; /* Ancho de la columna del menú */
-    height:50%;  /* Asegura que ocupe toda la altura */
+    height:45%;  /* Asegura que ocupe toda la altura */
     transform: translateX(-100%); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
     z-index: 9; /* Asegura que el menú esté debajo del botón */
     transition: transform 0.3s ease-in-out; /* Añadido para animación suave */

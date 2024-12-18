@@ -59,8 +59,11 @@
   .search-form {
     justify-self: center;
     order: 3;
-    width: 10%;
+    width: 20%;
     background-color: white;
     box-shadow: none;
+  }
+  .search-input{
+    display: none;
   }
 }
