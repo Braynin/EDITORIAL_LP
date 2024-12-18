@@ -2,12 +2,9 @@
 .search-form {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 400px;
+  width: 226px;
   background-color: rgba(0, 0, 0, 0.1); /* Fondo de la barra */
   border-radius: 4px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: box-shadow 0.3s ease; /* Transición suave en el foco */
 }
 
 .search-form:focus-within {
@@ -23,36 +20,6 @@
   outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
-.search-input:focus {
-  outline: none; /* Elimina el contorno al hacer clic en el input */
-}
-
-.search-button {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #007bff;
-  cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.search-button:hover {
-  color: #0056b3;
-  transform: scale(1.1);
-}
-/* Barra de búsqueda a la derecha */
-.header-search {
-  /* La barra de búsqueda va a la tercera columna */
-  justify-self: end;
-  order: 3;
-}
-
-/* Ocultar barra de búsqueda en pantallas pequeñas si no es necesario */
-.search-input {
-  width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
-}
 .search-form div {
   display: none;
 }
@@ -60,10 +27,10 @@
 @media screen and (max-width: 768px) {
   .search-form {
     justify-content: right;
-    background-color: white;
-    box-shadow: none;
+    background-color: transparent;
     order: 3;
     padding-right: 50px;
+    width: 0px;
   }
   .search-input {
     display: none;

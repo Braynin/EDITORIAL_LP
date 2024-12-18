@@ -2,10 +2,9 @@
 .header-container {
   display: flex;
   align-items: center;
-
-  gap: 50px; /* Espacio entre logo, búsqueda y enlaces */
   width: 100%;
   background-color: white;
+  justify-content: space-around;
 }
 
 /* Logo del encabezado */
@@ -14,80 +13,13 @@
   margin-top: 3px;
 }
 
-/* Contenedor de la barra de búsqueda */
-.header-search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-/* Estilo del campo de entrada de búsqueda */
-.search-input {
-  width: 200px;
-  height: 30px;
-  border-radius: 5px;
-  border: 2px solid gray;
-  padding-left: 10px;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #000;
-}
-
-/* Lista de opciones de navegación */
-.nav-options {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-/* Estilo para cada opción de navegación */
-.nav-option {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease,
-    border-radius 0.2s ease;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-
-/* Enlaces dentro de cada opción de navegación */
-.nav-link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: color 0.2s ease;
-}
-
-/* Hover en las opciones de navegación */
-.nav-option:hover {
-  background-color: red;
-}
-
-.nav-option:hover .nav-link {
-  color: white;
-}
-
-/* Enlaces generales dentro del contenedor del encabezado */
-.header-container ul li a {
-  text-decoration: none;
-  color: black;
-}
-
 /* Media query para pantallas más pequeñas (menos de 768px) */
 @media screen and (max-width: 768px) {
-  .header-container {
-    gap: 0px;
-  }
-
   .logo-container {
     justify-self: center;
     order: 2;
+  }
+  .header-container {
+    justify-content: space-between;
   }
 }
