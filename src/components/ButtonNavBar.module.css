@@ -83,6 +83,7 @@
   /* Mostrar las opciones cuando el menú está abierto */
   .nav-options.open {
     transform: translateX(0); /* Desliza el menú hacia la derecha */
+    
   }
 
   /* Estilos de las opciones dentro del menú */
@@ -90,6 +91,7 @@
     font-size: 18px;
     width: 100%;
     border-bottom: 1px solid black;
+    
   }
 
   /* Estilo de los enlaces dentro de cada opción */
