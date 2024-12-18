@@ -19,14 +19,3 @@
     padding-left: 50px;
   }
 }
-/* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 768px) {  
-  .nav-container {
-    display: flex;
-    justify-content: space-between; /* Centra la barra de navegación */
-    padding: 0;
-    background-color: white;
-    
-  }
-  
-}
