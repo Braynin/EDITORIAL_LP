@@ -54,13 +54,18 @@
 .search-input {
   width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
 }
+.search-form div {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .search-form {
-    justify-self: center;
-    order: 3;
-    width: 10%;
+    justify-content: center;
     background-color: white;
     box-shadow: none;
+    order: 3;
+  }
+  .search-input {
+    display: none;
   }
 }

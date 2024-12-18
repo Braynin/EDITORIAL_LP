@@ -7,3 +7,9 @@
 .main {
   margin-top: 150px;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-items: center;
+  }
+}
