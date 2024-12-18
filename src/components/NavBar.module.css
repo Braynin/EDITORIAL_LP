@@ -9,10 +9,13 @@
 
 /* Contenedor del nav */
 .nav {
-  padding: 10px;
-  max-width: 800px; /* Limita el tamaño máximo del nav */
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  /* gap: 20px; */
-  display: flex;
-  justify-content: center; /* Centra los elementos dentro del nav */
+  padding: 10px 0px;
+
+  /* Asegura que ocupe todo el ancho disponible */
+}
+@media screen and (max-width: 768px) {
+  .nav-container {
+    justify-content: left;
+    padding-left: 50px;
+  }
 }

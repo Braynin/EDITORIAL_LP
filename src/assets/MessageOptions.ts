@@ -1,4 +1,4 @@
-class Message {
+export class Messages {
   text: string;
   linkto: string;
 
@@ -9,11 +9,9 @@ class Message {
 }
 
 /* Objects */
-const message1 = new Message("lp pasion por el derecho", "#");
-const message2 = new Message("contactanos para mas informacion", "#");
-const message3 = new Message("llamanos o escribenos", "#");
+const message1 = new Messages("lp pasion por el derecho", "#");
+const message2 = new Messages("contactanos para mas informacion", "#");
+const message3 = new Messages("llamanos o escribenos", "#");
 
 /* Array */
-const arrayMessages: Message[] = [message1, message2, message3];
-
-export default arrayMessages;
+export const arrayMessages: Messages[] = [message1, message2, message3];

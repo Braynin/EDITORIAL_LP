@@ -1,7 +1,7 @@
 import styles from "./Message.module.css";
-import arrayMessages from "../assets/MessageOptions";
+import { Messages, arrayMessages } from "../assets/MessageOptions";
 
-const createMessage = (option: any) => (
+const createMessage = (option: Messages) => (
   <a className={styles.message} href={option.linkto}>
     {option.text}
   </a>
