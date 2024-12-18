@@ -54,12 +54,11 @@
 @media screen and (max-width: 768px) {
   /* Mostrar el botón hamburguesa solo en dispositivos móviles */
   .hamburger-btn {
-    display: flex; /* El botón se muestra en móviles */
+    display: flex;
     background: none;
     border: none;
     cursor: pointer;
     z-index: 10; /* Asegura que el botón esté encima del menú */
-    
   }
 
   /* Estilos para el menú de navegación en dispositivos móviles */
@@ -69,7 +68,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    
+
     background-color: white;
     margin-top: 100px;
     padding-top: 20px;
@@ -92,7 +91,6 @@
   .nav-option {
     font-size: 18px;
     width: 100%;
-    text-indent: 9vw; ;
     border-bottom: 1px solid black;
     
   }
@@ -102,11 +100,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 10px 15px;
+    padding-left: 50px;
     transition: color 0.2s ease;
-  }
-
-  .nav-link:hover {
-    color: red;
   }
 }

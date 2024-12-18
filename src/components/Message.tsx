@@ -1,5 +1,5 @@
 import styles from "./Message.module.css";
-import {Messages, arrayMessages} from "../assets/MessageOptions";
+import { Messages, arrayMessages } from "../assets/MessageOptions";
 
 const createMessage = (option: Messages) => (
   <a className={styles.message} href={option.linkto}>

@@ -2,7 +2,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   gap: 50px; /* Espacio entre logo, búsqueda y enlaces */
   width: 100%;
   background-color: white;
@@ -83,11 +83,7 @@
 /* Media query para pantallas más pequeñas (menos de 768px) */
 @media screen and (max-width: 768px) {
   .header-container {
-    max-width: 100%;
-    display: flex;
     gap: 0px;
-    align-items: center;
-    justify-items: stretch;
   }
 
   .logo-container {

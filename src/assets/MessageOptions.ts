@@ -15,5 +15,3 @@ const message3 = new Messages("llamanos o escribenos", "#");
 
 /* Array */
 export const arrayMessages: Messages[] = [message1, message2, message3];
-
-
