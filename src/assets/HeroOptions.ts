@@ -48,3 +48,35 @@ export const AdsOptions: HeroOption[] = [
     link: "/details?id=8",
   },
 ];
+export const MobileHeroOptions: HeroOption[] = [
+  {
+    id: 1,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_CODIGOCIVIL.png",
+    link: "/details?id=3",
+  },
+  {
+    id: 2,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_CODIGOPENAL.jpeg",
+    link: "/details?id=1",
+  },
+  {
+    id: 3,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_DEFENSORDOS.jpeg",
+    link: "/details?id=7",
+  },
+  {
+    id: 4,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_LAVOCACIONPORLALIBERTAD.jpeg",
+    link: "#",
+  },
+  {
+    id: 5,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_LITIGACIONORAL.jpeg",
+    link: "/details?id=8",
+  },
+  {
+    id: 6,
+    imgUrl: "../public/BANNERS VISTA MOBILE/BANNERS MOBILE/BM_LAFESEDANOSEVENDE.jpeg",
+    link: "/details?id=22",
+  },
+]

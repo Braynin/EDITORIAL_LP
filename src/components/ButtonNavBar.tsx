@@ -11,6 +11,9 @@ export default function ButtonNavBar() {
     setMenuOpen(!menuOpen); // Alterna el estado de apertura del menú
   };
 
+  const pdfUrl1 = "#";
+  const pdfUrl2 = "#";
+
   return (
     <>
       {/* Botón de hamburguesa */}
@@ -31,7 +34,18 @@ export default function ButtonNavBar() {
             </li>
           </React.Fragment>
         ))}
+        <div className={styles["catalogos"]}>
+          <a   href="{pdfUrl1}" download>
+          <button className={styles["btn-catalogo"]}>Catalogo</button>
+          </a>
+          <a  href="{pdfUrl2}" download>
+          <button className={styles["btn-catalogo"]}>Catalogo al por mayor</button>
+          </a>
+
+        </div>
+          
       </ul>
+       
     </>
   );
 }
