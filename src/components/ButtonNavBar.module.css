@@ -49,7 +49,9 @@
 .hamburger-btn {
   display: none; /* Oculta el botón en pantallas grandes */
 }
-
+.catalogos{  
+  display: none;
+}
 /* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
   /* Mostrar el botón hamburguesa solo en dispositivos móviles */
@@ -101,4 +103,43 @@
     transition: color 0.2s ease;
     width: 100%;
   }
+  
+/* Estilos para el contenedor de los botones de los catálogos */
+.catalogos {
+  display: flex;                /* Usamos flexbox para organizar los elementos */
+  flex-direction: column;       /* Los elementos dentro se apilan verticalmente */
+  align-items: center;          /* Centra los botones horizontalmente */
+  width: 100%;                  /* El contenedor toma todo el ancho disponible */
+  padding: 10px;                /* Espaciado interno para no estar pegado a los bordes */
+  box-sizing: border-box;       /* Asegura que el padding no afecte el tamaño total del contenedor */
+}
+
+/* Estilo para el enlace que envuelve al botón */
+.catalogos a {
+  width: 100%;                  /* El enlace ocupa todo el ancho disponible */
+  display: flex;                /* Usamos flexbox para centrar el contenido dentro del <a> */
+  justify-content: center;      /* Centra el botón dentro del <a> */
+  align-items: center;          /* Centra el botón verticalmente dentro del <a> */
+  margin-bottom: 10px;          /* Espaciado entre los botones */
+  text-decoration: none;        /* Evita subrayado de los enlaces */
+}
+
+/* Estilos para el botón de catálogo */
+.btn-catalogo {
+  padding: 20px 20px;           /* Espaciado interno para el botón */
+  font-size: 18px;              /* Tamaño de la fuente */
+  background-color: red;        /* Fondo rojo para el botón */
+  color: white;                 /* Texto blanco */
+  border: none;                 /* Sin borde */
+  border-radius: 5px;           /* Bordes redondeados */
+  cursor: pointer;              /* El cursor cambia a pointer cuando pasa por encima */
+  width: 100%;                  /* El botón ocupa todo el ancho disponible */
+  max-width: 500px;             /* Limita el ancho máximo para que no se estire demasiado */
+  text-align: center;           /* Centra el texto dentro del botón */
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.btn-catalogo:hover {
+  background-color: darkred;    /* Color de fondo al hacer hover */
+}
 }

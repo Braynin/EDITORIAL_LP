@@ -1,5 +1,3 @@
-/* Eliminar el estilo inline y hacer que el contenedor ocupe todo el espacio horizontal disponible */
-
 /* Las imágenes dentro del contenedor */
 .container-images ul {
   display: flex; /* Colocamos las imágenes en fila */
@@ -87,6 +85,7 @@
 .dot-container-item:hover::after {
   opacity: 0.6; /* Sombra más visible al hacer hover */
 }
+
 /* Flechas de navegación */
 .leftArrow,
 .rightArrow {
@@ -101,10 +100,12 @@
   opacity: 0.2; /* La transparencia inicial */
   user-select: none; /* Evita que se seleccione el texto */
 }
+
 .leftArrow:hover,
 .rightArrow:hover {
   opacity: 1;
 }
+
 .leftArrow {
   left: 32px; /* Ubica la flecha a la izquierda */
 }
@@ -112,3 +113,74 @@
 .rightArrow {
   right: 32px; /* Ubica la flecha a la derecha */
 }
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+  /* Ajustamos la altura de la imagen para pantallas pequeñas */
+  .hero-container {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* Contenedor del slider */
+  .slider-container {
+    height: 100%; /* El contenedor del slider debe ocupar el 100% de la altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aseguramos que los puntos estén siempre al fondo */
+  }
+
+  /* Imagen dentro del contenedor */
+  .container-images ul li img {
+    object-position: center; /* Centra la imagen */
+    object-fit: cover ; /* La imagen cubre todo el contenedor sin perder la relación de aspecto */
+    height: 100%; /* La imagen siempre ocupará toda la altura disponible */
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    margin-top: 0;
+  }
+
+  /* Dots del carrusel */
+  .dots-container {
+    position: relative; /* Los puntos están fijos en la parte inferior */
+    bottom: 0px; /* Ajustamos la distancia desde la parte inferior */
+    width: 100%; /* Los puntos ocupan todo el ancho */
+    display: flex;
+    justify-content: center; /* Centra los puntos */
+    z-index: 2; /* Los puntos deben estar por encima de la imagen */
+  }
+
+  /* Estilo de los puntos */
+  .dot-container-item {
+    margin: 0 5px; /* Ajustamos el margen entre los puntos */
+    cursor: pointer;
+    font-size: 14px; /* Reducimos el tamaño de los puntos */
+    color: black;
+  }
+
+  /* Sombra para los puntos */
+  .dot-container-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px; /* Tamaño del punto */
+    height: 12px; /* Tamaño del punto */
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5); /* Sombra oscura */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Puntos activos */
+  .dot-container-item.active::after {
+    opacity: 1;
+  }
+
+  /* Efecto hover */
+  .dot-container-item:hover::after {
+    opacity: 0.6; /* Sombra más visible al hacer hover */
+  }
+}
+

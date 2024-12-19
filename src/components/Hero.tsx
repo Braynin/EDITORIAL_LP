@@ -1,6 +1,7 @@
 import Style from "./Hero.module.css";
 import { useEffect, useState } from "react";
-import { heroOptions } from "../assets/HeroOptions";
+import { heroOptions } from "../assets/HeroOptions"; // Array de imágenes para pantalla grande
+import { MobileHeroOptions } from "../assets/HeroOptions"; // Array de imágenes para móvil
 import { Link } from "react-router-dom";
 
 interface Imagen {
@@ -12,16 +13,40 @@ interface Imagen {
 export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false); // Estado para pausar el intervalo
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Estado para el ancho de la ventana
+  const [images, setImages] = useState(heroOptions); // Estado para el array de imágenes
+
+  // Función para manejar el cambio de tamaño de la ventana
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  // Actualizar las imágenes cuando el tamaño de la ventana cambia
+  useEffect(() => {
+    if (windowWidth <= 768) {
+      setImages(MobileHeroOptions); // Si la pantalla es pequeña, usa las imágenes móviles
+    } else {
+      setImages(heroOptions); // Si la pantalla es grande, usa las imágenes de escritorio
+    }
+  }, [windowWidth]);
+
+  // useEffect para escuchar el cambio de tamaño de la ventana
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   // Función para mover las imágenes (anterior o siguiente)
   const scrollToImage = (direction: string) => {
     if (direction === "prev") {
       setCurrentIndex((curr) =>
-        curr === 0 ? heroOptions.length - 1 : curr - 1
+        curr === 0 ? images.length - 1 : curr - 1
       );
     } else {
       setCurrentIndex((curr) =>
-        curr === heroOptions.length - 1 ? 0 : curr + 1
+        curr === images.length - 1 ? 0 : curr + 1
       );
     }
   };
@@ -35,12 +60,12 @@ export const Hero = () => {
   useEffect(() => {
     if (!isPaused) {
       const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % heroOptions.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 4000);
 
       return () => clearInterval(interval); // Limpiar intervalo al desmontar
     }
-  }, [isPaused]);
+  }, [isPaused, images.length]);
 
   // Manejar pausa y reanudación al pasar/quitar el cursor
   const handleMouseEnter = () => {
@@ -81,8 +106,8 @@ export const Hero = () => {
               transform: `translateX(-${currentIndex * 100}%)`, // Movimiento de deslizamiento
             }}
           >
-            {heroOptions && heroOptions.length > 0 ? (
-              heroOptions.map((item: Imagen) => (
+            {images && images.length > 0 ? (
+              images.map((item: Imagen) => (
                 <li key={item.id}>
                   <Link
                     to={item.link || "#"} // Enlace (por defecto # si no está definido)
@@ -101,7 +126,7 @@ export const Hero = () => {
 
         {/* Dots de navegación */}
         <div className={Style["dots-container"]}>
-          {heroOptions.map((_, idx) => (
+          {images.map((_, idx) => (
             <div
               key={idx}
               className={`${Style["dot-container-item"]} ${
