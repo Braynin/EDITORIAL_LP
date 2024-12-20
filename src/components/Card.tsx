@@ -2,12 +2,26 @@ import { Link } from "react-router-dom";
 import "../index.css";
 import styles from "./Card.module.css";
 import { Products } from "../assets/ProductsOptions";
+import { IconShoppingBagCheck } from "@tabler/icons-react";
 
 interface TemplateProps {
   array: Products[];
 }
-
+const whatsapp = "939613209";
+const mensaje = "Hola, quiero comprar este libro:";
+const mensajeCodificado = encodeURIComponent(mensaje);
 function CreateCard({ option }: { option: Products }) {
+  // Aquí estamos creando el mensaje completo con el nombre del producto
+  const mensajeCompleto = `${mensajeCodificado}${encodeURIComponent(
+    option.nombre
+  )}`;
+  // Función para prevenir la acción de redirección cuando se hace clic en el ícono de WhatsApp
+  const handleWhatsAppClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    event.stopPropagation(); // Evitar que el clic se propague y active el Link
+  };
+
   return (
     <div className={styles["card"]}>
       <Link to={`/details?id=${option.id}`} className={styles["product-card"]}>
@@ -17,34 +31,21 @@ function CreateCard({ option }: { option: Products }) {
           className={styles["product-img"]}
         />
         <div className={styles["product-info"]}>
+          <p className={styles["product-title"]}>{option.nombreCard}</p>
           <span className={styles["brand"]}>{option.presentacion}</span>
-          <p className={styles["product-title"]}>{option.nombre}</p>
           <div className={styles["product-price-block"]}>
             <p className={styles["current-price"]}>S/.{option.precioMenor}</p>
-
-            <div className={styles["icon"]}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className={
-                  styles[
-                    "icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
-                  ]
-                }
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M5 12l14 0" />
-                <path d="M13 18l6 -6" />
-                <path d="M13 6l6 6" />
-              </svg>
-            </div>
+            <a
+              className={styles["case-icon"]}
+              href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+            >
+              <div className={styles["icon"]}>
+                <IconShoppingBagCheck stroke={2} />
+              </div>
+            </a>
           </div>
         </div>
       </Link>

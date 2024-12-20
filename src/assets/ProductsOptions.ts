@@ -18,6 +18,7 @@ export class Products {
   alto: string;
   ancho: string;
   private _supplier: string;
+  nombreCard: string;
   constructor(
     id: string,
     nombre: string,
@@ -35,7 +36,8 @@ export class Products {
     presentacion: string,
     peso: string,
     alto: string,
-    ancho: string
+    ancho: string,
+    nombreCard: string
   ) {
     this.id = id;
     this.nombre = nombre;
@@ -55,6 +57,7 @@ export class Products {
     this.alto = alto;
     this.ancho = ancho;
     this._supplier = ""; // Inicialización por defecto
+    this.nombreCard = nombreCard;
   }
   get supplier(): string {
     return this._supplier;
@@ -88,13 +91,15 @@ const product1 = new Products(
   "Tapa Dura",
   "1.4kg",
   "21cm",
-  "16cm"
+  "16cm",
+   "Código Penal"
 );
 const product2 = new Products(
   "2",
   "Código Penal",
   "50",
   "",
+  
   [
     "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-CENITAL-RUSTICA.png",
     "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-BACK-IZQUIERDA-RUSTICA.png",
@@ -112,7 +117,8 @@ const product2 = new Products(
   "Tapa Rústica",
   "1.3kg",
   "21cm",
-  "16cm"
+  "16cm",
+   "Código Penal"
 );
 const product3 = new Products(
   "3",
@@ -136,7 +142,8 @@ const product3 = new Products(
   "Tapa Dura",
   "1.4kg",
   "21cm",
-  "16cm"
+  "16cm",
+  "Código Civil",
 );
 const product4 = new Products(
   "4",
@@ -160,7 +167,8 @@ const product4 = new Products(
   "Tapa Rústica",
   "1.4kg",
   "21cm",
-  "16cm"
+  "16cm",
+  "Código Civil",
 );
 const product5 = new Products(
   "5",
@@ -184,7 +192,8 @@ const product5 = new Products(
   "Tapa Dura",
   "1.6kg",
   "25cm",
-  "17cm"
+  "17cm",
+  "Detencion policial"
 );
 const product6 = new Products(
   "6",
@@ -207,7 +216,8 @@ const product6 = new Products(
   "Tapa Dura",
   "0.8kg",
   "18cm",
-  "11cm"
+  "11cm",
+  "Mini Código penal",
 );
 const product7 = new Products(
   "7",
@@ -230,7 +240,8 @@ const product7 = new Products(
   "Tapa Rustica",
   "1kg",
   "23cm",
-  "16cm"
+  "16cm",
+  "El Defensor 2",
 );
 const product8 = new Products(
   "8",
@@ -254,7 +265,8 @@ const product8 = new Products(
   "Tapa Rustica",
   "0.50kg",
   "24cm",
-  "16cm"
+  "16cm",
+  "Litigacion Oral Civil",
 );
 const product9 = new Products(
   "9",
@@ -270,10 +282,11 @@ const product9 = new Products(
   "Editorial LP",
   "2024",
   "238",
-  "Tapa Rustica",
+  "Colección",
   "1kg",
   "20cm",
-  "13cm"
+  "13cm",
+  "¿Cómo redactar un contrato?"
 );
 const product10 = new Products(
   "10",
@@ -298,7 +311,8 @@ const product10 = new Products(
   "Tapa Rustica",
   "0.60kg",
   "24cm",
-  "17cm"
+  "17cm",
+  "Culpabilidad y Neurociencias",
 );
 const product11 = new Products(
   "11",
@@ -322,7 +336,8 @@ const product11 = new Products(
   "Tapa Rustica",
   "0.40kg",
   "23cm",
-  "15cm"
+  "15cm",
+  "Derecho del Consumidor",
 );
 const product12 = new Products(
   "12",
@@ -347,7 +362,8 @@ const product12 = new Products(
   "Tapa Rustica",
   "0.40kg",
   "23cm",
-  "15cm"
+  "15cm",
+  "PAD",
 );
 const product13 = new Products(
   "13",
@@ -371,7 +387,8 @@ const product13 = new Products(
   "Tapa Rustica",
   "0.80kg",
   "23cm",
-  "15cm"
+  "15cm",
+  "La Constitucion en las redes",
 );
 const product14 = new Products(
   "14",
@@ -400,7 +417,8 @@ const product14 = new Products(
   "Con caja",
   "1kg",
   "20cm",
-  "15cm"
+  "15cm",
+  "Litigacion Oral en audiencias previas"
 );
 const product15 = new Products(
   "15",
@@ -425,7 +443,8 @@ const product15 = new Products(
   "Sin caja",
   "1kg",
   "20cm",
-  "15cm"
+  "15cm",
+  "Litigacion Oral en audiencias previas"
 );
 const product16 = new Products(
   "16",
@@ -438,7 +457,7 @@ const product16 = new Products(
     "public/EL NUEVO CÓDIGO PROCESAL CONSTITUCIONAL/EL-NUEVO-CÓDIGO-PROCESAL-CONSTITUCIONAL_FRONT DERECHA.png",
   ],
 
-  "Penal",
+  "Constitucional",
   "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
   "978-61249315-5-0",
   "Luis Andrés Roel Alva",
@@ -448,7 +467,8 @@ const product16 = new Products(
   "Tapa Rustica",
   "0.6kg",
   "24cm",
-  "16cm"
+  "16cm",
+  "Nuevo Código Procesal Constitucional"
 );
 const product17 = new Products(
   "17",
@@ -472,7 +492,8 @@ const product17 = new Products(
   "Tapa Rustica",
   "0.65kg",
   "24cm",
-  "15cm"
+  "15cm", 
+  "Redaccion Administrativa"
 );
 const product18 = new Products(
   "18",
@@ -496,7 +517,8 @@ const product18 = new Products(
   "Tapa Dura",
   "1.15kg",
   "24cm",
-  "17cm"
+  "17cm",
+  "Derecho penal: parte general",
 );
 const product19 = new Products(
   "19",
@@ -520,7 +542,8 @@ const product19 = new Products(
   "Tapa Rustica",
   "0.55kg",
   "23cm",
-  "15cm"
+  "15cm",
+  "Mi primer juicio de familia"
 );
 const product20 = new Products(
   "20",
@@ -544,7 +567,8 @@ const product20 = new Products(
   "Tapa Rustica",
   "0.8kg",
   "21cm",
-  "16cm"
+  "16cm",
+  "El Defensor"
 );
 const product21 = new Products(
   "21",
@@ -569,7 +593,8 @@ const product21 = new Products(
   "Tapa Dura",
   "1kg",
   "24cm",
-  "17cm"
+  "17cm",
+  "El derecho a la prueba"
 );
 const product22 = new Products(
   "22",
@@ -593,7 +618,8 @@ const product22 = new Products(
   "Tapa Rústica",
   "0.2kg",
   "20cm",
-  "14cm"
+  "14cm",
+  "La fe se da no se vende",
 );
 
 /*Array*/
