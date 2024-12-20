@@ -32,7 +32,7 @@ const separator6 = new Separator(
   "Ofertas"
 );
 
-const arraySeparators = [
+export const arraySeparators: Separator[] = [
   separator1,
   separator2,
   separator3,
@@ -41,4 +41,36 @@ const arraySeparators = [
   separator6,
 ];
 
-export default arraySeparators;
+
+const separatoMobile1 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_ADMIN.png",
+  "Administrativo"
+);
+const separatoMobile2 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_CIV.png",
+  "Civil"
+);
+const separatoMobile3 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_PEN.png",
+  "Penal"
+);
+const separatoMobile4 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_FAM.png",
+  "Familia"
+);
+const separatoMobile5 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_CONSTITUCIONALES.png",
+  "Constitucional"
+);
+const separatoMobile6 = new Separator(
+  "public/BANNERS VISTA MOBILE/SEPARADORES MOBILE/separador de libros secciones_OFERTA.png",
+  "Ofertas"
+);
+export const arraySeparatorsMobile: Separator[] = [
+  separatoMobile1,
+  separatoMobile2,
+  separatoMobile3,
+  separatoMobile4,
+  separatoMobile5,
+  separatoMobile6,
+];

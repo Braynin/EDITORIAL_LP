@@ -34,7 +34,7 @@ const bannerSection6 = new BannerSection(
   "Ofertas"
 );
 
-const arrayBannerSections: BannerSection[] = [
+export const arrayBannerSections: BannerSection[] = [
   bannerSection1,
   bannerSection2,
   bannerSection3,
@@ -43,4 +43,5 @@ const arrayBannerSections: BannerSection[] = [
   bannerSection6,
 ];
 
-export default arrayBannerSections;
+
+

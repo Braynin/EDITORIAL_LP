@@ -1,15 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { arrayOffers } from "../assets/OffersOptions.ts"; // Aquí está el array de tus productos (ofertas)
 import styles from "./Offers.module.css"; // Estilos del componente
 import { TemplateOffer } from "./OffersCard.tsx"; // Plantilla de producto (oferta)
-import arraySeparators from "../assets/SeparatorsOptions.ts";
+import { arraySeparators, arraySeparatorsMobile } from "../assets/SeparatorsOptions.ts";
 
 export default function Offers() {
   const visibleProducts = 4; // Número de productos visibles por "página" en el slider
   interface StartIndexes {
     [key: string]: number;
   }
+
   const [StartIndexes, setStartIndexes] = useState<StartIndexes>({});
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  // Detectar si la pantalla es menor a 768px
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Actualiza el estado si el ancho es menor a 768px
+    };
+
+    // Ejecutar la función de tamaño en el montaje del componente
+    handleResize();
+
+    // Agregar el event listener para el cambio de tamaño
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el event listener cuando el componente se desmonte
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Función para desplazarse por los productos
   const scrollTo = (direction: string, section: string) => {
     const sectionProducts = arrayOffers; // Usamos todos los productos, sin filtrar por sección
@@ -46,17 +65,18 @@ export default function Offers() {
     startIndex + visibleProducts
   );
 
+  // Selección del separador adecuado según el tamaño de la pantalla
+  const separator = isMobile
+    ? arraySeparatorsMobile.find((separator) => separator.section === "Ofertas")
+    : arraySeparators.find((separator) => separator.section === "Ofertas");
+
+  // Renderizar el componente
   if (arrayOffers.length <= visibleProducts) {
     return (
       <div className={styles["offers-container"]}>
-        {arraySeparators.find((separator) => separator.section === "Ofertas")
-          ?.img && (
+        {separator?.img && (
           <img
-            src={
-              arraySeparators.find(
-                (separator) => separator.section === "Ofertas"
-              )?.img
-            }
+            src={separator.img}
             alt="Ofertas"
             className={styles["separator"]}
           />
@@ -71,14 +91,9 @@ export default function Offers() {
   } else {
     return (
       <div className={styles["offers-container"]}>
-        {arraySeparators.find((separator) => separator.section === "Ofertas")
-          ?.img && (
+        {separator?.img && (
           <img
-            src={
-              arraySeparators.find(
-                (separator) => separator.section === "Ofertas"
-              )?.img
-            }
+            src={separator.img}
             alt="Ofertas"
             className={styles["separator"]}
           />
