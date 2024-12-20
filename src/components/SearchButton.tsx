@@ -6,7 +6,7 @@ interface SearchButtonProps {
 const SearchButton: React.FC<SearchButtonProps> = ({ onClick }) => {
   return (
     <span className={styles["search-button"]} onClick={onClick}>
-      <IconSearch stroke={2} />
+      <IconSearch stroke={3.5} />
     </span>
   );
 };

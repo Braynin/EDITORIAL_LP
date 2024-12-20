@@ -5,10 +5,17 @@
   width: 226px;
   background-color: rgba(0, 0, 0, 0.1); /* Fondo de la barra */
   border-radius: 4px; /* Bordes redondeados */
+  padding-right: 10px;
 }
 
 .search-form:focus-within {
   box-shadow: 0 6px 12px rgba(139, 0, 0, 0.5), 0 0 6px rgba(255, 0, 0, 0.3); /* Sombra cuando se enfoca algún elemento dentro */
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ocupa el 100% del contenedor */
 }
 
 .search-input {
@@ -20,19 +27,64 @@
   outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
-.search-form div {
+.menu-botton {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .search-form {
+@media screen and (max-width: 1024px) {
+  .menu-botton {
+    width: 30%;
+    display: flex;
     justify-content: right;
     background-color: transparent;
     order: 3;
-    padding-right: 50px;
-    width: 30%;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    padding-right: 20px;
+    color: rgb(157, 157, 157);
+    z-index: 1001;
   }
+  .search-form.open {
+    transform: translateX(0); /* Desliza el menú hacia la derecha */
+  }
+  .search-form {
+    margin-top: 100px;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(246, 246, 246);
+
+    width: 100%; /* Ancho de la columna del menú */
+    height: 6%; /* Asegura que ocupe toda la altura */
+    transform: translateX(
+      100%
+    ); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
+    transition: transform 0.3s ease-in-out; /* Añadido para animación suave */
+    z-index: 1000;
+    padding: 0px;
+  }
+  .search-form:focus-within {
+    box-shadow: none;
+  }
+  .search-input-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+
   .search-input {
-    display: none;
+    background-color: transparent; /* Fondo de la barra */
+    border-radius: 4px;
+  }
+  .search-button-container {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    background-color: transparent; /* Fondo de la barra */
+    padding-right: 10px;
   }
 }

@@ -9,12 +9,12 @@
 
 /* Logo del encabezado */
 .header-logo {
-  width: 10rem;
-  margin-top: 3px;
+  width: 14rem;
+  height: 100%;
 }
 
 /* Media query para pantallas más pequeñas (menos de 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .logo-container {
     justify-self: center;
     order: 2;

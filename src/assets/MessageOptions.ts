@@ -9,9 +9,9 @@ export class Messages {
 }
 
 /* Objects */
-const message1 = new Messages("lp pasion por el derecho", "#");
-const message2 = new Messages("contactanos para mas informacion", "#");
-const message3 = new Messages("llamanos o escribenos", "#");
+const message1 = new Messages("Editorial LP", "#");
+const message2 = new Messages("Aprovecha los descuentos", "#");
+const message3 = new Messages("Contactanos para mas informacion", "#");
 
 /* Array */
 export const arrayMessages: Messages[] = [message1, message2, message3];

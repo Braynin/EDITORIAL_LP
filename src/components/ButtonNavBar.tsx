@@ -3,6 +3,7 @@ import styles from "./ButtonNavBar.module.css";
 import arrayNavOptions from "../assets/NavOptions.ts";
 import React from "react";
 import { IconMenu2 } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
 
 export default function ButtonNavBar() {
   const [menuOpen, setMenuOpen] = useState(false); // Estado para abrir/cerrar el menú
@@ -16,10 +17,13 @@ export default function ButtonNavBar() {
 
   return (
     <>
-      {/* Botón de hamburguesa */}
-      <button className={styles["hamburger-btn"]} onClick={toggleMenu}>
-        <IconMenu2 stroke={2} />
-      </button>
+      <div className={styles["hamburger-btn"]}>
+        {menuOpen ? (
+          <IconX stroke={3.5} onClick={() => toggleMenu()} />
+        ) : (
+          <IconMenu2 stroke={3.5} onClick={() => toggleMenu()} />
+        )}
+      </div>
 
       {/* Opciones de navegación */}
       <ul
@@ -35,17 +39,16 @@ export default function ButtonNavBar() {
           </React.Fragment>
         ))}
         <div className={styles["catalogos"]}>
-          <a   href="{pdfUrl1}" download>
-          <button className={styles["btn-catalogo"]}>Catalogo</button>
+          <a href={pdfUrl1} download>
+            <button className={styles["btn-catalogo"]}>Catalogo</button>
           </a>
-          <a  href="{pdfUrl2}" download>
-          <button className={styles["btn-catalogo"]}>Catalogo al por mayor</button>
+          <a href={pdfUrl2} download>
+            <button className={styles["btn-catalogo"]}>
+              Catalogo al por mayor
+            </button>
           </a>
-
         </div>
-          
       </ul>
-       
     </>
   );
 }

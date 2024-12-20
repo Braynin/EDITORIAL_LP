@@ -2,26 +2,70 @@
 .messages-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 0px;
   background-color: #cf2e2e;
   height: 1rem;
   overflow: hidden;
   border: 1px solid black;
-  
- 
+  position: relative;
 }
+
 .messages {
   display: flex;
-  max-width: 100%;
-  animation: scrollMessages 15s linear infinite;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 800;
+  justify-content: center;
+  animation: scrollMessages 20s linear infinite;
+  visibility: hidden;
+}
+
+.messages-1 {
+  animation-delay: 0s; /* Empieza inmediatamente */
+}
+
+.messages-2 {
+  animation-delay: 10s; /* Comienza después de que el primer mensaje termina */
 }
 
 @keyframes scrollMessages {
   0% {
-    transform: translateX(200%); /* Comienza fuera a la derecha */
+    visibility: visible;
+    transform: translateX(100%); /* Comienza fuera de la izquierda */
+  }
+
+  50% {
+    transform: translateX(0%); /* Totalmente visible en el centro */
   }
   100% {
-    transform: translateX(-200%); /* Termina fuera a la izquierda */
+    transform: translateX(-100%); /* Completamente fuera de la izquierda */
+  }
+}
+@media screen and (max-width: 1024px) {
+  .messages {
+    animation: scrollMessages 20s linear infinite;
+  }
+  .messages-1 {
+    animation-delay: 0s; /* Empieza inmediatamente */
+  }
+
+  .messages-2 {
+    animation-delay: 10s; /* Comienza después de que el primer mensaje termina */
+  }
+  @keyframes scrollMessages {
+    0% {
+      visibility: visible;
+      transform: translateX(150%); /* Comienza fuera de la izquierda */
+    }
+
+    50% {
+      transform: translateX(0%); /* Totalmente visible en el centro */
+    }
+    100% {
+      transform: translateX(-150%); /* Completamente fuera de la izquierda */
+    }
   }
 }

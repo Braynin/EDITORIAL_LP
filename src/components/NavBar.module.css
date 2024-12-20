@@ -12,10 +12,10 @@
 
   /* Asegura que ocupe todo el ancho disponible */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .nav-container {
     width: 30%;
     justify-content: left;
-    padding-left: 50px;
+    padding-left: 20px;
   }
 }

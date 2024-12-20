@@ -2,6 +2,6 @@
   cursor: pointer;
   display: flex;
   border-radius: 50%;
-  padding-right: 10px;
   color: rgb(157, 157, 157);
+  stroke-width: 10px;
 }

@@ -49,11 +49,11 @@
 .hamburger-btn {
   display: none; /* Oculta el botón en pantallas grandes */
 }
-.catalogos{  
+.catalogos {
   display: none;
 }
 /* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* Mostrar el botón hamburguesa solo en dispositivos móviles */
   .hamburger-btn {
     color: rgb(157, 157, 157);
@@ -71,7 +71,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: rgb(246, 246, 246);
     margin-top: 100px;
     padding-top: 20px;
     width: 100%; /* Ancho de la columna del menú */
@@ -81,6 +81,7 @@
     ); /* Inicialmente, el menú está oculto fuera de la pantalla a la izquierda */
     z-index: 9; /* Asegura que el menú esté debajo del botón */
     transition: transform 0.3s ease-in-out; /* Añadido para animación suave */
+    padding-top: 61.44px;
   }
 
   /* Mostrar las opciones cuando el menú está abierto */
@@ -99,47 +100,46 @@
   .nav-link {
     text-decoration: none;
     font-weight: bold;
-    padding-left: 50px;
+    padding-left: 20px;
     transition: color 0.2s ease;
     width: 100%;
   }
-  
-/* Estilos para el contenedor de los botones de los catálogos */
-.catalogos {
-  display: flex;                /* Usamos flexbox para organizar los elementos */
-  flex-direction: column;       /* Los elementos dentro se apilan verticalmente */
-  align-items: center;          /* Centra los botones horizontalmente */
-  width: 100%;                  /* El contenedor toma todo el ancho disponible */
-  padding: 10px;                /* Espaciado interno para no estar pegado a los bordes */
-  box-sizing: border-box;       /* Asegura que el padding no afecte el tamaño total del contenedor */
-}
 
-/* Estilo para el enlace que envuelve al botón */
-.catalogos a {
-  width: 100%;                  /* El enlace ocupa todo el ancho disponible */
-  display: flex;                /* Usamos flexbox para centrar el contenido dentro del <a> */
-  justify-content: center;      /* Centra el botón dentro del <a> */
-  align-items: center;          /* Centra el botón verticalmente dentro del <a> */
-  margin-bottom: 10px;          /* Espaciado entre los botones */
-  text-decoration: none;        /* Evita subrayado de los enlaces */
-}
+  /* Estilos para el contenedor de los botones de los catálogos */
+  .catalogos {
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    flex-direction: column; /* Los elementos dentro se apilan verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    width: 100%; /* El contenedor toma todo el ancho disponible */
+    padding: 20px; /* Espaciado interno para no estar pegado a los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+  }
 
-/* Estilos para el botón de catálogo */
-.btn-catalogo {
-  padding: 20px 20px;           /* Espaciado interno para el botón */
-  font-size: 18px;              /* Tamaño de la fuente */
-  background-color: red;        /* Fondo rojo para el botón */
-  color: white;                 /* Texto blanco */
-  border: none;                 /* Sin borde */
-  border-radius: 5px;           /* Bordes redondeados */
-  cursor: pointer;              /* El cursor cambia a pointer cuando pasa por encima */
-  width: 100%;                  /* El botón ocupa todo el ancho disponible */
-  max-width: 500px;             /* Limita el ancho máximo para que no se estire demasiado */
-  text-align: center;           /* Centra el texto dentro del botón */
-}
+  /* Estilo para el enlace que envuelve al botón */
+  .catalogos a {
+    width: 100%; /* El enlace ocupa todo el ancho disponible */
+    display: flex; /* Usamos flexbox para centrar el contenido dentro del <a> */
+    justify-content: center; /* Centra el botón dentro del <a> */
+    align-items: center; /* Centra el botón verticalmente dentro del <a> */
+    margin-bottom: 10px; /* Espaciado entre los botones */
+    text-decoration: none; /* Evita subrayado de los enlaces */
+  }
 
-/* Cambio de color al pasar el ratón sobre el botón */
-.btn-catalogo:hover {
-  background-color: darkred;    /* Color de fondo al hacer hover */
-}
+  /* Estilos para el botón de catálogo */
+  .btn-catalogo {
+    padding: 20px 20px; /* Espaciado interno para el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    background-color: red; /* Fondo rojo para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* El cursor cambia a pointer cuando pasa por encima */
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro del botón */
+  }
+
+  /* Cambio de color al pasar el ratón sobre el botón */
+  .btn-catalogo:hover {
+    background-color: darkred; /* Color de fondo al hacer hover */
+  }
 }

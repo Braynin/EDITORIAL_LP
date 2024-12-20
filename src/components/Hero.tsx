@@ -41,13 +41,9 @@ export const Hero = () => {
   // Función para mover las imágenes (anterior o siguiente)
   const scrollToImage = (direction: string) => {
     if (direction === "prev") {
-      setCurrentIndex((curr) =>
-        curr === 0 ? images.length - 1 : curr - 1
-      );
+      setCurrentIndex((curr) => (curr === 0 ? images.length - 1 : curr - 1));
     } else {
-      setCurrentIndex((curr) =>
-        curr === images.length - 1 ? 0 : curr + 1
-      );
+      setCurrentIndex((curr) => (curr === images.length - 1 ? 0 : curr + 1));
     }
   };
 
@@ -140,7 +136,7 @@ export const Hero = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                fill="#000000"
+                fill="#d9d9d9"
                 className="icon icon-tabler icons-tabler-filled icon-tabler-point"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
