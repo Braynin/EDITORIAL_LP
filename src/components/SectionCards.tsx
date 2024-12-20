@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { arrayProducts, Products } from "../assets/ProductsOptions.ts";
 import styles from "./SectionCards.module.css";
 import { Template } from "./Card.tsx";
 import normalizeText from "../assets/NormalizeText.ts";
-import arraySeparators from "../assets/SeparatorsOptions.ts";
+import { arraySeparators, arraySeparatorsMobile } from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
-import arrayBannerSections from "../assets/BannerSectionOption.ts";
+import { arrayBannerSections } from "../assets/BannerSectionOption.ts";
 import { Link } from "react-router-dom";
 import { IconChevronRight } from "@tabler/icons-react";
+
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
   section: string; // section debería ser un string
@@ -15,6 +16,23 @@ interface CardsSectionProps {
 
 const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const [startIndexes, setStartIndexes] = useState<Record<string, number>>({});
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  // Detectar si la pantalla es menor a 768px
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Actualiza el estado si el ancho es menor a 768px
+    };
+
+    // Ejecutar la función de tamaño en el montaje del componente
+    handleResize();
+
+    // Agregar el event listener para el cambio de tamaño
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el event listener cuando el componente se desmonte
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Función para filtrar los productos por sección
   const sectionProducts = (array: Products[], section: string): Products[] => {
@@ -57,9 +75,13 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const startIndex = startIndexes[section] || 0;
 
   // Busca el separador asociado con la sección actual
-  const separator = arraySeparators.find(
-    (separator) => normalizeText(separator.section) === normalizeText(section)
-  );
+  const separator = isMobile
+    ? arraySeparatorsMobile.find(
+        (separator) => normalizeText(separator.section) === normalizeText(section)
+      )
+    : arraySeparators.find(
+        (separator) => normalizeText(separator.section) === normalizeText(section)
+      );
 
   // Verifica la URL actual para determinar el estado de la navegación
   const location = useLocation();

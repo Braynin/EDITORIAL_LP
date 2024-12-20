@@ -71,3 +71,15 @@
 .rightArrow {
   right: 0px; /* Ubica la flecha a la derecha */
 }
+/* Media query para pantallas móviles (menos de 768px) */
+@media screen and (max-width: 768px) {
+  .separator {
+    border-radius: 0px;
+    width: 100%;
+   
+  }
+  .offers-container {
+    padding: 20px 0px;
+    
+  }
+}

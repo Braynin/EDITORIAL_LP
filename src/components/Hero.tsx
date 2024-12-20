@@ -72,6 +72,15 @@ export const Hero = () => {
     setIsPaused(false);
   };
 
+  // Manejar pausa y reanudación para dispositivos táctiles
+  const handleTouchStart = () => {
+    setIsPaused(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsPaused(false);
+  };
+
   return (
     <div className={Style["hero-container"]}>
       <div className={Style["slider-container"]}>
@@ -81,6 +90,8 @@ export const Hero = () => {
           onClick={() => scrollToImage("prev")}
           onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
           onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
+          onTouchStart={handleTouchStart} // Evento táctil para móviles
+          onTouchEnd={handleTouchEnd} // Evento táctil para móviles
           tabIndex={-1} // Desactivar foco
         >
           &#8249;
@@ -90,6 +101,8 @@ export const Hero = () => {
           onClick={() => scrollToImage("next")}
           onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
           onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
+          onTouchStart={handleTouchStart} // Evento táctil para móviles
+          onTouchEnd={handleTouchEnd} // Evento táctil para móviles
           tabIndex={-1} // Desactivar foco
         >
           &#8250;
@@ -109,6 +122,8 @@ export const Hero = () => {
                     to={item.link || "#"} // Enlace (por defecto # si no está definido)
                     onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
                     onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
+                    onTouchStart={handleTouchStart} // Evento táctil para móviles
+                    onTouchEnd={handleTouchEnd} // Evento táctil para móviles
                   >
                     <img src={item.imgUrl} alt={`image-${item.id}`} />
                   </Link>
