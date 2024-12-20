@@ -13,10 +13,10 @@
   color: #272727;
   border-radius: 20px; /* Bordes redondeados */
   width: 255px; /* 250 */
-  margin: 15px;
+  margin: 10px;
   text-decoration: none;
   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Suaves transiciones */
-  height: 420px;
+  height: 385px;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra más suave y difusa */
@@ -41,11 +41,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   height: 100%;
 }
 
 .product-title {
+  
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -55,7 +56,9 @@
 .product-price-block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  gap: 100px;
+  margin-top: 10px;
 }
 
 .product-price-block .current-price {
@@ -72,13 +75,23 @@
 }
 
 .product-info .icon {
-  align-self: flex-end;
-  margin-top: 10px;
+  
+  
   font-size: 18px;
-  color: #c2bbbb;
+  color: white;
 }
 .brand {
   font-size: 12px;
   text-transform: uppercase;
   color: #c2bbbb;
+}
+.case-icon {
+  background-color: red;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;          
+  justify-content: center; 
 }
