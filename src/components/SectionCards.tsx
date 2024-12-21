@@ -153,7 +153,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
         <>
           <div className={styles["breadcrumb"]}>
             <Link to="/">Inicio</Link>
-            <IconChevronRight stroke={2} /> {section}
+            <IconChevronRight stroke={2} className={styles["icon"]} /> {section}
           </div>
           <div className={styles["card-section"]}>
             <img

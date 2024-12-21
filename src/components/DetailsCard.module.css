@@ -210,3 +210,14 @@
 .product-description strong {
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px){
+  .product-images-checkout-block {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .product-checkout-block {
+    width: 100%;
+  }
+}

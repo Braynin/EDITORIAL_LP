@@ -172,7 +172,7 @@ const product4 = new Products(
 );
 const product5 = new Products(
   "5",
-  "Detencion policial en flagrancia y proceso inmediato",
+  "Detención policial en flagrancia y proceso inmediato",
   "130",
   "",
   [
@@ -193,7 +193,7 @@ const product5 = new Products(
   "1.6kg",
   "25cm",
   "17cm",
-  "Detencion policial"
+  "Detención policial"
 );
 const product6 = new Products(
   "6",
@@ -245,7 +245,7 @@ const product7 = new Products(
 );
 const product8 = new Products(
   "8",
-  "Litigacion Oral Civil",
+  "Litigación Oral Civil",
   "100",
   "",
   [
@@ -266,7 +266,7 @@ const product8 = new Products(
   "0.50kg",
   "24cm",
   "16cm",
-  "Litigacion Oral Civil",
+  "Litigación Oral Civil",
 );
 const product9 = new Products(
   "9",
@@ -367,7 +367,7 @@ const product12 = new Products(
 );
 const product13 = new Products(
   "13",
-  "La Constitucion en las redes",
+  "La Constitución en las redes",
   "120",
   "",
   [
@@ -388,11 +388,11 @@ const product13 = new Products(
   "0.80kg",
   "23cm",
   "15cm",
-  "La Constitucion en las redes",
+  "La Constitución en las redes",
 );
 const product14 = new Products(
   "14",
-  "Coleccion Litigacion Oral en audiencias previas",
+  "Coleccion Litigación Oral en audiencias previas",
   "150",
   "",
   [
@@ -418,11 +418,11 @@ const product14 = new Products(
   "1kg",
   "20cm",
   "15cm",
-  "Litigacion Oral en audiencias previas"
+  "Litigación Oral en audiencias previas"
 );
 const product15 = new Products(
   "15",
-  "Coleccion Litigacion Oral en audiencias previas",
+  "Coleccion Litigación Oral en audiencias previas",
   "140",
   "",
   [
@@ -444,7 +444,7 @@ const product15 = new Products(
   "1kg",
   "20cm",
   "15cm",
-  "Litigacion Oral en audiencias previas"
+  "Litigación Oral en audiencias previas"
 );
 const product16 = new Products(
   "16",
@@ -468,7 +468,7 @@ const product16 = new Products(
   "0.6kg",
   "24cm",
   "16cm",
-  "Nuevo Código Procesal Constitucional"
+  "Cod. Procesal Constitucional"
 );
 const product17 = new Products(
   "17",
@@ -493,7 +493,7 @@ const product17 = new Products(
   "0.65kg",
   "24cm",
   "15cm", 
-  "Redaccion Administrativa"
+  "Redacción Administrativa"
 );
 const product18 = new Products(
   "18",

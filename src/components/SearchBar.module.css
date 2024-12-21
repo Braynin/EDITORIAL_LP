@@ -79,6 +79,8 @@
   .search-input {
     background-color: transparent; /* Fondo de la barra */
     border-radius: 4px;
+    font-weight: 400;
+    font-style: normal;
   }
   .search-button-container {
     display: flex;

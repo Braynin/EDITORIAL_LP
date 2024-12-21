@@ -21,11 +21,15 @@
 
 .footer-title {
   font-size: 20px;
-  font-weight: 800;
+  
   margin-bottom: 10px;
   color: white;
+  font-weight: 600;
+  font-style: normal;
 }
 .footer-text {
+  font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   margin-top: 15px;
   color: white;
@@ -36,6 +40,8 @@
   font-size: 14px;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  font-style: normal;
 }
 .footer-address {
   margin-bottom: 5px;
@@ -102,4 +108,19 @@
   transform: scale(
     1.1
   ); /* Aumenta el tamaño de la imagen ligeramente al hacer hover */
+}
+
+@media screen and (max-width: 768px){
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
