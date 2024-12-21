@@ -9,16 +9,18 @@
   overflow: hidden;
   border: 1px solid black;
   position: relative;
+  justify-content: space-between;
 }
 
 .messages {
-  display: flex;
-  position: absolute;
   width: 100%;
+  min-width: 800px;
+  position: absolute;
+  display: flex;
   white-space: nowrap;
   font-size: 1rem;
   font-weight: 800;
-  justify-content: center;
+  justify-content: space-around;
   animation: scrollMessages 20s linear infinite;
   visibility: hidden;
 }
@@ -58,14 +60,14 @@
   @keyframes scrollMessages {
     0% {
       visibility: visible;
-      transform: translateX(150%); /* Comienza fuera de la izquierda */
+      transform: translateX(100%); /* Comienza fuera de la izquierda */
     }
 
     50% {
       transform: translateX(0%); /* Totalmente visible en el centro */
     }
     100% {
-      transform: translateX(-150%); /* Completamente fuera de la izquierda */
+      transform: translateX(-100%); /* Completamente fuera de la izquierda */
     }
   }
 }

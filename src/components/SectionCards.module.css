@@ -81,9 +81,12 @@
 
 /* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
+  .leftArrow,
+  .rightArrow {
+    display: none;
+  }
   .separator {
     border-radius: 0px;
     width: 100%;
-   
   }
 }
