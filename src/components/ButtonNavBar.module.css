@@ -98,7 +98,6 @@
 
   /* Estilo de los enlaces dentro de cada opción */
   .nav-link {
-    
     text-decoration: none;
     font-weight: 700;
     font-style: normal;
@@ -133,7 +132,7 @@
     font-style: normal;
     padding: 20px 20px; /* Espaciado interno para el botón */
     font-size: 18px; /* Tamaño de la fuente */
-    background-color: red; /* Fondo rojo para el botón */
+    background-color: #e01a22; /* Fondo rojo para el botón */
     color: white; /* Texto blanco */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
