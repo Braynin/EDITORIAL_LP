@@ -16,7 +16,7 @@
   margin: 10px;
   text-decoration: none;
   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Suaves transiciones */
-  height: 385px;
+  height: 400px;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra más suave y difusa */
@@ -46,8 +46,11 @@
 }
 
 .product-title {
-  font-size: 16px;
   text-transform: uppercase;
+
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
 
   line-height: 24px;
   margin: 10px 0 5px;
@@ -81,10 +84,12 @@
 .brand {
   font-size: 12px;
   text-transform: uppercase;
-  color: #c2bbbb;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-style: normal;
 }
 .case-icon {
-  background-color: red;
+  background-color: #e01a22;
   width: 35px;
   height: 35px;
   align-items: center;

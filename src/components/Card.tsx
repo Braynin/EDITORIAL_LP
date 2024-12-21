@@ -24,7 +24,7 @@ function CreateCard({ option }: { option: Products }) {
 
   return (
     <div className={styles["card"]}>
-      <Link to={`/details?id=${option.id}`} className={styles["product-card"]}>
+      <Link to={`/details?id=${option.id}`} className={styles["product-card"] }>
         <img
           src={option.imagen[0]}
           alt={option.nombre}

@@ -98,8 +98,10 @@
 
   /* Estilo de los enlaces dentro de cada opción */
   .nav-link {
+    
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
     padding-left: 20px;
     transition: color 0.2s ease;
     width: 100%;
@@ -127,6 +129,8 @@
 
   /* Estilos para el botón de catálogo */
   .btn-catalogo {
+    font-weight: 600;
+    font-style: normal;
     padding: 20px 20px; /* Espaciado interno para el botón */
     font-size: 18px; /* Tamaño de la fuente */
     background-color: red; /* Fondo rojo para el botón */
