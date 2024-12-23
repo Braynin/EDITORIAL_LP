@@ -17,7 +17,8 @@ function DetailsCard() {
     const foundProduct = arrayProducts.find((product) => product.id === id);
     if (foundProduct) {
       setProduct(foundProduct);
-      setPrice(Number(foundProduct.precioMenor));
+      setPrice(Number(foundProduct.precio));
+      window.scrollTo(0, 0);
     }
   }, [id]);
 
@@ -25,7 +26,7 @@ function DetailsCard() {
     const newQuantity = Number(event.target.value);
     setQuantity(newQuantity);
     if (product) {
-      setPrice(newQuantity * Number(product.precioMenor));
+      setPrice(newQuantity * Number(product.precio));
     }
   };
 

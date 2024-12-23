@@ -2,8 +2,8 @@
 export class Products {
   id: string;
   nombre: string;
-  precioMenor: string;
-  precioMayor: string;
+  precio: string;
+  precioOferta: string;
   imagen: string[];
 
   section: string;
@@ -22,8 +22,8 @@ export class Products {
   constructor(
     id: string,
     nombre: string,
-    precioMenor: string,
-    precioMayor: string,
+    precio: string,
+    precioOferta: string,
     imagen: string[],
 
     section: string,
@@ -41,8 +41,8 @@ export class Products {
   ) {
     this.id = id;
     this.nombre = nombre;
-    this.precioMenor = precioMenor;
-    this.precioMayor = precioMayor;
+    this.precio = precio;
+    this.precioOferta = precioOferta;
     this.imagen = imagen;
 
     this.section = section;
@@ -92,14 +92,13 @@ const product1 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-   "Código Penal"
+  "Código Penal"
 );
 const product2 = new Products(
   "2",
   "Código Penal",
   "50",
   "",
-  
   [
     "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-CENITAL-RUSTICA.png",
     "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-BACK-IZQUIERDA-RUSTICA.png",
@@ -118,7 +117,7 @@ const product2 = new Products(
   "1.3kg",
   "21cm",
   "16cm",
-   "Código Penal"
+  "Código Penal"
 );
 const product3 = new Products(
   "3",
@@ -143,7 +142,7 @@ const product3 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-  "Código Civil",
+  "Código Civil"
 );
 const product4 = new Products(
   "4",
@@ -168,7 +167,7 @@ const product4 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-  "Código Civil",
+  "Código Civil"
 );
 const product5 = new Products(
   "5",
@@ -217,7 +216,7 @@ const product6 = new Products(
   "0.8kg",
   "18cm",
   "11cm",
-  "Mini Código penal",
+  "Mini Código penal"
 );
 const product7 = new Products(
   "7",
@@ -241,7 +240,7 @@ const product7 = new Products(
   "1kg",
   "23cm",
   "16cm",
-  "El Defensor 2",
+  "El Defensor 2"
 );
 const product8 = new Products(
   "8",
@@ -266,7 +265,7 @@ const product8 = new Products(
   "0.50kg",
   "24cm",
   "16cm",
-  "Litigación Oral Civil",
+  "Litigación Oral Civil"
 );
 const product9 = new Products(
   "9",
@@ -312,7 +311,7 @@ const product10 = new Products(
   "0.60kg",
   "24cm",
   "17cm",
-  "Culpabilidad y Neurociencias",
+  "Culpabilidad y Neurociencias"
 );
 const product11 = new Products(
   "11",
@@ -337,7 +336,7 @@ const product11 = new Products(
   "0.40kg",
   "23cm",
   "15cm",
-  "Derecho del Consumidor",
+  "Derecho del Consumidor"
 );
 const product12 = new Products(
   "12",
@@ -363,7 +362,7 @@ const product12 = new Products(
   "0.40kg",
   "23cm",
   "15cm",
-  "PAD",
+  "PAD"
 );
 const product13 = new Products(
   "13",
@@ -388,7 +387,7 @@ const product13 = new Products(
   "0.80kg",
   "23cm",
   "15cm",
-  "La Constitución en las redes",
+  "La Constitución en las redes"
 );
 const product14 = new Products(
   "14",
@@ -492,19 +491,21 @@ const product17 = new Products(
   "Tapa Rustica",
   "0.65kg",
   "24cm",
-  "15cm", 
+  "15cm",
   "Redacción Administrativa"
 );
 const product18 = new Products(
   "18",
   "Derecho penal: parte general",
-  "130",
-  "",
+  "120",
+  "80",
   [
     "public/DERECHO PENAL PARTE GENERAL/DERECHO-PENAL-PARTE-GENERAL_CENITAL.png",
+
     "public/DERECHO PENAL PARTE GENERAL/DERECHO-PENAL-PARTE-GENERAL_BACK-IZQUIERDA.png",
     "public/DERECHO PENAL PARTE GENERAL/DERECHO-PENAL-PARTE-GENERAL_FRONT-DERECHA.png",
     "public/DERECHO PENAL PARTE GENERAL/DERECHO-PENAL-PARTE-GENERAL_FRONT-IZQUIERDA.png",
+    "public/OFERTAS/OFFER_DPPG_DETAILS.jpeg",
   ],
 
   "Penal",
@@ -518,7 +519,7 @@ const product18 = new Products(
   "1.15kg",
   "24cm",
   "17cm",
-  "Derecho penal: parte general",
+  "Derecho penal: parte general"
 );
 const product19 = new Products(
   "19",
@@ -619,9 +620,35 @@ const product22 = new Products(
   "0.2kg",
   "20cm",
   "14cm",
-  "La fe se da no se vende",
+  "La fe se da no se vende"
 );
 
+const product23 = new Products(
+  "23",
+  "Código Penal y Código Civil",
+  "100",
+  "90",
+  [
+    "public/OFERTAS/OFFER_CPTR_CCTR_DETAILS.jpeg",
+    "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-CENITAL-RUSTICA.png",
+    "public/CÓDIGO PENAL/TAPA RUSTICA/CODIGO-PENAL-BACK-IZQUIERDA-RUSTICA.png",
+    "public/CÓDIGO CIVIL/TAPA RUSTICA/CODIGO-CIVIL-CENITAL-RUSTICA.png",
+    "public/CÓDIGO CIVIL/TAPA RUSTICA/CODIGO-CIVIL-BACK-DERECHA-RUSTICA.png",
+  ],
+
+  "Ofertas",
+  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "978-61249574-6-8 ; 978-61249574-7-4",
+  "LP",
+  "Editorial LP",
+  "2024",
+  "1004",
+  "Tapa Rústica",
+  "1.3kg",
+  "21cm",
+  "16cm",
+  "Código Penal y Código Civil"
+);
 /*Array*/
 
 export const arrayProducts: Products[] = [
@@ -647,4 +674,5 @@ export const arrayProducts: Products[] = [
   product20,
   product21,
   product22,
+  product23,
 ];

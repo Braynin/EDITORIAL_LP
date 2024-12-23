@@ -24,7 +24,7 @@ function CreateCard({ option }: { option: Products }) {
 
   return (
     <div className={styles["card"]}>
-      <Link to={`/details?id=${option.id}`} className={styles["product-card"] }>
+      <Link to={`/details?id=${option.id}`} className={styles["product-card"]}>
         <img
           src={option.imagen[0]}
           alt={option.nombre}
@@ -34,7 +34,7 @@ function CreateCard({ option }: { option: Products }) {
           <p className={styles["product-title"]}>{option.nombreCard}</p>
           <span className={styles["brand"]}>{option.presentacion}</span>
           <div className={styles["product-price-block"]}>
-            <p className={styles["current-price"]}>S/.{option.precioMenor}</p>
+            <p className={styles["current-price"]}>S/.{option.precio}</p>
             <a
               className={styles["case-icon"]}
               href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}

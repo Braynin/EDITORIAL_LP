@@ -39,13 +39,30 @@
 .slider {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  overflow-x: auto;
+  object-fit: cover;
+
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   max-width: 100%;
   align-items: center;
+}
+.img-container {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+.offer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.offer-img:hover {
+  transform: translateY(-10px); /* Levanta ligeramente al pasar el mouse */
+  box-shadow: 0 10px 10px rgb(143, 141, 141);
+  cursor: pointer;
 }
 
 .slider::-webkit-scrollbar {
@@ -71,15 +88,14 @@
 .rightArrow {
   right: 0px; /* Ubica la flecha a la derecha */
 }
+
 /* Media query para pantallas móviles (menos de 768px) */
 @media screen and (max-width: 768px) {
   .separator {
     border-radius: 0px;
     width: 100%;
-   
   }
   .offers-container {
     padding: 20px 0px;
-    
   }
 }
