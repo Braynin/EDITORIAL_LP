@@ -113,6 +113,8 @@ function DetailsCard() {
           <div className={styles["checkout-container"]}>
             <h1 className={styles["checkout-total-label"]}> {productTitle}</h1>
             <p className={styles["checkout-autor"]}>{product?.autor || ""}</p>
+            <div>
+            <div className={styles["checkout-infoPrice"]}>
             <h2 id="price" className={styles["checkout-total-price"]}>
               S/.{price}
             </h2>
@@ -130,10 +132,12 @@ function DetailsCard() {
               <a href="https://wa.me/939613209" className={styles["cart-btn"]}>
                 COMPRA AQUÍ
               </a>
+              </div>
             </div>
 
+          </div>
             <ul className={styles["checkout-policy-list"]}>
-              <li>
+              <li className={styles["indice"]}>
                 <a className={styles["policy-icon"]} href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
