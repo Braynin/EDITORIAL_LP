@@ -34,7 +34,22 @@ function CreateCard({ option }: { option: Products }) {
           <p className={styles["product-title"]}>{option.nombreCard}</p>
           <span className={styles["brand"]}>{option.presentacion}</span>
           <div className={styles["product-price-block"]}>
-            <p className={styles["current-price"]}>S/.{option.precio}</p>
+            <div className={styles["prices"]}>
+              {Number(option.precioOferta) !== 0 && (
+                <h2 className={styles["price-offer"]}>
+                  S/.{option.precioOferta}
+                </h2>
+              )}
+              <h2
+                className={
+                  Number(option.precioOferta) !== 0
+                    ? styles["price-strikethrough"]
+                    : styles["price"]
+                }
+              >
+                S/.{option.precio}
+              </h2>
+            </div>
             <a
               className={styles["case-icon"]}
               href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}

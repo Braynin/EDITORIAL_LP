@@ -12,23 +12,6 @@
   border-radius: 25px;
   margin-bottom: 35px;
 }
-.breadcrumb {
-  margin: 0px 0px 20px 0px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.breadcrumb a {
-  color: #272727;
-  font-weight: 700;
-}
-.icon {
-  margin-top: 2px;
-}
 
 .banner-section {
   border-radius: 15px;

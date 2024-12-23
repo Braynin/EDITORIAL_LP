@@ -9,8 +9,6 @@ import {
 } from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
 import { arrayBannerSections } from "../assets/BannerSectionOption.ts";
-import { Link } from "react-router-dom";
-import { IconChevronRight } from "@tabler/icons-react";
 
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
@@ -166,10 +164,6 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
     if (filteredProducts.length <= 4) {
       return (
         <>
-          <div className={styles["breadcrumb"]}>
-            <Link to="/">Inicio</Link>
-            <IconChevronRight stroke={2} className={styles["icon"]} /> {section}
-          </div>
           <div className={styles["card-section"]}>
             <img
               className={styles["banner-section"]}
@@ -187,9 +181,6 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
     } else {
       return (
         <>
-          <div className={styles["breadcrumb"]}>
-            <Link to="/">Inicio</Link> <IconChevronRight stroke={2} /> {section}
-          </div>
           <div className={styles["card-section"]}>
             <img
               className={styles["banner-section"]}

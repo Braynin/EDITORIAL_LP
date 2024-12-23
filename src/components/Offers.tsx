@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
-import { OfferOption, offerOptions } from "../assets/OffersOptions.ts";
+import {
+  OfferOption,
+  offerOptions,
+  offerOptionsMobile,
+} from "../assets/OffersOptions.ts";
 import styles from "./Offers.module.css"; // Estilos del componente
 import {
   arraySeparators,
@@ -31,6 +35,8 @@ export default function Offers() {
     ? arraySeparatorsMobile.find((separator) => separator.section === "Ofertas")
     : arraySeparators.find((separator) => separator.section === "Ofertas");
 
+  const arrayOffers = isMobile ? offerOptionsMobile : offerOptions;
+
   // Renderizar el componente
 
   return (
@@ -44,13 +50,13 @@ export default function Offers() {
       )}
       <div className={styles["card-section"]}>
         <div className={styles["slider"]}>
-          {offerOptions.map((product: OfferOption) => (
+          {arrayOffers.map((product: OfferOption) => (
             <div className={styles["img-container"]}>
               <Link to={product.link}>
                 <img
                   src={product.imgUrl}
                   className={styles["offer-img"]}
-                  alt={"Ofertas ${product.id}"}
+                  alt={`Ofertas ${product.id}`}
                 />
               </Link>
             </div>

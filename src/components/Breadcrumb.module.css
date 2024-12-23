@@ -1,0 +1,28 @@
+.breadcrumb {
+  margin: 0px 0px 0px 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #6d6d6d;
+}
+.breadcrumb a {
+  color: #6d6d6d;
+  font-weight: 700;
+}
+.icon {
+  color: #6d6d6d;
+  margin-top: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .breadcrumb {
+    font-size: 10px;
+  }
+  .icon {
+    height: 15px;
+    padding-bottom: 3px;
+  }
+}

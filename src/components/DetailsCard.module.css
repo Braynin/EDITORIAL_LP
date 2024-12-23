@@ -10,7 +10,6 @@
 /* IMAGES */
 .product-images-block {
   display: flex;
-  
 }
 
 .product-images {
@@ -55,7 +54,6 @@
 }
 
 .product-images-block {
-  
   padding: 10px;
   margin: 10px 50px;
 }
@@ -64,32 +62,40 @@
 .product-checkout-block {
   flex-direction: column;
   max-width: 400px;
-  
 }
 
 .checkout-container {
- 
   margin: 60px 50px;
- 
-  
-  
 }
 
 .checkout-total-label {
   color: #2e2e2e;
-  font-weight:  bold;
+  font-weight: bold;
 }
-.checkout-autor{
+.checkout-autor {
   padding: 12px 0px;
   border-bottom: 1px solid #c2bbbb;
   color: #aaaaaa;
 }
 
-.checkout-total-price {
+.checkout-prices {
+  display: flex;
+}
+.checkout-total-price,
+.checkout-total-price-offer {
   color: #002d85;
   font-size: 40px;
   font-weight: 700;
   margin: 20px 0px;
+}
+
+.checkout-total-price-strikethrough {
+  color: #cc3333;
+  font-size: 20px;
+  align-content: center;
+  margin: 20px 0px;
+  text-decoration: line-through;
+  margin-left: 10px;
 }
 
 .checkout-description {
@@ -122,10 +128,9 @@
 .checkout-process {
   /* row-gap: 20px; */
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: flex-start;
   margin: 10px 0px;
-
 }
 
 .checkout-process .top {
@@ -143,18 +148,16 @@
   box-sizing: border-box;
 }
 
-
-
 .cart-btn {
   display: inline-block;
   text-align: center;
   align-content: center;
   margin: 0 5px;
   padding: 10px 40px;
-  background: #CC3333;
+  background: #cc3333;
   color: white;
   font-weight: bold;
-  
+
   height: 30px;
   border-radius: 10px;
 }
@@ -164,7 +167,7 @@
   color: white;
   border: none;
 }
-.indice{
+.indice {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -193,7 +196,7 @@
   margin-bottom: 20px;
   list-style-type: none; /* Elimina los puntos de la lista */
   padding: 0;
-  color: #2e2e2e ;
+  color: #2e2e2e;
 }
 
 .product-details {
@@ -218,14 +221,12 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px){
-  
+@media screen and (max-width: 768px) {
   .details-container {
     display: flex;
     flex-direction: column;
   }
   .big-img-container {
-   
     width: 100%; /* Ajusta según tu diseño */
     height: 100%;
     cursor: zoom-in;
@@ -233,12 +234,11 @@
   .product-images {
     padding-bottom: 0px;
   }
-  
+
   .product-images-checkout-block {
     display: flex;
     flex-direction: column;
-    align-items: center   ;
-    
+    align-items: center;
   }
   .product-checkout-block {
     width: 100%;
@@ -246,27 +246,26 @@
   .checkout-container {
     margin: 60px 20px;
   }
-  .checkout-autor{
+  .checkout-autor {
     text-align: center;
   }
-  .checkout-infoPrice{
+  .checkout-infoPrice {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
   }
   .checkout-total-price {
     color: #002d85;
     font-size: 40px;
   }
-  .checkout-process { 
+  .checkout-process {
     align-items: center;
   }
-  
+
   .cart-btn {
     margin: 0 5px;
-    padding: 10px 20px;  
+    padding: 10px 20px;
     border-radius: 10px;
   }
   .container-sipnosis-information {
@@ -275,5 +274,4 @@
     flex-direction: column;
     text-align: justify;
   }
- 
 }

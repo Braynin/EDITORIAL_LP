@@ -61,21 +61,26 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
-  gap: 100px;
+  width: 95%;
   margin-top: 10px;
 }
-
-.product-price-block .current-price {
-  font-size: 22px;
-  font-weight: bold;
+.prices {
+  display: flex;
+}
+.price-offer,
+.price {
   color: #002d85;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
-.product-price-block .old-price {
-  font-size: 14px;
-  font-weight: 400;
-  color: #aaa;
+.price-strikethrough {
+  color: #cc3333;
+  font-size: 15px;
+  align-content: center;
   text-decoration: line-through;
+  margin-left: 5px;
 }
 
 .product-info .icon {
