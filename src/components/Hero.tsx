@@ -16,6 +16,10 @@ export const Hero = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Estado para el ancho de la ventana
   const [images, setImages] = useState(heroOptions); // Estado para el array de imágenes
 
+  // Estados para manejar el deslizamiento táctil
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
+
   // Función para manejar el cambio de tamaño de la ventana
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -72,13 +76,34 @@ export const Hero = () => {
     setIsPaused(false);
   };
 
-  // Manejar pausa y reanudación para dispositivos táctiles
-  const handleTouchStart = () => {
-    setIsPaused(true);
+  // Manejar inicio del toque (guardar la posición inicial del toque)
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
   };
 
+  // Manejar movimiento táctil (guardar la posición final)
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  // Manejar fin del toque (determinar dirección del deslizamiento)
   const handleTouchEnd = () => {
-    setIsPaused(false);
+    if (touchStartX !== null && touchEndX !== null) {
+      const swipeDistance = touchStartX - touchEndX;
+
+      // Detectar si el deslizamiento fue significativo (umbral)
+      if (swipeDistance > 50) {
+        // Deslizamiento hacia la izquierda (siguiente)
+        scrollToImage("next");
+      } else if (swipeDistance < -50) {
+        // Deslizamiento hacia la derecha (anterior)
+        scrollToImage("prev");
+      }
+    }
+
+    // Reiniciar valores táctiles
+    setTouchStartX(null);
+    setTouchEndX(null);
   };
 
   return (
@@ -90,8 +115,6 @@ export const Hero = () => {
           onClick={() => scrollToImage("prev")}
           onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
           onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
-          onTouchStart={handleTouchStart} // Evento táctil para móviles
-          onTouchEnd={handleTouchEnd} // Evento táctil para móviles
           tabIndex={-1} // Desactivar foco
         >
           &#8249;
@@ -101,8 +124,6 @@ export const Hero = () => {
           onClick={() => scrollToImage("next")}
           onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
           onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
-          onTouchStart={handleTouchStart} // Evento táctil para móviles
-          onTouchEnd={handleTouchEnd} // Evento táctil para móviles
           tabIndex={-1} // Desactivar foco
         >
           &#8250;
@@ -120,10 +141,11 @@ export const Hero = () => {
                 <li key={item.id}>
                   <Link
                     to={item.link || "#"} // Enlace (por defecto # si no está definido)
+                    onTouchStart={handleTouchStart} // Detectar toque inicial
+                    onTouchMove={handleTouchMove} // Detectar movimiento del toque
+                    onTouchEnd={handleTouchEnd} // Detectar fin del toque
                     onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
                     onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
-                    onTouchStart={handleTouchStart} // Evento táctil para móviles
-                    onTouchEnd={handleTouchEnd} // Evento táctil para móviles
                   >
                     <img src={item.imgUrl} alt={`image-${item.id}`} />
                   </Link>

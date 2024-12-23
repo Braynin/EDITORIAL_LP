@@ -3,7 +3,10 @@ import { arrayProducts, Products } from "../assets/ProductsOptions.ts";
 import styles from "./SectionCards.module.css";
 import { Template } from "./Card.tsx";
 import normalizeText from "../assets/NormalizeText.ts";
-import { arraySeparators, arraySeparatorsMobile } from "../assets/SeparatorsOptions.ts";
+import {
+  arraySeparators,
+  arraySeparatorsMobile,
+} from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
 import { arrayBannerSections } from "../assets/BannerSectionOption.ts";
 import { Link } from "react-router-dom";
@@ -18,10 +21,21 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   const [startIndexes, setStartIndexes] = useState<Record<string, number>>({});
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
+  const [visibleProducts, setVisibleProducts] = useState(5);
+
+  // Actualizar las imágenes cuando el tamaño de la ventana cambia
+  useEffect(() => {
+    if (isMobile) {
+      setVisibleProducts(filteredProducts.length);
+    } else {
+      setVisibleProducts(5);
+    }
+  }, [isMobile]);
+
   // Detectar si la pantalla es menor a 768px
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Actualiza el estado si el ancho es menor a 768px
+      setIsMobile(window.innerWidth <= 768); // Actualiza el estado si el ancho es menor a 768px
     };
 
     // Ejecutar la función de tamaño en el montaje del componente
@@ -45,7 +59,6 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
     );
   };
 
-  const visibleProducts = 5; // Número de productos visibles a la vez
   const filteredProducts = sectionProducts(arrayProducts, section);
 
   // Función para manejar el desplazamiento
@@ -77,10 +90,12 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   // Busca el separador asociado con la sección actual
   const separator = isMobile
     ? arraySeparatorsMobile.find(
-        (separator) => normalizeText(separator.section) === normalizeText(section)
+        (separator) =>
+          normalizeText(separator.section) === normalizeText(section)
       )
     : arraySeparators.find(
-        (separator) => normalizeText(separator.section) === normalizeText(section)
+        (separator) =>
+          normalizeText(separator.section) === normalizeText(section)
       );
 
   // Verifica la URL actual para determinar el estado de la navegación
