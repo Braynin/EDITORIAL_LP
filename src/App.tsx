@@ -6,9 +6,9 @@ import Home from "./views/Home";
 import Details from "./views/Details.tsx";
 import SectionView from "./views/SectionView.tsx";
 import QuienesSomos from "./views/QuienesSomos.tsx";
-import Opiniones from "./views/Opiniones.tsx";
+
 import PreguntasFrecuentes from "./views/PreguntasFrecuentes.tsx";
-import CambiosYDevoluciones from "./views/CambiosYDevoluciones.tsx";
+
 import PoliticasDePrivacidad from "./views/PoliticasDePrivacidad.tsx";
 import PoliticasDeCookies from "./views/PoliticasDeCookies.tsx";
 import TerminosYCondiciones from "./views/TerminosYCondiciones.tsx";
@@ -34,9 +34,8 @@ function App() {
 
     // Rutas generadas a partir de tu array
     { path: "/quienes-somos", element: <QuienesSomos /> },
-    { path: "/opiniones-de-clientes", element: <Opiniones /> },
     { path: "/preguntas-frecuentes", element: <PreguntasFrecuentes /> },
-    { path: "/cambios-y-devoluciones", element: <CambiosYDevoluciones /> },
+    
     { path: "/politicas-de-privacidad", element: <PoliticasDePrivacidad /> },
     { path: "/politicas-de-cookies", element: <PoliticasDeCookies /> },
     { path: "/terminos-y-condiciones", element: <TerminosYCondiciones /> },
