@@ -267,26 +267,7 @@ const product8 = new Products(
   "16cm",
   "Litigación Oral Civil"
 );
-const product9 = new Products(
-  "9",
-  "Colección ¿Cómo redactar un contrato? Notas desde la práctica",
-  "140",
-  "",
-  ["public/COLECCION - COMO REDACTAR UN CONTRATO.webp"],
 
-  "Civil",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
-  "978-61249574-8-2",
-  "Jhoel Chipana Catalán",
-  "Editorial LP",
-  "2024",
-  "238",
-  "Colección",
-  "1kg",
-  "20cm",
-  "13cm",
-  "¿Cómo redactar un contrato?"
-);
 const product10 = new Products(
   "10",
   "Culpabilidad y Neurociencias",
@@ -660,7 +641,6 @@ export const arrayProducts: Products[] = [
   product6,
   product7,
   product8,
-  product9,
   product10,
   product11,
   product12,
