@@ -5,9 +5,13 @@ const QuienesSomos = () => {
   return (
     <Layout>
       <div className={styles["quienes-somos-container"]}>
-        <h1 className={styles["titulo-principal"]}>Quiénes Somos</h1>
+        <div className={styles["titulo-principal"]}>
+          <img  className={styles["img-quienesSomos"]} src="public/QUIENES SOMOS BANNER.png" alt="Quienes Somos"  />
+        </div>
         <div className={styles["mision-container"]}>
-          <div className={styles["imagen-container"]}></div>
+          <div className={styles["imagen-container"]}>
+            <img className={styles["img-mision"]} src="public/METAS-ICON_WEB.png"  alt="Misión" />
+          </div>
           <div className={styles["text-container"]}>
             <h2 className={styles["titulo"]}>Misión</h2>
             <p className={styles["texto"]}>
@@ -18,7 +22,9 @@ const QuienesSomos = () => {
           </div>
         </div>
         <div className={styles["vision-container"]}>
-          <div className={styles["imagen-container"]}></div>
+          <div className={styles["imagen-container"]}>
+            <img className={styles["img-vision"]} src="public/VISIÓN-ICON_WEB.png" alt="Visión" />
+          </div>
           <div className={styles["text-container"]}>
             <h2 className={styles["titulo"]}>Visión</h2>
             <p className={styles["texto"]}>

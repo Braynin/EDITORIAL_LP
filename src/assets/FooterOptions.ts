@@ -37,9 +37,7 @@ const footerOption1 = new FooterOption(
 );
 const footerOption2 = new FooterOption(
   "Servicio al cliente",
-  ["Opiniones de clientes", "/opiniones-de-clientes"],
   ["Preguntas Frecuentes", "/preguntas-frecuentes"],
-  ["Cambios y Devoluciones", "/cambios-y-devoluciones"]
 );
 const footerOption3 = new FooterOption(
   "Política",
