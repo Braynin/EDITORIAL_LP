@@ -4,11 +4,24 @@ import arrayNavOptions from "../assets/NavOptions.js";
 import CardsSection from "./SectionCards";
 import { AdsOptions } from "../assets/HeroOptions.js";
 import { Link } from "react-router-dom";
+import { AdsMobileOptions } from "../assets/HeroOptions.js";
+import { useState, useEffect } from "react";
 interface ProductsCardProps {
   section: string;
 }
 
 const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const AdsOpt = isMobile ? AdsMobileOptions : AdsOptions;
+
   if (section === "") {
     let imageIndex = 0;
     return (
@@ -17,10 +30,10 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
           const shouldShowImage = (index + 1) % 2 === 0;
           let image = "";
           if (shouldShowImage) {
-            const heroOption = AdsOptions[imageIndex];
+            const heroOption = AdsOpt[imageIndex];
             image = heroOption.imgUrl;
             imageIndex++;
-            if (imageIndex >= AdsOptions.length) {
+            if (imageIndex >= AdsOpt.length) {
               imageIndex = 0;
             }
           }
@@ -29,7 +42,7 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
               <CardsSection section={option.text} />
               {shouldShowImage && (
                 <div className={styles["image-container"]}>
-                  <Link to={AdsOptions[imageIndex - 1].link}>
+                  <Link to={AdsOpt[imageIndex - 1].link}>
                     <img
                       src={image}
                       alt={`Ads ${imageIndex}`}

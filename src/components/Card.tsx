@@ -52,6 +52,7 @@ function CreateCard({ option }: { option: Products }) {
             </div>
             <a
               className={styles["case-icon"]}
+              title="A COMPRAR!!"
               href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}
               target="_blank"
               rel="noopener noreferrer"

@@ -1,12 +1,15 @@
 import Layout from "../components/Layout";
 import styles from "./OffersView.module.css";
+import { Link } from "react-router-dom";
+import { offerOptions, OfferOption } from "../assets/OffersOptions";
+import Breadcrumb from "../components/Breadcrumb";
 
 const OffersView = () => {
   return (
-    <Layout>
-      <div className={styles.offers}>
-        <div className={styles["offers-container"]}>
-          {/* Banner principal con imagen */}
+    <>
+      <Layout>
+        <Breadcrumb section="Ofertas" />
+        <div className={styles.offers}>
           <div className={styles["offers-banner"]}>
             <img
               className={styles["offers-img"]}
@@ -14,17 +17,24 @@ const OffersView = () => {
               alt="Ofertas"
             />
           </div>
-        </div>
 
-        {/* Contenedor para los banners de colores */}
-        <div className={styles["offers-placeholder-container"]}>
-          <div className={`${styles["offers-banner"]} ${styles["placeholder-banner"]} ${styles["color-1"]}`}></div>
-          <div className={`${styles["offers-banner"]} ${styles["placeholder-banner"]} ${styles["color-2"]}`}></div>
-          <div className={`${styles["offers-banner"]} ${styles["placeholder-banner"]} ${styles["color-3"]}`}></div>
-          <div className={`${styles["offers-banner"]} ${styles["placeholder-banner"]} ${styles["color-4"]}`}></div>
+          {/* Contenedor para los banners de colores */}
+          <div className={styles["offers-placeholder-container"]}>
+            {offerOptions.map((product: OfferOption) => (
+              <div className={styles["img-container"]}>
+                <Link to={product.link}>
+                  <img
+                    src={product.imgUrl}
+                    className={styles["offer-img"]}
+                    alt={`Ofertas ${product.id}`}
+                  />
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

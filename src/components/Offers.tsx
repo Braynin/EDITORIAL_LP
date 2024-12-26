@@ -17,16 +17,10 @@ export default function Offers() {
   // Detectar si la pantalla es menor a 768px
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Actualiza el estado si el ancho es menor a 768px
+      setIsMobile(window.innerWidth < 768);
     };
-
-    // Ejecutar la función de tamaño en el montaje del componente
     handleResize();
-
-    // Agregar el event listener para el cambio de tamaño
     window.addEventListener("resize", handleResize);
-
-    // Limpiar el event listener cuando el componente se desmonte
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
