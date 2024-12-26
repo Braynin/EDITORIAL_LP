@@ -19,6 +19,7 @@ export class Products {
   ancho: string;
   private _supplier: string;
   nombreCard: string;
+  indice: string;
   constructor(
     id: string,
     nombre: string,
@@ -37,7 +38,8 @@ export class Products {
     peso: string,
     alto: string,
     ancho: string,
-    nombreCard: string
+    nombreCard: string,
+    indice: string
   ) {
     this.id = id;
     this.nombre = nombre;
@@ -58,6 +60,7 @@ export class Products {
     this.ancho = ancho;
     this._supplier = ""; // Inicialización por defecto
     this.nombreCard = nombreCard;
+    this.indice = indice;
   }
   get supplier(): string {
     return this._supplier;
@@ -92,7 +95,8 @@ const product1 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-  "Código Penal"
+  "Código Penal",
+  "public/INDICES/INDICE-Código Penal índice.pdf"
 );
 const product2 = new Products(
   "2",
@@ -117,7 +121,8 @@ const product2 = new Products(
   "1.3kg",
   "21cm",
   "16cm",
-  "Código Penal"
+  "Código Penal",
+  "public/INDICES/INDICE-Código Penal índice.pdf"
 );
 const product3 = new Products(
   "3",
@@ -142,7 +147,8 @@ const product3 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-  "Código Civil"
+  "Código Civil",
+  "public/INDICES/INDICE CODIGO CIVIL ACTUALIZADO.pdf"
 );
 const product4 = new Products(
   "4",
@@ -167,7 +173,8 @@ const product4 = new Products(
   "1.4kg",
   "21cm",
   "16cm",
-  "Código Civil"
+  "Código Civil",
+  "public/INDICES/INDICE CODIGO CIVIL ACTUALIZADO.pdf"
 );
 const product5 = new Products(
   "5",
@@ -192,7 +199,8 @@ const product5 = new Products(
   "1.6kg",
   "25cm",
   "17cm",
-  "Detención policial"
+  "Detención policial",
+  "public/INDICES/INDICE DETENCIÓN POLICIAL EN FLAGRANCIA Y PROCESO INMEDIATO.pdf"
 );
 const product6 = new Products(
   "6",
@@ -216,7 +224,8 @@ const product6 = new Products(
   "0.8kg",
   "18cm",
   "11cm",
-  "Mini Código penal"
+  "Mini Código penal",
+  "public/INDICES/INDICE-MINI CODIGO.pdf"
 );
 const product7 = new Products(
   "7",
@@ -240,7 +249,8 @@ const product7 = new Products(
   "1kg",
   "23cm",
   "16cm",
-  "El Defensor 2"
+  "El Defensor 2",
+  "public/INDICES/INDICE-El defensor 2.pdf"
 );
 const product8 = new Products(
   "8",
@@ -265,7 +275,8 @@ const product8 = new Products(
   "0.50kg",
   "24cm",
   "16cm",
-  "Litigación Oral Civil"
+  "Litigación Oral Civil",
+  "public/INDICES/INDICE LITIGACIÓN ORAL CIVIL.pdf"
 );
 
 const product10 = new Products(
@@ -292,7 +303,8 @@ const product10 = new Products(
   "0.60kg",
   "24cm",
   "17cm",
-  "Culpabilidad y Neurociencias"
+  "Culpabilidad y Neurociencias",
+  ""
 );
 const product11 = new Products(
   "11",
@@ -317,7 +329,8 @@ const product11 = new Products(
   "0.40kg",
   "23cm",
   "15cm",
-  "Derecho del Consumidor"
+  "Derecho del Consumidor",
+  "public/INDICES/INDICE DERECHO DEL CONSUMIDOR.pdf"
 );
 const product12 = new Products(
   "12",
@@ -343,7 +356,8 @@ const product12 = new Products(
   "0.40kg",
   "23cm",
   "15cm",
-  "PAD"
+  "PAD",
+  "public/INDICES/INDICE-PAD.pdf"
 );
 const product13 = new Products(
   "13",
@@ -368,7 +382,8 @@ const product13 = new Products(
   "0.80kg",
   "23cm",
   "15cm",
-  "La Constitución en las redes"
+  "La Constitución en las redes",
+  "public/INDICES/INDICE-CONSTITUCION EN LAS REDES.pdf"
 );
 const product14 = new Products(
   "14",
@@ -398,7 +413,8 @@ const product14 = new Products(
   "1kg",
   "20cm",
   "15cm",
-  "Litigación Oral en audiencias previas"
+  "Litigación Oral en audiencias previas",
+  "public/INDICES/ÍNDICE AUDIENCIA DE CONTROL DE PLAZO.zip"
 );
 const product15 = new Products(
   "15",
@@ -424,7 +440,8 @@ const product15 = new Products(
   "1kg",
   "20cm",
   "15cm",
-  "Litigación Oral en audiencias previas"
+  "Litigación Oral en audiencias previas",
+  "public/INDICES/ÍNDICE AUDIENCIA DE CONTROL DE PLAZO.zip"
 );
 const product16 = new Products(
   "16",
@@ -448,7 +465,8 @@ const product16 = new Products(
   "0.6kg",
   "24cm",
   "16cm",
-  "Cod. Procesal Constitucional"
+  "Cod. Procesal Constitucional",
+  "public/INDICES/INDICE-Nuevo código Procesal constitucional _Roel Alva_índice.pdf"
 );
 const product17 = new Products(
   "17",
@@ -473,7 +491,8 @@ const product17 = new Products(
   "0.65kg",
   "24cm",
   "15cm",
-  "Redacción Administrativa"
+  "Redacción Administrativa",
+  "public/INDICES/INDICE CURSO REDACCIÓN ADMINISTRATIVO.pdf"
 );
 const product18 = new Products(
   "18",
@@ -500,7 +519,8 @@ const product18 = new Products(
   "1.15kg",
   "24cm",
   "17cm",
-  "Derecho penal: parte general"
+  "Derecho penal: parte general",
+  "public/INDICES/INDICE DERECHO PENAL PARTE GENERAL.pdf"
 );
 const product19 = new Products(
   "19",
@@ -525,7 +545,8 @@ const product19 = new Products(
   "0.55kg",
   "23cm",
   "15cm",
-  "Mi primer juicio de familia"
+  "Mi primer juicio de familia",
+  "public/INDICES/INDICE MI PRIMER JUICIO DE FAMILIA.pdf"
 );
 const product20 = new Products(
   "20",
@@ -550,7 +571,8 @@ const product20 = new Products(
   "0.8kg",
   "21cm",
   "16cm",
-  "El Defensor"
+  "El Defensor",
+  "public/INDICES/INDICE EL DEFENSOR.pdf"
 );
 const product21 = new Products(
   "21",
@@ -576,7 +598,8 @@ const product21 = new Products(
   "1kg",
   "24cm",
   "17cm",
-  "El derecho a la prueba"
+  "El derecho a la prueba",
+  ""
 );
 const product22 = new Products(
   "22",
@@ -601,7 +624,8 @@ const product22 = new Products(
   "0.2kg",
   "20cm",
   "14cm",
-  "La fe se da no se vende"
+  "La fe se da no se vende",
+  "public/INDICES/INDICE-La fe se da no se vende_indice.pdf"
 );
 
 const product23 = new Products(
@@ -628,7 +652,8 @@ const product23 = new Products(
   "1.3kg",
   "21cm",
   "16cm",
-  "Código Penal y Código Civil"
+  "Código Penal y Código Civil",
+  "public/INDICES/INDICE-CP Y CC.zip"
 );
 
 const product24 = new Products(
@@ -641,7 +666,6 @@ const product24 = new Products(
     "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_BACK-IZQUIERDA.png",
     "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_FRONT-IZQUIERDA.png",
     "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_FRONT-DERECHA.png",
-    
   ],
 
   "Penal",
@@ -655,7 +679,8 @@ const product24 = new Products(
   "1kg",
   "20cm",
   "12cm",
-  "Fernández Sessarego"
+  "Fernández Sessarego",
+  "public/INDICES/INDICE-Fernandez Sessarego_INDICE.pdf"
 );
 /*Array*/
 
@@ -682,5 +707,5 @@ export const arrayProducts: Products[] = [
   product21,
   product22,
   product23,
-  product24
+  product24,
 ];

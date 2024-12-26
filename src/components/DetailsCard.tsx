@@ -169,7 +169,7 @@ function DetailsCard() {
               </div>
               <ul className={styles["checkout-policy-list"]}>
                 <li className={styles["indice"]}>
-                  <a className={styles["policy-icon"]} href="#">
+                  <a className={styles["policy-icon"]} href={product?.indice} target="_blank" rel="noopener noreferrer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
