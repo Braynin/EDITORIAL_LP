@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./ButtonWhatsapp.module.css";
 
 const ButtonWhatsapp: React.FC = () => {
+  const mensaje =
+    "Hola, visite su página y quiero obtener mayor información sobre sus libros";
+  const mensajeCodificado = encodeURIComponent(mensaje);
   const handleClick = () => {
-    window.open("https://wa.me/939613209", "_blank"); 
+    window.open(`https://wa.me/939613209?text=${mensajeCodificado}`, "_blank");
   };
 
   return (
-    
-
     <div className={styles.whatsappButton} onClick={handleClick}>
       <svg
         version="1.1"
@@ -68,7 +69,6 @@ const ButtonWhatsapp: React.FC = () => {
         </g>
       </svg>
     </div>
-   
   );
 };
 
