@@ -23,7 +23,7 @@ export const heroOptions: HeroOption[] = [
   {
     id: 4,
     imgUrl: "../public/BANNERS/BANNERS-WEB_FERNANDEZ-SESSAREGO.png",
-    link: "#",
+    link: "/details?id=24",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const AdsOptions: HeroOption[] = [
   {
     id: 2,
     imgUrl: "../public/BANNERS/BANNERS-WEB_FERNANDEZ-SESSAREGO.png",
-    link: "#",
+    link: "/details?id=24",
   },
   {
     id: 3,
