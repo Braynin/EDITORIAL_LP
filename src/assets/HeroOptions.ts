@@ -33,7 +33,7 @@ export const heroOptions: HeroOption[] = [
   {
     id: 6,
     imgUrl: "../public/BANNERS/BANNERS WEB_LA FÉ SE DA NO SE VENDE.png",
-    link: "/details?id=8",
+    link: "/details?id=22",
   },
 ];
 export const AdsOptions: HeroOption[] = [

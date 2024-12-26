@@ -10,7 +10,7 @@
         <div className={styles["footer-container"]}>
         <div className={styles["footer-section"]}>
           <a className={styles["logo-container"]} href="">
-          <img src="./public/logolp.webp" alt="lp" className={styles["logo-footer"]} />
+          <img src="public/LOGO EDITORIAL - ROJO.png" alt="lp" className={styles["logo-footer"]} />
           </a>
             
             <p className={styles["footer-text"]}>Visítanos en nuestras redes</p>
