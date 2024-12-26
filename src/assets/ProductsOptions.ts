@@ -147,7 +147,7 @@ const product3 = new Products(
 const product4 = new Products(
   "4",
   "Código Civil ",
-  "75",
+  "50",
   "",
   [
     "public/CÓDIGO CIVIL/TAPA RUSTICA/CODIGO-CIVIL-CENITAL-RUSTICA.png",
@@ -630,6 +630,33 @@ const product23 = new Products(
   "16cm",
   "Código Penal y Código Civil"
 );
+
+const product24 = new Products(
+  "24",
+  "Fernández Sessarego. La vocación por la libertad",
+  "80",
+  "",
+  [
+    "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_CENITAL.png",
+    "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_BACK-IZQUIERDA.png",
+    "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_FRONT-IZQUIERDA.png",
+    "public/FERNÁNDEZ SESSAREGO LA VOCACIÓN POR LA LIBERTAD/FERNÁNDEZ-SESSAREGO-LA-VOCACIÓN-POR-LA-LIBERTAD_FRONT-DERECHA.png",
+    
+  ],
+
+  "Penal",
+  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "978-612-49720-6-5",
+  "Carlos Calderón Puertas ",
+  "Editorial LP",
+  "2024",
+  "366",
+  "Tapa Rústica",
+  "1kg",
+  "20cm",
+  "12cm",
+  "Fernández Sessarego"
+);
 /*Array*/
 
 export const arrayProducts: Products[] = [
@@ -655,4 +682,5 @@ export const arrayProducts: Products[] = [
   product21,
   product22,
   product23,
+  product24
 ];
