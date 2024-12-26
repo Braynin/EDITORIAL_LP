@@ -8,7 +8,7 @@ interface TemplateProps {
   array: Products[];
 }
 const whatsapp = "939613209";
-const mensaje = "Hola, quiero comprar este libro:";
+const mensaje = "Hola, visite su pagina y quiero comprar este libro: ";
 const mensajeCodificado = encodeURIComponent(mensaje);
 function CreateCard({ option }: { option: Products }) {
   // Aquí estamos creando el mensaje completo con el nombre del producto
