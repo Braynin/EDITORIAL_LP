@@ -98,4 +98,17 @@
   .offers-container {
     padding: 20px 0px;
   }
+  
+  .img-container {
+    width: 100%;
+    
+    margin: 10px 5px;
+  }
+
+
+.slider {
+  display: flex;
+  flex-direction: column;
+ margin: 10px;
+}
 }

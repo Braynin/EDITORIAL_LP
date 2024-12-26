@@ -18,7 +18,7 @@ const SocialLink1: SocialLink = {
 };
 const SocialLink2: SocialLink = {
   name: "Facebook",
-  linkto: "https://www.facebook.com/lpderecho",
+  linkto: "https://www.facebook.com/lpeditores/",
   svg: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const SocialLink5: SocialLink = {
 
 const SocialLink6: SocialLink = {
   name: "YouTube",
-  linkto: "#",
+  linkto: "https://www.youtube.com/@LPDerecho_",
   svg: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
