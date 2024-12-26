@@ -12,8 +12,11 @@ const SearchResults = () => {
   const query = queryParams.get("q") || "";
 
   // Filtra los productos usando el query
-  const filteredProducts = arrayProducts.filter((product) =>
-    normalizeText(product.nombre).includes(normalizeText(query))
+  const filteredProducts = arrayProducts.filter(
+    (product) =>
+      normalizeText(product.nombre).includes(normalizeText(query)) ||
+      normalizeText(product.autor).includes(normalizeText(query)) ||
+      normalizeText(product.section).includes(normalizeText(query))
   );
   return (
     <>
@@ -25,7 +28,7 @@ const SearchResults = () => {
           {filteredProducts.length > 0 ? (
             <Cards array={filteredProducts} />
           ) : (
-            <p>No se encontraron productos con ese nombre.</p>
+            <p>No se encontraron productos, intenta otra búsqueda.</p>
           )}
         </div>
       </Layout>

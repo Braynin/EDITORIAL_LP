@@ -14,17 +14,18 @@ const SearchBar = () => {
     setMenuOpen(!menuOpen); // Alterna el estado de apertura del menú
   };
   const handleSearch = (searchText: string) => {
-    const filtered = arrayProducts.filter((product) =>
-      normalizeText(product.nombre).includes(normalizeText(searchText)) ||
-      normalizeText(product.autor).includes(normalizeText(searchText)) ||
-      normalizeText(product.section).includes(normalizeText(searchText))
+    const filtered = arrayProducts.filter(
+      (product) =>
+        normalizeText(product.nombre).includes(normalizeText(searchText)) ||
+        normalizeText(product.autor).includes(normalizeText(searchText)) ||
+        normalizeText(product.section).includes(normalizeText(searchText))
     );
 
     if (filtered.length === 0) {
       Swal.fire({
         icon: "warning",
         title: "Producto no encontrado",
-        text: "No se encontraron productos con ese nombre. Intenta otra búsqueda.",
+        text: "No se encontraron productos . Intenta otra búsqueda.",
         confirmButtonText: "Aceptar",
         confirmButtonColor: "#3085d6",
       });

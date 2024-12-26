@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "../components/Layout.tsx";
 import MainDetails from "../components/MainDetails.tsx";
+import Catalogos from "../components/CatalogoBtn.tsx";
 
 function Details() {
   const { id } = useParams(); // Obtiene el id de la ruta
@@ -15,6 +16,7 @@ function Details() {
     <>
       <Layout>
         <MainDetails />
+        <Catalogos />
       </Layout>
     </>
   );

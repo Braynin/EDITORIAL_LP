@@ -11,7 +11,7 @@
 .img-quienesSomos {
   width: 100%;
   background-size: cover;
-  margin: 10px 0px 30px 10px;
+  margin: 10px 0px 30px 0px;
 }
 
 /* Contenedores de Misión y Visión: display flex con flex-direction column */
@@ -23,14 +23,14 @@
   align-content: center;
   margin-bottom: 40px;
   width: 100%;
-  max-width: 800px;
+  max-width: 880px;
 }
 
 .imagen-container {
   width: 100%;
   height: 300px; /* Tamaño de las imágenes más grandes que el texto */
 
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .img-mision {
@@ -40,7 +40,7 @@
 .img-vision {
   height: 100%;
   object-fit: contain;
-  margin-right: 93px;
+  margin-right: 85px;
 }
 
 .text-container {
@@ -56,16 +56,18 @@
 }
 
 .texto {
-  text-align: justify; /* Justificar el texto */
-  margin: 0;
+  text-align: left;
+  margin: 0px;
   font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 768px) {
   .mision-container,
   .vision-container {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    width: 90%;
+    margin-top: 20px;
   }
   .img-quienesSomos {
     width: 100%;
@@ -73,17 +75,24 @@
     background-repeat: no-repeat;
     margin: 0px;
   }
-  .img-mision,
-  .img-vision {
-    width: 100%;
-    height: 150px;
+  .img-mision {
+    height: 100%;
     object-fit: contain;
+    margin-left: 7px;
   }
-
+  .img-vision {
+    height: 100%;
+    object-fit: contain;
+    margin-right: 35px;
+  }
   .imagen-container {
     width: 100%;
     height: 150px; /* Tamaño de las imágenes más grandes que el texto */
+  }
 
-    margin-bottom: 20px;
+  .texto {
+    text-align: left;
+    letter-spacing: 0.3px;
+    font-size: 15px;
   }
 }

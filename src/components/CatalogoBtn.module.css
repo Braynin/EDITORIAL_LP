@@ -1,0 +1,22 @@
+.catalogos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.btn-catalogo {
+  display: flex;
+  justify-content: center;
+  border: none; /* Sin borde */
+  border-radius: 15px; /* Bordes redondeados */
+  cursor: pointer; /* El cursor cambia a pointer cuando pasa por encima */
+  width: 500px; /* El botón ocupa todo el ancho disponible */
+}
+@media screen and (max-width: 768px) {
+  .catalogos {
+    display: none;
+  }
+}

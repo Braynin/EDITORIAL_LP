@@ -3,7 +3,7 @@ import styles from "./OffersView.module.css";
 import { Link } from "react-router-dom";
 import { offerOptions, OfferOption } from "../assets/OffersOptions";
 import Breadcrumb from "../components/Breadcrumb";
-
+import Catalogos from "../components/CatalogoBtn.tsx";
 const OffersView = () => {
   return (
     <>
@@ -33,6 +33,7 @@ const OffersView = () => {
             ))}
           </div>
         </div>
+        <Catalogos />
       </Layout>
     </>
   );
