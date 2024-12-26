@@ -604,7 +604,7 @@ const product21 = new Products(
 const product22 = new Products(
   "22",
   "La fe se da no se vende",
-  "130",
+  "45",
   "",
   [
     "public/LA FE SE DA NO SE VENDE/LA-FE-SE-DA-NO-SE-VENDE_CENITAL.png",

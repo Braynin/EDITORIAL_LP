@@ -9,12 +9,16 @@ interface TemplateProps {
 }
 const whatsapp = "939613209";
 const mensaje = "Hola, visite su pagina y quiero comprar este libro: ";
-const mensajeCodificado = encodeURIComponent(mensaje);
+
 function CreateCard({ option }: { option: Products }) {
-  // Aquí estamos creando el mensaje completo con el nombre del producto
-  const mensajeCompleto = `${mensajeCodificado}${encodeURIComponent(
-    option.nombre
-  )}`;
+   // Codificar el nombre y la presentación por separado antes de construir el mensaje
+   const nombreCodificado = encodeURIComponent(option.nombre);
+   const presentacionCodificada = encodeURIComponent(option.presentacion || "No disponible");
+ 
+   // Construir el mensaje completo con los valores codificados
+   const mensajeCompleto = `${mensaje}${nombreCodificado}%0A ${presentacionCodificada}`;
+
+
   // Función para prevenir la acción de redirección cuando se hace clic en el ícono de WhatsApp
   const handleWhatsAppClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
