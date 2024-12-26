@@ -15,7 +15,9 @@ const SearchBar = () => {
   };
   const handleSearch = (searchText: string) => {
     const filtered = arrayProducts.filter((product) =>
-      normalizeText(product.nombre).includes(normalizeText(searchText))
+      normalizeText(product.nombre).includes(normalizeText(searchText)) ||
+      normalizeText(product.autor).includes(normalizeText(searchText)) ||
+      normalizeText(product.section).includes(normalizeText(searchText))
     );
 
     if (filtered.length === 0) {

@@ -9,7 +9,7 @@ const ButtonWhatsapp: React.FC = () => {
   return (
     
 
-    <div className={styles.whatsappButton} onClick={handleClick}>
+    <div className={styles.whatsappButton} onClick={handleClick} >
       <svg
         version="1.1"
         id="Capa_1"
