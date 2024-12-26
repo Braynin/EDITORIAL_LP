@@ -71,7 +71,7 @@
 }
 
 /* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .leftArrow,
   .rightArrow {
     display: none;
@@ -88,7 +88,7 @@
     height: 200px; /* Ajusta la altura según sea necesario */
     border-radius: 0px; /* Opcional */
   }
-  .banner-section img{
+  .banner-section img {
     max-width: 100%;
     max-height: 100%;
   }

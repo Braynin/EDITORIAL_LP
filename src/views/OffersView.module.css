@@ -1,77 +1,68 @@
 /* Contenedor principal */
 .offers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9; /* Fondo claro para destacar */
-    flex-direction: column; /* Asegura que la imagen esté encima y los otros banners debajo */
-    
+  margin: auto;
+  max-width: 1445px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro para destacar */
+  flex-direction: column; /* Asegura que la imagen esté encima y los otros banners debajo */
+}
+
+/* Contenedor para la imagen de oferta */
+
+/* Banner de oferta principal */
+.offers-banner {
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Imagen dentro del banner */
+.offers-img {
+  width: 100%;
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+  /* Asegura que la imagen mantenga proporciones */
+}
+
+/* Contenedor de los banners placeholder */
+.offers-placeholder-container {
+  width: 70%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.img-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-img {
+  width: 100%;
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+  object-fit: hide; /* Asegura que la imagen mantenga proporciones */
+}
+@media screen and (max-width: 768px) {
+  .offers {
+    padding: 20px 0px;
   }
-  
-  /* Contenedor para la imagen de oferta */
-  .offers-container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Banner de oferta principal */
   .offers-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Oculta los bordes sobrantes */
-    border-radius: 15px; /* Bordes redondeados */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
-    
+    border-radius: 0px;
   }
-  
-  /* Imagen dentro del banner */
   .offers-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px; /* Bordes redondeados para la imagen */
-    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
-  }
-  
-  /* Contenedor de los banners placeholder */
-  .offers-placeholder-container {
-    display: grid; /* Usamos grid para organizar los banners */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* Espacio entre los banners */
-    margin-top: 20px;
-  }
-  
-  /* Banners de marcador */
-  .placeholder-banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff; /* Texto blanco */
-    height: 200px; /* Altura fija para consistencia */
-    border-radius: 15px; /* Bordes redondeados */
+    width: 100%;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    border-radius: 0px; /* Opcional */
   }
-  
-  /* Colores temporales */
-  .color-1 {
-    background-color: #ff5733; /* Naranja */
-  }
-  
-  .color-2 {
-    background-color: #33b5e5; /* Azul claro */
-  }
-  
-  .color-3 {
-    background-color: #2ecc71; /* Verde */
-  }
-  
-  .color-4 {
-    background-color: #f1c40f; /* Amarillo */
-  }
-  
+}

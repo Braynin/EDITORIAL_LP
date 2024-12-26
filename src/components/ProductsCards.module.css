@@ -30,10 +30,12 @@
   border-radius: 8px;
 }
 
-
 /* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .products-container {
     padding: 20px 0px;
+  }
+  .Ads-img {
+    border-radius: 0px;
   }
 }
