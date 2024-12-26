@@ -3,6 +3,7 @@ import styles from "./ProductsCards.module.css";
 import arrayNavOptions from "../assets/NavOptions.js";
 import CardsSection from "./SectionCards";
 import { AdsOptions } from "../assets/HeroOptions.js";
+import { Link } from "react-router-dom";
 interface ProductsCardProps {
   section: string;
 }
@@ -28,11 +29,13 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
               <CardsSection section={option.text} />
               {shouldShowImage && (
                 <div className={styles["image-container"]}>
-                  <img
-                    src={image}
-                    alt={`Ads ${imageIndex + 1}`}
-                    className={styles["Ads-img"]}
-                  />
+                  <Link to={AdsOptions[imageIndex - 1].link}>
+                    <img
+                      src={image}
+                      alt={`Ads ${imageIndex}`}
+                      className={styles["Ads-img"]}
+                    />
+                  </Link>
                 </div>
               )}
             </React.Fragment>

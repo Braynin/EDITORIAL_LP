@@ -159,6 +159,8 @@ function DetailsCard() {
                     <a
                       href="https://wa.me/939613209"
                       className={styles["cart-btn"]}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       COMPRA AQUÍ
                     </a>

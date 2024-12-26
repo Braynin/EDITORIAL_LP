@@ -251,13 +251,13 @@
   }
   .checkout-infoPrice {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+
     justify-content: space-between;
   }
   .checkout-total-price {
     color: #002d85;
-    font-size: 30px;
+    font-size: 35px;
   }
   .checkout-process {
     align-items: center;
@@ -275,7 +275,14 @@
     flex-direction: column;
     text-align: justify;
   }
+  .checkout-total-price-strikethrough {
+    font-size: 15px;
+  }
+  .checkout-prices {
+    display: flex;
+  }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .details-container {
     display: flex;

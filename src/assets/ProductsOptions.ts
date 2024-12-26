@@ -147,7 +147,7 @@ const product3 = new Products(
 const product4 = new Products(
   "4",
   "Código Civil ",
-  "75",
+  "50",
   "",
   [
     "public/CÓDIGO CIVIL/TAPA RUSTICA/CODIGO-CIVIL-CENITAL-RUSTICA.png",

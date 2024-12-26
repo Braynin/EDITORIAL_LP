@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: flex-start;
   color: #6d6d6d;
+  text-decoration: none;
+  margin-left: 5%;
 }
 .breadcrumb a {
   color: #6d6d6d;
@@ -19,7 +21,7 @@
 }
 @media screen and (max-width: 1024px) {
   .breadcrumb {
-    font-size: 10px;
+    margin-left: 20px;
   }
   .icon {
     height: 15px;

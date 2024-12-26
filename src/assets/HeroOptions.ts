@@ -38,22 +38,22 @@ export const heroOptions: HeroOption[] = [
 ];
 export const AdsOptions: HeroOption[] = [
   {
-    id: 3,
+    id: 1,
     imgUrl: "../public/BANNERS/BANNERS-WEB_EL-DEFENSOR-2.png",
     link: "/details?id=7",
   },
   {
-    id: 4,
+    id: 2,
     imgUrl: "../public/BANNERS/BANNERS-WEB_FERNANDEZ-SESSAREGO.png",
     link: "#",
   },
   {
-    id: 5,
+    id: 3,
     imgUrl: "../public/BANNERS/BANNERS-WEB_LITIGACION-ORAL.png",
     link: "/details?id=8",
   },
   {
-    id: 6,
+    id: 4,
     imgUrl: "../public/BANNERS/BANNERS WEB_LA FÉ SE DA NO SE VENDE.png",
     link: "/details?id=8",
   },

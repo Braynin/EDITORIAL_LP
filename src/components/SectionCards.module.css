@@ -71,7 +71,7 @@
 }
 
 /* Media query para pantallas móviles (menos de 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .leftArrow,
   .rightArrow {
     display: none;
