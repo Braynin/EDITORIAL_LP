@@ -85,7 +85,7 @@ const product1 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vid transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Este libro ofrece una recopilación exhaustiva y actualizada del Código Penal, integrando tanto las normas vigentes como la jurisprudencia relevante en el ámbito penal. A diferencia de los códigos tradicionales, que solo incluyen textos legislativos, este compendio incluye decisiones jurisprudenciales nacionales e internacionales que complementan y concretan la ley. Se seleccionan solo aquellos pronunciamientos que llenan vacíos legales, interpretan figuras jurídicas o crean doctrina, con el fin de ofrecer una herramienta útil y funcional. Además, se incorporan enlaces y códigos QR para facilitar la consulta y mantener al lector actualizado con los últimos fallos.",
   "978-61249574-6-8",
   "LP",
   "Editorial LP",
@@ -111,7 +111,7 @@ const product2 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Este libro ofrece una recopilación exhaustiva y actualizada del Código Penal, integrando tanto las normas vigentes como la jurisprudencia relevante en el ámbito penal. A diferencia de los códigos tradicionales, que solo incluyen textos legislativos, este compendio incluye decisiones jurisprudenciales nacionales e internacionales que complementan y concretan la ley. Se seleccionan solo aquellos pronunciamientos que llenan vacíos legales, interpretan figuras jurídicas o crean doctrina, con el fin de ofrecer una herramienta útil y funcional. Además, se incorporan enlaces y códigos QR para facilitar la consulta y mantener al lector actualizado con los últimos fallos.",
   "978-61249574-6-8",
   "LP",
   "Editorial LP",
@@ -372,7 +372,7 @@ const product13 = new Products(
   ],
 
   "Constitucional",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "La Constitución en las redes es el último libro de Omar Sar Suárez, basado en su exitoso programa #ElConstitucional, transmitido desde 2020 en redes sociales. A través de este espacio, Sar Suárez interactúa con estudiantes y profesionales del Derecho, explicando de manera accesible temas constitucionales y procesales de actualidad. El libro recopila los guiones de dichos programas, presentando una investigación rigurosa y selección de jurisprudencia del Tribunal Constitucional. A lo largo de sus páginas, aborda diversos temas del Código Procesal Constitucional, ofreciendo una guía bibliográfica y cuadros explicativos para facilitar el estudio y comprensión de los conceptos.",
   "978-61248993-3-1",
   "Omar Sar",
   "Escuela de Derecho LP",
@@ -614,7 +614,7 @@ const product22 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "En un contexto marcado por la inmediatez de las redes sociales y la complejidad de los textos académicos, el autor busca transmitir sus vivencias y reflexiones a través de Cuatro Cuentos. Esta obra se aleja del estilo técnico y académico, presentando relatos que reflejan experiencias personales, entrelazadas con sueños, decisiones audaces, y lecciones de vida. Los cuentos cubren distintas etapas del autor como letrado, abordando tanto sus logros como desafíos. Cada cuento va acompañado de un colofón, donde se explica la figura del notario en el contexto peruano, fusionando narrativa y reflexión profesional.",
   "978-612-49720-5-8",
   "Víctor Raúl Tinageros Loza",
   "Editorial LP",
@@ -669,7 +669,7 @@ const product24 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "El texto es un prólogo en el que el autor relata la relación entre dos figuras académicas y profesionales, Carlos Fernández Sessarego y Carlos Calderón Puertas, destacando la profundidad de sus conversaciones y la admiración mutua. En este prólogo, se menciona la dedicación intelectual de Calderón Puertas, su pasión por el conocimiento, y cómo esta relación condujo a una entrevista profunda sobre la vida y obra de Fernández Sessarego, un destacado jurista peruano. El autor reflexiona sobre la contribución de Calderón Puertas y la importancia de este trabajo, subrayando la riqueza de la entrevista y su valor para el entendimiento de la vida y obra del homenajeado.",
   "978-612-49720-6-5",
   "Carlos Calderón Puertas ",
   "Editorial LP",
