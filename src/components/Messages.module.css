@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   padding: 10px 0px;
-  background-color: #cf2e2e;
+  background-color: #e01a22;
   height: 1rem;
   overflow: hidden;
   border: 1px solid black;
@@ -21,7 +21,7 @@
   font-size: 1rem;
   font-weight: 800;
   justify-content: space-around;
-  animation: scrollMessages 20s linear infinite;
+  animation: scrollMessages 26s linear infinite;
   visibility: hidden;
 }
 
@@ -30,9 +30,11 @@
 }
 
 .messages-2 {
-  animation-delay: 10s; /* Comienza después de que el primer mensaje termina */
+  animation-delay: 13s; /* Comienza después de que el primer mensaje termina */
 }
-
+.paused {
+  animation-play-state: paused;
+}
 @keyframes scrollMessages {
   0% {
     visibility: visible;
@@ -48,14 +50,14 @@
 }
 @media screen and (max-width: 1024px) {
   .messages {
-    animation: scrollMessages 20s linear infinite;
+    animation: scrollMessages 26s linear infinite;
   }
   .messages-1 {
     animation-delay: 0s; /* Empieza inmediatamente */
   }
 
   .messages-2 {
-    animation-delay: 10s; /* Comienza después de que el primer mensaje termina */
+    animation-delay: 13s; /* Comienza después de que el primer mensaje termina */
   }
   @keyframes scrollMessages {
     0% {
