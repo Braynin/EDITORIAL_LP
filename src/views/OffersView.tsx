@@ -15,6 +15,7 @@ const OffersView = () => {
               className={styles["offers-img"]}
               src="/BANNER DE SECCION/BANNERS-DE-SECCIÓN_OFERTAS.jpg"
               alt="Ofertas"
+              loading="lazy"
             />
           </div>
 
@@ -27,6 +28,7 @@ const OffersView = () => {
                     src={product.imgUrl}
                     className={styles["offer-img"]}
                     alt={`Ofertas ${product.id}`}
+                    loading="lazy"
                   />
                 </Link>
               </div>

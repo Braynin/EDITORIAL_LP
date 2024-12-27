@@ -11,6 +11,7 @@ export default function Catalogos() {
         <img
           className={styles["btn-catalogo"]}
           src="public/BANNERS VISTA MOBILE/BOTONES CATALOGO/SEPARADOR WEB catalogo minorista.png"
+          loading="lazy"
         />
       </a>
       <a
@@ -20,6 +21,7 @@ export default function Catalogos() {
       >
         <img
           className={styles["btn-catalogo"]}
+          loading="lazy"
           src="public/BANNERS VISTA MOBILE/BOTONES CATALOGO/SEPARADOR WEB catalogo mayorista.png"
         />
       </a>

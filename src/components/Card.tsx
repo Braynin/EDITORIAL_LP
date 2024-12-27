@@ -11,13 +11,14 @@ const whatsapp = "939613209";
 const mensaje = "Hola, visite su pagina y quiero comprar este libro: ";
 
 function CreateCard({ option }: { option: Products }) {
-   // Codificar el nombre y la presentación por separado antes de construir el mensaje
-   const nombreCodificado = encodeURIComponent(option.nombre);
-   const presentacionCodificada = encodeURIComponent(option.presentacion || "No disponible");
- 
-   // Construir el mensaje completo con los valores codificados
-   const mensajeCompleto = `${mensaje}${nombreCodificado}%0A ${presentacionCodificada}`;
+  // Codificar el nombre y la presentación por separado antes de construir el mensaje
+  const nombreCodificado = encodeURIComponent(option.nombre);
+  const presentacionCodificada = encodeURIComponent(
+    option.presentacion || "No disponible"
+  );
 
+  // Construir el mensaje completo con los valores codificados
+  const mensajeCompleto = `${mensaje}${nombreCodificado}%0A ${presentacionCodificada}`;
 
   // Función para prevenir la acción de redirección cuando se hace clic en el ícono de WhatsApp
   const handleWhatsAppClick = (
@@ -33,6 +34,7 @@ function CreateCard({ option }: { option: Products }) {
           src={option.imagen[0]}
           alt={option.nombre}
           className={styles["product-img"]}
+          loading="lazy"
         />
         <div className={styles["product-info"]}>
           <p className={styles["product-title"]}>{option.nombreCard}</p>

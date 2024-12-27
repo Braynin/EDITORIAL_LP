@@ -22,6 +22,7 @@ function DetailsCard() {
       setPrice(Number(foundProduct.precio));
       setPriceOffer(Number(foundProduct.precioOferta));
       window.scrollTo(0, 0);
+      setQuantity(1);
     }
   }, [id]);
 
@@ -67,6 +68,7 @@ function DetailsCard() {
         src={img}
         alt={product.nombre}
         onClick={changeMini}
+        loading="lazy"
       />
     ));
   };
@@ -103,6 +105,7 @@ function DetailsCard() {
                 id="big-img"
                 src={product?.imagen?.[0] || "default-image.jpg"}
                 alt={product?.nombre || "default name"}
+                loading="lazy"
                 style={
                   isZoomed
                     ? {
@@ -169,7 +172,12 @@ function DetailsCard() {
               </div>
               <ul className={styles["checkout-policy-list"]}>
                 <li className={styles["indice"]}>
-                  <a className={styles["policy-icon"]} href={product?.indice} target="_blank" rel="noopener noreferrer">
+                  <a
+                    className={styles["policy-icon"]}
+                    href={product?.indice}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

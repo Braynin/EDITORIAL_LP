@@ -147,7 +147,11 @@ export const Hero = () => {
                     onMouseEnter={handleMouseEnter} // Pausar al pasar el cursor
                     onMouseLeave={handleMouseLeave} // Reanudar al quitar el cursor
                   >
-                    <img src={item.imgUrl} alt={`image-${item.id}`} />
+                    <img
+                      src={item.imgUrl}
+                      alt={`image-${item.id}`}
+                      loading="lazy"
+                    />
                   </Link>
                 </li>
               ))

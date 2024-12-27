@@ -113,6 +113,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
             className={styles["separator"]}
             src={separator?.img}
             alt={separator?.section}
+            loading="lazy"
           />
           <div className={styles["slider-container"]}>
             <div className={styles["slider"]}>
@@ -128,6 +129,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
             className={styles["separator"]}
             src={separator?.img}
             alt={separator?.section}
+            loading="lazy"
           />
           <div className={styles["slider-container"]}>
             <div
@@ -169,6 +171,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
               className={styles["banner-section"]}
               src={bannerSection?.img}
               alt={bannerSection?.section}
+              loading="lazy"
             />
             <div className={styles["slider-container"]}>
               <div className={styles["slider"]}>
@@ -186,6 +189,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
               className={styles["banner-section"]}
               src={bannerSection?.img}
               alt={bannerSection?.section}
+              loading="lazy"
             />
             <div className={styles["slider-container"]}>
               <div

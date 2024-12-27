@@ -40,6 +40,7 @@ export default function Offers() {
           src={separator.img}
           alt="Ofertas"
           className={styles["separator"]}
+          loading="lazy"
         />
       )}
       <div className={styles["card-section"]}>
@@ -51,6 +52,7 @@ export default function Offers() {
                   src={product.imgUrl}
                   className={styles["offer-img"]}
                   alt={`Ofertas ${product.id}`}
+                  loading="lazy"
                 />
               </Link>
             </div>

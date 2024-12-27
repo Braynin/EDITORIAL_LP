@@ -47,6 +47,7 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
                       src={image}
                       alt={`Ads ${imageIndex}`}
                       className={styles["Ads-img"]}
+                      loading="lazy"
                     />
                   </Link>
                 </div>

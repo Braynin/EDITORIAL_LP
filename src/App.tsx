@@ -35,7 +35,7 @@ function App() {
     // Rutas generadas a partir de tu array
     { path: "/quienes-somos", element: <QuienesSomos /> },
     { path: "/preguntas-frecuentes", element: <PreguntasFrecuentes /> },
-    
+
     { path: "/politicas-de-privacidad", element: <PoliticasDePrivacidad /> },
     { path: "/politicas-de-cookies", element: <PoliticasDeCookies /> },
     { path: "/terminos-y-condiciones", element: <TerminosYCondiciones /> },

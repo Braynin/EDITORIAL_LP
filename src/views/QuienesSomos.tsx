@@ -10,6 +10,7 @@ const QuienesSomos = () => {
             className={styles["img-quienesSomos"]}
             src="public/QUIENES SOMOS BANNER.png"
             alt="Quienes Somos"
+            loading="lazy"
           />
         </div>
         <div className={styles["mision-container"]}>
@@ -18,6 +19,7 @@ const QuienesSomos = () => {
               className={styles["img-mision"]}
               src="public/METAS-ICON_WEB.png"
               alt="Misión"
+              loading="lazy"
             />
           </div>
           <div className={styles["text-container"]}>
@@ -35,6 +37,7 @@ const QuienesSomos = () => {
               className={styles["img-vision"]}
               src="public/VISIÓN-ICON_WEB.png"
               alt="Visión"
+              loading="lazy"
             />
           </div>
           <div className={styles["text-container"]}>
