@@ -31,20 +31,16 @@ class FooterOption {
 const footerOption1 = new FooterOption(
   "Sobre Nosotros",
   ["Quienes Somos", "/quienes-somos"],
-  ["", "#"],
+  ["Preguntas Frecuentes", "/preguntas-frecuentes"],
   ["", "#"],
   ["", "#"]
 );
+
 const footerOption2 = new FooterOption(
-  "Servicio al cliente",
-  ["Preguntas Frecuentes", "/preguntas-frecuentes"],
-);
-const footerOption3 = new FooterOption(
   "Política",
   ["Políticas de privacidad", "/politicas-de-privacidad"],
-  ["Políticas de Cookies", "/politicas-de-cookies"],
   ["Términos y condiciones", "/terminos-y-condiciones"],
-  ["Términos y condiciones Promocionales", "/terminos-y-condiciones-promocionales"],
+  // ["Términos y condiciones Promocionales", "/terminos-y-condiciones-promocionales"],
   ["Política de entrega", "/politicas-de-entrega"]
 );
 
@@ -52,8 +48,7 @@ const footerOption3 = new FooterOption(
 
 const arrayFooterOptions: FooterOption[] = [
   footerOption1,
-  footerOption2,
-  footerOption3,
+  footerOption2
 ];
 
 export default arrayFooterOptions;

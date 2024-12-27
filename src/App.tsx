@@ -10,7 +10,6 @@ import QuienesSomos from "./views/QuienesSomos.tsx";
 import PreguntasFrecuentes from "./views/PreguntasFrecuentes.tsx";
 
 import PoliticasDePrivacidad from "./views/PoliticasDePrivacidad.tsx";
-import PoliticasDeCookies from "./views/PoliticasDeCookies.tsx";
 import TerminosYCondiciones from "./views/TerminosYCondiciones.tsx";
 import TerminosYCondicionesPromocionales from "./views/TerminosYCondicionesPromocionales.tsx";
 import SearchResults from "./views/SearchResults.tsx";
@@ -37,7 +36,6 @@ function App() {
     { path: "/preguntas-frecuentes", element: <PreguntasFrecuentes /> },
 
     { path: "/politicas-de-privacidad", element: <PoliticasDePrivacidad /> },
-    { path: "/politicas-de-cookies", element: <PoliticasDeCookies /> },
     { path: "/terminos-y-condiciones", element: <TerminosYCondiciones /> },
     {
       path: "/terminos-y-condiciones-promocionales",
