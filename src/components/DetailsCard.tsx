@@ -201,8 +201,8 @@ function DetailsCard() {
                       <path d="M9 13l6 0" />
                       <path d="M9 17l6 0" />
                     </svg>
+                    <p className={styles["policy-desc"]}>Descarga el índice</p>
                   </a>
-                  <p className={styles["policy-desc"]}>Descarga el índice</p>
                 </li>
 
                 <ShareButton />

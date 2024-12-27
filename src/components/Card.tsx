@@ -3,6 +3,7 @@ import "../index.css";
 import styles from "./Card.module.css";
 import { Products } from "../assets/ProductsOptions";
 import { IconShoppingBagCheck } from "@tabler/icons-react";
+import { useState } from "react";
 
 interface TemplateProps {
   array: Products[];
@@ -26,52 +27,67 @@ function CreateCard({ option }: { option: Products }) {
   ) => {
     event.stopPropagation(); // Evitar que el clic se propague y active el Link
   };
-
+  const [currentImage, setCurrentImage] = useState(option.imagen[0]);
+  const handleMouseEnter = () => {
+    if (option.imagen.length > 1) {
+      setCurrentImage(option.imagen[1]);
+    }
+  };
+  const handleMouseLeave = () => {
+    setCurrentImage(option.imagen[0]);
+  };
   return (
-    <div className={styles["card"]}>
-      <Link to={`/details?id=${option.id}`} className={styles["product-card"]}>
-        <img
-          src={option.imagen[0]}
-          alt={option.nombre}
-          className={styles["product-img"]}
-          loading="lazy"
-        />
-        <div className={styles["product-info"]}>
-          <p className={styles["product-title"]}>{option.nombreCard}</p>
-          <span className={styles["brand"]}>{option.presentacion}</span>
-          <div className={styles["product-price-block"]}>
-            <div className={styles["prices"]}>
-              {Number(option.precioOferta) !== 0 && (
-                <h2 className={styles["price-offer"]}>
-                  S/.{option.precioOferta}
+    <>
+      <div className={styles["card"]}>
+        <Link
+          to={`/details?id=${option.id}`}
+          className={styles["product-card"]}
+        >
+          <img
+            src={currentImage}
+            alt={option.nombre}
+            className={styles["product-img"]}
+            loading="lazy"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+          <div className={styles["product-info"]}>
+            <p className={styles["product-title"]}>{option.nombreCard}</p>
+            <span className={styles["brand"]}>{option.presentacion}</span>
+            <div className={styles["product-price-block"]}>
+              <div className={styles["prices"]}>
+                {Number(option.precioOferta) !== 0 && (
+                  <h2 className={styles["price-offer"]}>
+                    S/.{option.precioOferta}
+                  </h2>
+                )}
+                <h2
+                  className={
+                    Number(option.precioOferta) !== 0
+                      ? styles["price-strikethrough"]
+                      : styles["price"]
+                  }
+                >
+                  S/.{option.precio}
                 </h2>
-              )}
-              <h2
-                className={
-                  Number(option.precioOferta) !== 0
-                    ? styles["price-strikethrough"]
-                    : styles["price"]
-                }
-              >
-                S/.{option.precio}
-              </h2>
-            </div>
-            <a
-              className={styles["case-icon"]}
-              title="A COMPRAR!!"
-              href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleWhatsAppClick}
-            >
-              <div className={styles["icon"]}>
-                <IconShoppingBagCheck stroke={2} />
               </div>
-            </a>
+              <a
+                className={styles["case-icon"]}
+                title="A COMPRAR!!"
+                href={`https://wa.me/${whatsapp}?text=${mensajeCompleto}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleWhatsAppClick}
+              >
+                <div className={styles["icon"]}>
+                  <IconShoppingBagCheck stroke={2} />
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </Link>
-    </div>
+        </Link>
+      </div>
+    </>
   );
 }
 

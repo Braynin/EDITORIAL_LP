@@ -167,12 +167,6 @@
   color: white;
   border: none;
 }
-.indice {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: flex-end;
-}
 
 .container-sipnosis-information {
   margin: 0 350px;
@@ -220,7 +214,11 @@
 .product-description strong {
   font-weight: bold;
 }
-
+.policy-icon {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .details-container {
     display: flex;
