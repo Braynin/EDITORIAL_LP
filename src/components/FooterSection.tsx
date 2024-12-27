@@ -2,7 +2,16 @@ import { Link } from "react-router-dom";
 import styles from "./FooterSection.module.css";
 import arrayFooterOptions from "../assets/FooterOptions";
 
-const createFooterSection = (option: any) => (
+interface FooterOptions {
+  title: string;
+  option1: [string, string];
+  option2: [string, string];
+  option3: [string, string];
+  option4: [string, string];
+  option5: [string, string];
+}
+
+const createFooterSection = (option: FooterOptions) => (
   <div className={styles["footer-section"]}>
     <h4 className={styles["footer-title"]}>{option.title}</h4>
     <ul className={styles["footer-options"]}>
