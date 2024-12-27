@@ -39,9 +39,8 @@ const footerOption1 = new FooterOption(
 const footerOption2 = new FooterOption(
   "Política",
   ["Políticas de privacidad", "/politicas-de-privacidad"],
-  ["Políticas de Cookies", "/politicas-de-cookies"],
   ["Términos y condiciones", "/terminos-y-condiciones"],
-  ["Términos y condiciones Promocionales", "/terminos-y-condiciones-promocionales"],
+  // ["Términos y condiciones Promocionales", "/terminos-y-condiciones-promocionales"],
   ["Política de entrega", "/politicas-de-entrega"]
 );
 
