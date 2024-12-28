@@ -9,11 +9,11 @@ function Footer() {
     <>
       <div className={styles["footer-container"]}>
         <div className={styles["footer-section"]}>
-          <a className={styles["logo-container"]} href="">
+          <a className={styles["logo-container"]} href="/" rel="noopener noreferrer">
             <img
               loading="lazy"
               src="public/LOGO EDITORIAL - ROJO.png"
-              alt="lp"
+              alt="lp" 
               className={styles["logo-footer"]}
             />
           </a>
