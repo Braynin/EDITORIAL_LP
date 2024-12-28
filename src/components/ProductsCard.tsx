@@ -38,7 +38,7 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
             }
           }
           return (
-            <React.Fragment key={option.text}>
+            <>
               <CardsSection section={option.text} />
               {shouldShowImage && (
                 <div className={styles["image-container"]}>
@@ -52,7 +52,7 @@ const ProductsCard: React.FC<ProductsCardProps> = ({ section }) => {
                   </Link>
                 </div>
               )}
-            </React.Fragment>
+            </>
           );
         })}
       </div>

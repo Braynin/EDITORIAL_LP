@@ -6,7 +6,21 @@
   gap: 20px;
 }
 
+.cinta-offer {
+  position: absolute;
+  top: 35px;
+  left: -10px;
+  z-index: 10; /* Ajusta según sea necesario */
+}
+.cinta {
+  /* Estilos de la imagen de la cinta */
+  width: 120px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  transform: rotate(-48deg);
+}
+
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fff;
