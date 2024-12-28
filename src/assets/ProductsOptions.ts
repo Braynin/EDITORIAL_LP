@@ -322,7 +322,7 @@ const product11 = new Products(
   ],
 
   "Administrativo",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "La obra de Julio Baltazar Durand Carrión y Pavel Flores Flores ofrece un análisis profundo y didáctico del derecho del consumidor peruano. Aborda temas esenciales como los principios, derechos de los consumidores, contratos de consumo, cláusulas abusivas, y la responsabilidad objetiva en accidentes de consumo. Además, examina los mecanismos de protección, tanto judiciales como alternativos, y reflexiona sobre la relación de este derecho con otras ramas jurídicas. Con claridad y enfoque pedagógico, el libro contribuye al estudio del derecho del consumidor en Latinoamérica, destacando su impacto en el derecho privado y público, y proponiendo nuevas perspectivas para su comprensión y desarrollo.",
   "978-61249574-0-6",
   "Julio Baltazar Durand Carrión, Pavel FLores Flores",
   "Editorial LP",
@@ -514,7 +514,7 @@ const product18 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "El libro analiza la evolución del Código Penal de 1991, afectado por reformas excepcionales que desdibujaron su carácter garantista. Examina las doctrinas de Roxin y Jakobs, destacando sus enfoques sobre criminalidad organizada y derecho penal económico, así como su impacto en la dogmática penal contemporánea. Aborda problemas como la instrumentalización del derecho penal y plantea una exposición coherente de la parte general, basada en principios constitucionales como legalidad, claridad normativa y responsabilidad subjetiva. Con un enfoque crítico, busca ofrecer herramientas prácticas y teóricas para comprender el derecho penal vigente y reflexionar sobre su desarrollo en contextos locales y comparados.",
   "978-61249315-0-5",
   "Dino Carlos Caro Coria, Luis Miguel Reyna Alfaro",
   "Escuela de Derecho LP",
