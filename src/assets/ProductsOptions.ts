@@ -138,7 +138,7 @@ const product3 = new Products(
   ],
 
   "Civil",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "El libro Código Civil: Jurisprudencia relevante y actual celebra los 40 años del Código Civil peruano de 1984 con una propuesta innovadora. Recopila criterios jurisprudenciales clave, resumidos en titulares concisos y acompañados de enlaces cortos que permiten acceder rápidamente al texto completo de las resoluciones. Este enfoque facilita el acceso para litigantes, jueces y estudiantes, promoviendo debates enriquecedores en el ámbito académico y profesional. Además, integra jurisprudencia nacional e internacional, destacando casos relevantes de Italia, Francia, España, Colombia y Argentina. Con un diseño práctico y detallado, este Código es una herramienta útil para entender y aplicar el derecho civil, invitando a su constante mejora.",
   "978-61249574-7-4",
   "LP",
   "Editorial LP",
@@ -165,7 +165,7 @@ const product4 = new Products(
   ],
 
   "Civil",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "El libro Código Civil: Jurisprudencia relevante y actual celebra los 40 años del Código Civil peruano de 1984 con una propuesta innovadora. Recopila criterios jurisprudenciales clave, resumidos en titulares concisos y acompañados de enlaces cortos que permiten acceder rápidamente al texto completo de las resoluciones. Este enfoque facilita el acceso para litigantes, jueces y estudiantes, promoviendo debates enriquecedores en el ámbito académico y profesional. Además, integra jurisprudencia nacional e internacional, destacando casos relevantes de Italia, Francia, España, Colombia y Argentina. Con un diseño práctico y detallado, este Código es una herramienta útil para entender y aplicar el derecho civil, invitando a su constante mejora.",
   "978-61249574-7-4",
   "LP",
   "Editorial LP",
@@ -268,7 +268,7 @@ const product8 = new Products(
   ],
 
   "Civil",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "La comunicación es esencial para la humanidad, y en los procesos judiciales, su forma (oral o escrita) impacta directamente la justicia. En el Perú, la oralidad en el proceso civil ha demostrado ser más eficiente, permitiendo al juez interactuar directamente con las partes, promover transparencia y agilizar decisiones. Este libro, Litigación oral civil del juez Carlos E. Polanco Gutiérrez, analiza la evolución histórica del proceso civil peruano, las ventajas de la oralidad y el papel crucial del juez. Es una obra indispensable para abogados, jueces y estudiantes, que reflexiona sobre la implementación y beneficios de este enfoque moderno y dinámico.",
   "978-61249574-5-1",
   "Carlos E. Polanco Gutiérrez",
   "Editorial LP",
@@ -349,7 +349,7 @@ const product12 = new Products(
   ],
 
   "Administrativo",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Este libro es una guía esencial sobre el Procedimiento Administrativo Disciplinario (PAD) en la administración pública peruana. Explica de forma clara y práctica los conceptos generales, principios rectores, y las instituciones clave establecidas por la Ley del Servicio Civil y su reglamento. Además, aborda los precedentes obligatorios, opiniones especializadas y estrategias para la gestión y defensa en procesos disciplinarios. Con diagramas y cuadros ilustrativos, ofrece una herramienta indispensable para servidores públicos, abogados y gestores interesados en comprender y aplicar eficientemente este modelo disciplinario. Una obra diseñada para cerrar brechas de conocimiento y fortalecer la profesionalización en el sector público.",
   "978-61248993-0-0",
   "Gustavo A. Rico Iberico",
   "Escuela de Derecho LP",
@@ -486,7 +486,7 @@ const product17 = new Products(
   ],
 
   "Administrativo",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Este libro destaca la importancia de la redacción administrativa en el derecho administrativo, abordando la práctica forense administrativa esencial para el ordenamiento jurídico peruano. Dividido en 11 capítulos, analiza desde escritos de petición administrativa hasta modelos de demandas contra entidades públicas. Incluye guías para redactar actos administrativos individuales y generales, contratos laborales, demandas judiciales, y documentos esenciales en procedimientos sancionadores y disciplinarios. Diseñado para abogados, estudiantes, servidores públicos y ciudadanos, ofrece herramientas prácticas para elaborar documentos legales claros y precisos. Es un recurso accesible para quienes buscan entender o aplicar la redacción legal en diferentes contextos.",
   "978-61248993-2-4",
   "José María Pacori Cari",
   "Escuela de Derecho LP",
@@ -541,7 +541,7 @@ const product19 = new Products(
   ],
 
   "Familia",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Este libro del doctor Juan Carlos Del Aguila Llanos ofrece una guía práctica y accesible para abordar conflictos familiares, tanto para abogados como para quienes no están familiarizados con el derecho. A través de explicaciones claras y ejemplos sencillos, el autor proporciona herramientas para comprender cómo enfrentar estas situaciones y tomar decisiones informadas. Además, incluye valiosos consejos para elegir al abogado adecuado y reflexionar sobre las instituciones relevantes en el derecho de familia. Una obra diseñada para facilitar el entendimiento, promover soluciones efectivas y mejorar la calidad de vida familiar.",
   "978-61248993-9-3",
   "Juan Carlos Del Aguila LLanos",
   "Escuela de Derecho LP",
