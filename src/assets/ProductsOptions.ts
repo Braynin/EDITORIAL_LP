@@ -434,7 +434,7 @@ const product15 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Esta colección reúne cuatro obras fundamentales que abordan con profundidad y rigor aspectos esenciales del derecho procesal penal, combinando teoría, crítica y práctica. Los textos exploran temas como el derecho al plazo razonable, la fase de investigación preparatoria, la audiencia de inadmisión de diligencias y la tutela de derechos, ofreciendo análisis jurisprudenciales, dogmáticos y metodológicos. Cada libro destaca por su enfoque accesible y su relevancia tanto para estudiantes como para profesionales del derecho, brindando herramientas indispensables para mejorar la litigación penal y fortalecer el respeto por los derechos fundamentales. Una contribución invaluable al conocimiento y práctica del derecho penal contemporáneo.",
   "978-61248993-7-9",
   "Jefferson Moreno Nieves",
   "Escuela de Derecho LP",
