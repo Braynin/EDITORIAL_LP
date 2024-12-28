@@ -649,7 +649,7 @@ const product23 = new Products(
   ],
 
   "Ofertas",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Los libros Código Penal y Código Civil: Jurisprudencia relevante y actual ofrecen una recopilación exhaustiva y actualizada de normas y jurisprudencia esencial en derecho peruano. El Código Penal integra los textos vigentes con la jurisprudencia más relevante, facilitando la aplicación práctica de la ley. Por su parte, el Código Civil se distingue por resumir pronunciamientos clave con titulares concisos, proporcionando acceso directo a las resoluciones completas. Ambas obras son herramientas fundamentales para estudiantes, abogados y jueces, promoviendo un análisis profundo y actualizado del derecho y favoreciendo la comprensión de la evolución normativa y jurisprudencial.",
   "978-61249574-6-8 ; 978-61249574-7-4",
   "LP",
   "Editorial LP",
