@@ -192,7 +192,7 @@ const product5 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Esta obra aborda de manera integral la detención policial en flagrancia, estructurada en 10 capítulos con 60 temas específicos y más de 600 casos jurisprudenciales. Diseñada para ser autosuficiente, analiza detalladamente las instituciones jurídicas vinculadas a la detención policial, un tema históricamente tratado de forma superficial en la doctrina nacional. Examina problemáticas como los supuestos de flagrancia extendida, la validez de pruebas derivadas de medidas restrictivas y el control judicial insuficiente. Es una herramienta valiosa para actores del sistema de justicia penal, especialmente en el contexto de la implementación de unidades de flagrancia y el equilibrio entre eficacia y derechos fundamentales.",
   "978-61249574-6-8",
   "Giammpol Taboada Pilco",
   "Editorial LP",
@@ -407,7 +407,7 @@ const product14 = new Products(
   ],
 
   "Penal",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Esta colección reúne cuatro obras fundamentales que abordan con profundidad y rigor aspectos esenciales del derecho procesal penal, combinando teoría, crítica y práctica. Los textos exploran temas como el derecho al plazo razonable, la fase de investigación preparatoria, la audiencia de inadmisión de diligencias y la tutela de derechos, ofreciendo análisis jurisprudenciales, dogmáticos y metodológicos. Cada libro destaca por su enfoque accesible y su relevancia tanto para estudiantes como para profesionales del derecho, brindando herramientas indispensables para mejorar la litigación penal y fortalecer el respeto por los derechos fundamentales. Una contribución invaluable al conocimiento y práctica del derecho penal contemporáneo.",
   "978-61248993-7-9",
   "Jefferson Moreno Nieves",
   "Escuela de Derecho LP",
@@ -459,7 +459,7 @@ const product16 = new Products(
   ],
 
   "Constitucional",
-  "En un pequeño pueblo rodeado de montañas, la vida transcurría con la serenidad de un río que fluye lentamente. Los habitantes, con rostros amigables y sonrisas sinceras, se reunían cada tarde en la plaza principal, donde los niños jugaban y los ancianos compartían historias de tiempos pasados. Las flores de colores vibrantes adornaban cada esquina, mientras el aroma del pan recién horneado se mezclaba con el canto de los pájaros. Era un lugar donde el tiempo parecía detenerse, invitando a todos a disfrutar de la simplicidad de la vida y a encontrar belleza en los pequeños momentos.",
+  "Esta obra ofrece un análisis profundo del Nuevo Código Procesal Constitucional de 2021, explorando las reformas normativas que fortalecen la garantía de los derechos fundamentales y la supremacía de la Constitución. Basada en la experiencia directa del autor como integrante del grupo de trabajo legislativo encargado de estas modificaciones, la publicación detalla aspectos innovadores como el control de convencionalidad, la defensa pública constitucional y el uso de lenguas originarias. Con comentarios a cada artículo, gráficos explicativos y debates doctrinales, esta contribución se posiciona como una referencia esencial para jueces, académicos, abogados y estudiantes del derecho constitucional.",
   "978-61249315-5-0",
   "Luis Andrés Roel Alva",
   "Escuela de Derecho LP",
