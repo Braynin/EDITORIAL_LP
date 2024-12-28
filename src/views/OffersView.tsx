@@ -4,7 +4,23 @@ import { Link } from "react-router-dom";
 import { offerOptions, OfferOption } from "../assets/OffersOptions";
 import Breadcrumb from "../components/Breadcrumb";
 import Catalogos from "../components/CatalogoBtn.tsx";
+import { useState, useEffect } from "react";
 const OffersView = () => {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 450);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const bannerOffer = isMobile
+    ? "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_OFERTAS.png"
+    : "/BANNER DE SECCION/BANNERS-DE-SECCIÓN_OFERTAS.jpg";
+
   return (
     <>
       <Layout>
@@ -13,7 +29,7 @@ const OffersView = () => {
           <div className={styles["offers-banner"]}>
             <img
               className={styles["offers-img"]}
-              src="/BANNER DE SECCION/BANNERS-DE-SECCIÓN_OFERTAS.jpg"
+              src={bannerOffer}
               alt="Ofertas"
               loading="lazy"
             />

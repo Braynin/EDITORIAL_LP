@@ -8,7 +8,10 @@ import {
   arraySeparatorsMobile,
 } from "../assets/SeparatorsOptions.ts";
 import { useLocation } from "react-router-dom";
-import { arrayBannerSections } from "../assets/BannerSectionOption.ts";
+import {
+  arrayBannerSections,
+  arrayBannerSectionMobile,
+} from "../assets/BannerSectionOption.ts";
 
 // Definir los tipos de las propiedades
 interface CardsSectionProps {
@@ -33,7 +36,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
   // Detectar si la pantalla es menor a 768px
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Actualiza el estado si el ancho es menor a 768px
+      setIsMobile(window.innerWidth <= 550); // Actualiza el estado si el ancho es menor a 768px
     };
 
     // Ejecutar la función de tamaño en el montaje del componente
@@ -159,7 +162,10 @@ const CardsSection: React.FC<CardsSectionProps> = ({ section }) => {
       );
     }
   } else {
-    const bannerSection = arrayBannerSections.find(
+    const SectionBanner = isMobile
+      ? arrayBannerSectionMobile
+      : arrayBannerSections;
+    const bannerSection = SectionBanner.find(
       (banner) => normalizeText(banner.section) === normalizeText(section)
     );
 
