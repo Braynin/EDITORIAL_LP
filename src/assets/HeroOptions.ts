@@ -7,14 +7,15 @@ interface HeroOption {
 export const heroOptions: HeroOption[] = [
   {
     id: 1,
-    imgUrl: "/BANNERS/BANNERS-WEB_CODIGO-CIVIL.png",
-    link: "/details?id=3",
-  },
-  {
-    id: 2,
     imgUrl: "/BANNERS/BANNERS-WEB_CODIGO-PENAL.png",
     link: "/details?id=1",
   },
+  {
+    id: 2,
+    imgUrl: "/BANNERS/BANNERS-WEB_CODIGO-CIVIL.png",
+    link: "/details?id=3",
+  },
+
   {
     id: 3,
     imgUrl: "/BANNERS/BANNERS-WEB_EL-DEFENSOR-2.png",

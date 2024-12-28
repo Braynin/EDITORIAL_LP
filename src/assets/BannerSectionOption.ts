@@ -43,4 +43,25 @@ export const arrayBannerSections: BannerSection[] = [
   bannerSection6,
 ];
 
-
+export const arrayBannerSectionMobile: BannerSection[] = [
+  {
+    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_ADMINISTRATIVO.png",
+    section: "Administrativo",
+  },
+  {
+    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CIVIL.png",
+    section: "Civil",
+  },
+  {
+    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_PENAL.png",
+    section: "Penal",
+  },
+  {
+    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_FAMILIA.png",
+    section: "Familia",
+  },
+  {
+    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CONSTITUCIONAL.png",
+    section: "Constitucional",
+  },
+];
