@@ -6,17 +6,14 @@
   gap: 20px;
 }
 
-.cinta-offer {
+.cinta {
   position: absolute;
   top: 35px;
   left: -10px;
-  z-index: 10; /* Ajusta según sea necesario */
-}
-.cinta {
-  /* Estilos de la imagen de la cinta */
-  width: 120px; /* Ajusta el tamaño según sea necesario */
-  height: auto;
-  transform: rotate(-48deg);
+  z-index: 10;
+  width: 120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 .product-card {
@@ -32,7 +29,7 @@
   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Suaves transiciones */
   height: 400px;
   box-sizing: border-box;
-  overflow: hidden;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra más suave y difusa */
 }
 

@@ -44,14 +44,12 @@ function CreateCard({ option }: { option: Products }) {
           className={styles["product-card"]}
         >
           {Number(option.precioOferta) !== 0 && (
-            <div className={styles["cinta-offer"]}>
-              <img
-                src="/OFERTAS/oferta tag.png"
-                alt="Cinta de oferta"
-                loading="lazy"
-                className={styles["cinta"]}
-              />
-            </div>
+            <img
+              src="/OFERTAS/oferta tag.png"
+              alt="Cinta de oferta"
+              loading="lazy"
+              className={styles["cinta"]}
+            />
           )}
           <img
             src={currentImage}
