@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ShareButton.module.css";
-import { 
+import {
   IconBrandWhatsapp,
   IconBrandFacebook,
   IconBrandTwitter,
@@ -41,7 +41,7 @@ const ShareButton: React.FC = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <a  href="#" onClick={handleCopyUrl} className={styles["policy-icon"]} >
+        <a href="#" onClick={handleCopyUrl} className={styles["policy-icon"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -52,7 +52,9 @@ const ShareButton: React.FC = () => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className={styles["icon icon-tabler icons-tabler-outline icon-tabler-share"]}
+            className={
+              styles["icon icon-tabler icons-tabler-outline icon-tabler-share"]
+            }
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -76,28 +78,44 @@ const ShareButton: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandWhatsapp size={24} stroke={2} className={styles.whatsappIcon} />
+              <IconBrandWhatsapp
+                size={24}
+                stroke={2}
+                className={styles.whatsappIcon}
+              />
             </a>
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandFacebook size={24} stroke={2} className={styles.facebookIcon} />
+              <IconBrandFacebook
+                size={24}
+                stroke={2}
+                className={styles.facebookIcon}
+              />
             </a>
             <a
               href={`https://twitter.com/intent/tweet?text=Miren esto: ${currentUrl}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandTwitter size={24} stroke={2} className={styles.twitterIcon} />
+              <IconBrandTwitter
+                size={24}
+                stroke={2}
+                className={styles.twitterIcon}
+              />
             </a>
             <a
               href={`https://www.linkedin.com/shareArticle?url=${currentUrl}&text=Miren esto`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandLinkedin size={24} stroke={2} className={styles.linkedinIcon} />
+              <IconBrandLinkedin
+                size={24}
+                stroke={2}
+                className={styles.linkedinIcon}
+              />
             </a>
           </div>
         )}

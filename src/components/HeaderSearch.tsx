@@ -10,7 +10,7 @@ function HeaderSearch() {
         <Link className={styles["logo-container"]} to="/">
           <img
             className={styles["header-logo"]}
-            src="/public/LOGO EDITORIAL - ROJO.png"
+            src="/LOGO EDITORIAL - ROJO.png"
             alt="Logo Lp"
             loading="lazy"
           />
