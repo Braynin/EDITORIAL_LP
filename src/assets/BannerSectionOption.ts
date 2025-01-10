@@ -45,23 +45,23 @@ export const arrayBannerSections: BannerSection[] = [
 
 export const arrayBannerSectionMobile: BannerSection[] = [
   {
-    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_ADMINISTRATIVO.png",
+    img: "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_ADMINISTRATIVO.png",
     section: "Administrativo",
   },
   {
-    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CIVIL.png",
+    img: "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CIVIL.png",
     section: "Civil",
   },
   {
-    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_PENAL.png",
+    img: "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_PENAL.png",
     section: "Penal",
   },
   {
-    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_FAMILIA.png",
+    img: "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_FAMILIA.png",
     section: "Familia",
   },
   {
-    img: "public/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CONSTITUCIONAL.png",
+    img: "/BANNERS VISTA MOBILE/SECTION MOBILE/BANNERS DE SECCIÓN_MOVIL_CONSTITUCIONAL.png",
     section: "Constitucional",
   },
 ];
