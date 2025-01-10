@@ -16,7 +16,7 @@ function Footer() {
           >
             <img
               loading="lazy"
-              src="public/LOGO EDITORIAL - ROJO.png"
+              src="/LOGO EDITORIAL - ROJO.png"
               alt="lp"
               className={styles["logo-footer"]}
             />
@@ -43,7 +43,7 @@ function Footer() {
           >
             <img
               loading="lazy"
-              src="./public/Item_libro_de_reclamaciones_128x80.png"
+              src="/Item_libro_de_reclamaciones_128x80.png"
               alt=""
             />
           </a>

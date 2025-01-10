@@ -12,12 +12,12 @@ export class OfferOption {
 export const offerOptions: OfferOption[] = [
   {
     id: "1",
-    imgUrl: "public/OFERTAS/OFFER_CPTR_CCTR.jpeg",
+    imgUrl: "/OFERTAS/OFFER_CPTR_CCTR.jpeg",
     link: "/details?id=23",
   },
   {
     id: "2",
-    imgUrl: "public/OFERTAS/OFFER_DPPG.png",
+    imgUrl: "/OFERTAS/OFFER_DPPG.png",
     link: "/details?id=18",
   },
 ];
@@ -26,12 +26,12 @@ export const offerOptionsMobile: OfferOption[] = [
   {
     id: "1",
     imgUrl:
-      "public/OFERTAS/OFFER_CPTR_CCTR.jpeg",
+      "/OFERTAS/OFFER_CPTR_CCTR.jpeg",
     link: "/details?id=23",
   },
   {
     id: "2",
-    imgUrl: "public/OFERTAS/OFFER_DPPG.png",
+    imgUrl: "/OFERTAS/OFFER_DPPG.png",
     link: "/details?id=18",
   },
 ];

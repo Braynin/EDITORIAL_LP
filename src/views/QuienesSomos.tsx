@@ -8,7 +8,7 @@ const QuienesSomos = () => {
         <div className={styles["titulo-principal"]}>
           <img
             className={styles["img-quienesSomos"]}
-            src="public/QUIENES SOMOS BANNER.png"
+            src="/QUIENES SOMOS BANNER.png"
             alt="Quienes Somos"
             loading="lazy"
           />
@@ -17,7 +17,7 @@ const QuienesSomos = () => {
           <div className={styles["imagen-container"]}>
             <img
               className={styles["img-mision"]}
-              src="public/METAS-ICON_WEB.png"
+              src="/METAS-ICON_WEB.png"
               alt="Misión"
               loading="lazy"
             />
@@ -35,7 +35,7 @@ const QuienesSomos = () => {
           <div className={styles["imagen-container"]}>
             <img
               className={styles["img-vision"]}
-              src="public/VISIÓN-ICON_WEB.png"
+              src="/VISIÓN-ICON_WEB.png"
               alt="Visión"
               loading="lazy"
             />
