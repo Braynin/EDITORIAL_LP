@@ -1,4 +1,4 @@
-import Layout from "../../src/components/Layout";
+import Layout from "../components/Layout";
 import styles from "./PoliticasDeEntrega.module.css";
 
 const PoliticasDeEntrega = () => {

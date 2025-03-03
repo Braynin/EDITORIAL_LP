@@ -1,9 +1,9 @@
-import Layout from "../../src/components/Layout.tsx";
+import Layout from "../components/Layout.tsx";
 import styles from "./OffersView.module.css";
 import { Link } from "react-router-dom";
-import { offerOptions, OfferOption } from "../../src/assets/OffersOptions.ts";
-import Breadcrumb from "../../src/components/Breadcrumb.tsx";
-import Catalogos from "../../src/components/CatalogoBtn.tsx";
+import { offerOptions, OfferOption } from "../assets/OffersOptions.ts";
+import Breadcrumb from "../components/Breadcrumb.tsx";
+import Catalogos from "../components/CatalogoBtn.tsx";
 import { useState, useEffect } from "react";
 const OffersView = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);

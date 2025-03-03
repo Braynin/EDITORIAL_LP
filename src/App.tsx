@@ -2,19 +2,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Importa tus vistas
 
-import Home from "../public/_redirects/Home.tsx";
-import Details from "../public/_redirects/Details.tsx";
-import SectionView from "../public/_redirects/SectionView.tsx";
-import QuienesSomos from "../public/_redirects/QuienesSomos.tsx";
+import Home from "./views/Home.tsx";
+import Details from "./views/Details.tsx";
+import SectionView from "./views/SectionView.tsx";
+import QuienesSomos from "./views/QuienesSomos.tsx";
 
-import PreguntasFrecuentes from "../public/_redirects/PreguntasFrecuentes.tsx";
+import PreguntasFrecuentes from "./views/PreguntasFrecuentes.tsx";
 
-import PoliticasDePrivacidad from "../public/_redirects/PoliticasDePrivacidad.tsx";
-import TerminosYCondiciones from "../public/_redirects/TerminosYCondiciones.tsx";
-import TerminosYCondicionesPromocionales from "../public/_redirects/TerminosYCondicionesPromocionales.tsx";
-import SearchResults from "../public/_redirects/SearchResults.tsx";
-import PoliticasDeEntrega from "../public/_redirects/PoliticasDeEntrega.tsx";
-import OffersView from "../public/_redirects/OffersView.tsx";
+import PoliticasDePrivacidad from "./views/PoliticasDePrivacidad.tsx";
+import TerminosYCondiciones from "./views/TerminosYCondiciones.tsx";
+import TerminosYCondicionesPromocionales from "./views/TerminosYCondicionesPromocionales.tsx";
+import SearchResults from "./views/SearchResults.tsx";
+import PoliticasDeEntrega from "./views/PoliticasDeEntrega.tsx";
+import OffersView from "./views/OffersView.tsx";
 
 function App() {
   const browserRouter = createBrowserRouter([

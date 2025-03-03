@@ -1,6 +1,6 @@
 import { useState } from "react";
-import preguntasFrecuentes from "../../src/assets/PreguntasFrecuentes.js"; // Importa el array
-import Layout from "../../src/components/Layout.js"; // Importa el Layout
+import preguntasFrecuentes from "../assets/PreguntasFrecuentes.js"; // Importa el array
+import Layout from "../components/Layout.js"; // Importa el Layout
 import styles from "./PreguntasFrecuentes.module.css"; // Estilos del componente
 
 const PreguntasFrecuentes = () => {
