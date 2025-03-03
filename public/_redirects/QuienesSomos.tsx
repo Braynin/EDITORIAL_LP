@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../../src/components/Layout";
 import styles from "./QuienesSomos.module.css";
 
 const QuienesSomos = () => {

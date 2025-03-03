@@ -1,9 +1,9 @@
 // SearchResults.jsx o SearchResults.tsx
 import { useLocation } from "react-router-dom";
-import { arrayProducts } from "../assets/ProductsOptions.js";
-import normalizeText from "../assets/NormalizeText.ts";
-import Layout from "../components/Layout.js";
-import { Cards } from "../components/Card.tsx";
+import { arrayProducts } from "../../src/assets/ProductsOptions.ts";
+import normalizeText from "../../src/assets/NormalizeText.ts";
+import Layout from "../../src/components/Layout.js";
+import { Cards } from "../../src/components/Card.tsx";
 import styles from "./SearchResults.module.css";
 
 const SearchResults = () => {
