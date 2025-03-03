@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import preguntasFrecuentes from '../assets/PreguntasFrecuentes.js'; // Importa el array
-import Layout from '../components/Layout'; // Importa el Layout
-import styles from './PreguntasFrecuentes.module.css'; // Estilos del componente
+import { useState } from "react";
+import preguntasFrecuentes from "../../src/assets/PreguntasFrecuentes.js"; // Importa el array
+import Layout from "../../src/components/Layout.js"; // Importa el Layout
+import styles from "./PreguntasFrecuentes.module.css"; // Estilos del componente
 
 const PreguntasFrecuentes = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -16,7 +16,9 @@ const PreguntasFrecuentes = () => {
   };
 
   return (
-    <Layout> {/* Aquí se utiliza el Layout global */}
+    <Layout>
+      {" "}
+      {/* Aquí se utiliza el Layout global */}
       <div className={styles["preguntasFrecuentes-container"]}>
         <h1 className={styles["title-faq"]}>Preguntas Frecuentes</h1>
         <div className={styles["faq-list"]}>

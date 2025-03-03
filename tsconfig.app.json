@@ -18,5 +18,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "assets/**/*"]
+  "include": ["src", "assets/**/*", "public/_redirects"]
 }

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import Layout from "../components/Layout.tsx";
-import MainSection from "../components/MainSection.tsx";
-import Catalogos from "../components/CatalogoBtn.tsx";
+import Layout from "../../src/components/Layout.tsx";
+import MainSection from "../../src/components/MainSection.tsx";
+import Catalogos from "../../src/components/CatalogoBtn.tsx";
 
 const SectionView: React.FC = () => {
   const location = useLocation();

@@ -1,4 +1,4 @@
-import Layout from "../components/Layout.tsx";
+import Layout from "../../src/components/Layout.tsx";
 import styles from "./TerminosYCondicionesPromocionales.module.css";
 
 const TerminosYCondicionesPromocionales = () => {
